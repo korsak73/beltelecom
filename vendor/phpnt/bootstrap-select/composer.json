@@ -1,0 +1,29 @@
+{
+    "name": "phpnt/bootstrap-select",
+    "description": "Yii2 Bootstrap Select Asset",
+    "keywords": ["yii2", "phpnt", "bootstrap-select", "bootstrap", "select", "widget"],
+    "type": "yii2-extension",
+    "license": "MIT",
+    "minimum-stability" : "dev",
+    "prefer-stable": true,
+    "support": {
+        "source": "https://github.com/phpnt/bootstrap-select"
+    },
+    "authors": [
+        {
+            "name": "phpNT",
+            "email": "phpnt@phpnt.com",
+            "homepage": "http://phpnt.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "*",
+        "bower-asset/bootstrap-select": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "phpnt\\bootstrapSelect\\": ""
+        }
+    }
+}

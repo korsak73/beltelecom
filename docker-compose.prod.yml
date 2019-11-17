@@ -1,0 +1,66 @@
+version: '3.2'
+
+volumes:
+  db-data:
+
+networks:
+  mynet:
+
+services:
+  php-logodom:
+    build:
+      context: ./
+      dockerfile: ./docker/php-fpm/dev/Dockerfile
+    container_name: "php.logodom"
+    volumes:
+      - type: bind
+        source: ./
+        target: /var/www/html
+    environment:
+      - XDEBUG_CONFIG='idekey=xdebug; xdebug.remote_host=192.168.0.115'
+      - PHP_IDE_CONFIG=serverName=docker-api
+      - YII_DEBUG=true
+      - YII_ENV=prod
+      - DB_DNS=mysql:host=mysql-logodom:3306;dbname=my_logodom
+      - DB_USER=user_logodom
+      - DB_PASSWORD=password_logodom
+    depends_on:
+      - mysql-logodom
+    networks:
+      - mynet
+
+  nginx-logodom:
+    build: ./docker/nginx/prod/
+    container_name: "nginx.logodom"
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - type: bind
+        source: ./
+        target: /var/www/html/
+    depends_on:
+      - php-logodom
+    environment:
+      - CERTBOT_DOMAINS=logodom.by
+    networks:
+      - mynet
+    links:
+      - php-logodom
+
+  mysql-logodom:
+    build:
+      context: ./
+      dockerfile: ./docker/mysql/dev/Dockerfile
+    container_name: "mysql.logodom"
+    ports:
+      - 3306:3306
+    environment:
+      - MYSQL_DATABASE=my_logodom
+      - MYSQL_USER=user_logodom
+      - MYSQL_PASSWORD=password_logodom
+      - MYSQL_ROOT_PASSWORD=root_logodom
+    volumes:
+      - db-data:/var/lib/mysql
+    networks:
+      - mynet

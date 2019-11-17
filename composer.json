@@ -1,0 +1,100 @@
+{
+    "name": "yiisoft/yii2-app-basic",
+    "description": "Yii 2 Basic Project Template",
+    "keywords": ["yii2", "framework", "basic", "project template"],
+    "homepage": "http://www.yiiframework.com/",
+    "type": "project",
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/yiisoft/yii2/issues?state=open",
+        "forum": "http://www.yiiframework.com/forum/",
+        "wiki": "http://www.yiiframework.com/wiki/",
+        "irc": "irc://irc.freenode.net/yii",
+        "source": "https://github.com/yiisoft/yii2"
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0",
+        "yiisoft/yii2": "~2.0.14",
+        "yiisoft/yii2-bootstrap": "~2.0.0",
+        "yiisoft/yii2-bootstrap4" : "dev-master",
+        "yiisoft/yii2-swiftmailer": "~2.0.0",
+        "tebazil/yii2-db-seeder": "^0.0.0",
+        "2amigos/yii2-transliterator-helper": "*",
+        "mihaildev/yii2-ckeditor": "*",
+        "mihaildev/yii2-elfinder": "*",
+        "costa-rico/yii2-images": "dev-master",
+        "boundstate/yii2-mailgun": "*",
+        "wadeshuler/yii2-sendgrid": "^1.0",
+        "kartik-v/yii2-grid": "@dev",
+        "dmstr/yii2-adminlte-asset": "^2.1",
+        "kartik-v/yii2-widget-datepicker": "@dev",
+        "kartik-v/yii2-widgets" : "~3.4",
+        "kartik-v/yii2-widget-timepicker" : "~1.0",
+        "kartik-v/yii2-date-range": "dev-master",
+        "kartik-v/yii2-widget-select2": "dev-master",
+        "phpnt/bootstrap-notify": "^0.0.2",
+        "phpnt/animate-css": "^0.0.1",
+        "phpnt/font-awesome": "*",
+        "phpnt/yii2-metismenu": "*",
+        "phpnt/bootstrap-select": "^0.0.1",
+        "bower-asset/admin-lte": "dev-master",
+        "phpnt/admin-lte": "*",
+        "himiklab/yii2-recaptcha-widget" : "*",
+        "fxp/composer-asset-plugin" : "~1.4"
+    },
+    "require-dev": {
+        "yiisoft/yii2-debug": "~2.0.0",
+        "yiisoft/yii2-gii": "~2.0.0",
+        "yiisoft/yii2-faker": "~2.0.0",
+
+        "codeception/base": "~2.3.0",
+        "codeception/verify": "~0.4.0",
+        "codeception/specify": "~0.4.6"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "enabled": false
+        },
+        "github-oauth": {
+            "github.com" : "31bf813767955779266832d78f8f2907677f2897"
+        },
+        "github-protocols": ["https", "ssh", "git"]
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "yii\\composer\\Installer::postInstall"
+        ],
+        "post-create-project-cmd": [
+            "yii\\composer\\Installer::postCreateProject",
+            "yii\\composer\\Installer::postInstall"
+        ]
+    },
+    "extra": {
+        "yii\\composer\\Installer::postCreateProject": {
+            "setPermission": [
+                {
+                    "runtime": "0777",
+                    "web/assets": "0777",
+                    "yii": "0755"
+                }
+            ]
+        },
+        "yii\\composer\\Installer::postInstall": {
+            "generateCookieValidationKey": [
+                "config/web.php"
+            ]
+        }
+    },
+    "repositories": {
+        "packagist": {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        "asset-packagist": {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    }
+}
