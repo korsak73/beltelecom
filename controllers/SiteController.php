@@ -75,8 +75,8 @@ class SiteController extends AppController
     {
         $model = new ContactUsForm();
 
-        $this->setMeta('Читайте последние статьи о логопедии, новости и мнения о нарушениях звукопроизношения, дефектах речи, 
-        заикании, дефектологии и т. д.', 'логопед, заикание, дефекты речи, постановка звуков', 'description');
+        $this->setMeta('CityLine a corporate Category Flat Bootstrap Responsive Website Template | Home :: w3layouts', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design', 'description');
 
         $data = Articles::getAll(2);
         $popular = Articles::getPopular();
