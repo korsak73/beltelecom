@@ -318,23 +318,23 @@
     },
     {
         "name": "bower-asset/bootstrap-select",
-        "version": "v2.0.0-beta1",
-        "version_normalized": "2.0.0.0-beta1",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
         "source": {
             "type": "git",
-            "url": "https://github.com/snapappointments/bootstrap-select.git",
-            "reference": "c4860ac07c612fe07ab2aca0fb22111dee3dab60"
+            "url": "git@github.com:snapappointments/bootstrap-select.git",
+            "reference": "ec243882c07ea16bef828a908c753366636dd634"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/snapappointments/bootstrap-select/zipball/c4860ac07c612fe07ab2aca0fb22111dee3dab60",
-            "reference": "c4860ac07c612fe07ab2aca0fb22111dee3dab60"
+            "url": "https://api.github.com/repos/snapappointments/bootstrap-select/zipball/ec243882c07ea16bef828a908c753366636dd634",
+            "reference": "ec243882c07ea16bef828a908c753366636dd634"
         },
         "require": {
             "bower-asset/jquery": ">=1.8"
         },
         "type": "bower-asset",
-        "installation-source": "dist",
+        "installation-source": "source",
         "license": [
             "MIT"
         ]
@@ -6154,18 +6154,18 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/options-resolver.git",
-            "reference": "4c6fc48de227c6f4a200cd40b6234f69a533c166"
+            "reference": "9a47735b8a38789175c8d8c2d2dfd6a9aec6ef73"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/options-resolver/zipball/4c6fc48de227c6f4a200cd40b6234f69a533c166",
-            "reference": "4c6fc48de227c6f4a200cd40b6234f69a533c166",
+            "url": "https://api.github.com/repos/symfony/options-resolver/zipball/9a47735b8a38789175c8d8c2d2dfd6a9aec6ef73",
+            "reference": "9a47735b8a38789175c8d8c2d2dfd6a9aec6ef73",
             "shasum": ""
         },
         "require": {
-            "php": "^7.2.9"
+            "php": "^7.2.5"
         },
-        "time": "2019-11-17T18:31:35+00:00",
+        "time": "2019-11-21T07:02:52+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {
@@ -6391,22 +6391,22 @@
         "source": {
             "type": "git",
             "url": "https://github.com/symfony/service-contracts.git",
-            "reference": "9d99e1556417bf227a62e14856d630672bf10eaf"
+            "reference": "144c5e51266b281231e947b51223ba14acf1a749"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/symfony/service-contracts/zipball/9d99e1556417bf227a62e14856d630672bf10eaf",
-            "reference": "9d99e1556417bf227a62e14856d630672bf10eaf",
+            "url": "https://api.github.com/repos/symfony/service-contracts/zipball/144c5e51266b281231e947b51223ba14acf1a749",
+            "reference": "144c5e51266b281231e947b51223ba14acf1a749",
             "shasum": ""
         },
         "require": {
-            "php": "^7.2.9",
+            "php": "^7.2.5",
             "psr/container": "^1.0"
         },
         "suggest": {
             "symfony/service-implementation": ""
         },
-        "time": "2019-11-09T09:18:34+00:00",
+        "time": "2019-11-18T17:27:11+00:00",
         "type": "library",
         "extra": {
             "branch-alias": {

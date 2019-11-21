@@ -5,8 +5,7 @@
     "dist/css/bootstrap-select.css",
     "dist/js/bootstrap-select.js"
   ],
-  "version": "1.6.3",
-  "homepage": "http://silviomoreto.github.io/bootstrap-select",
+  "homepage": "https://silviomoreto.github.io/bootstrap-select",
   "authors": [
     "silviomoreto"
   ],
@@ -27,6 +26,7 @@
     "README.md",
     "composer.json",
     "package.json",
-    "test.html"
+    "test.html",
+    "docs"
   ]
 }

@@ -7,11 +7,11 @@ networks:
   mynet:
 
 services:
-  php-logodom:
+  php-beltelecom:
     build:
       context: ./
       dockerfile: ./docker/php-fpm/dev/Dockerfile
-    container_name: "php.logodom"
+    container_name: "php.beltelecom"
     volumes:
       - type: bind
         source: ./
@@ -21,37 +21,37 @@ services:
       - PHP_IDE_CONFIG=serverName=docker-api
       - YII_DEBUG=true
       - YII_ENV=dev
-      - DB_DNS=mysql:host=mysql-logodom:3306;dbname=my_logodom
+      - DB_DNS=mysql:host=mysql-beltelecom:33061;dbname=my_logodom
       - DB_USER=user_logodom
       - DB_PASSWORD=password_logodom
     depends_on:
-      - mysql-logodom
+      - mysql-beltelecom
     networks:
       - mynet
 
-  nginx-logodom:
+  nginx-beltelecom:
     build: ./docker/nginx/dev/
-    container_name: "nginx.logodom"
+    container_name: "nginx.beltelecom"
     ports:
-      - 8888:80
+      - 8080:80
     volumes:
       - type: bind
         source: ./
         target: /var/www/html/
     depends_on:
-      - php-logodom
+      - php-beltelecom
     networks:
       - mynet
     links:
-      - php-logodom
+      - php-beltelecom
 
-  mysql-logodom:
+  mysql-beltelecom:
     build:
       context: ./
       dockerfile: ./docker/mysql/dev/Dockerfile
-    container_name: "mysql.logodom"
+    container_name: "mysql.beltelecom"
     ports:
-      - 3306:3306
+      - 33061:3306
     environment:
       - MYSQL_DATABASE=my_logodom
       - MYSQL_USER=user_logodom

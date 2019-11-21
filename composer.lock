@@ -210,8 +210,7 @@
                 "url": "https://api.github.com/repos/ColorlibHQ/AdminLTE/zipball/78325db63a464dbec01a222ecb243e9de42d434a",
                 "reference": "78325db63a464dbec01a222ecb243e9de42d434a"
             },
-            "type": "bower-asset",
-            "time": "2019-11-10T10:21:26+00:00"
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/animate.css",
@@ -226,8 +225,7 @@
                 "url": "https://api.github.com/repos/daneden/animate.css/zipball/ddab53f2c1ddf2d5bce9dbb84621f5968c020913",
                 "reference": "ddab53f2c1ddf2d5bce9dbb84621f5968c020913"
             },
-            "type": "bower-asset",
-            "time": "2019-09-28T11:22:17+00:00"
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/bootstrap",
@@ -252,16 +250,16 @@
         },
         {
             "name": "bower-asset/bootstrap-select",
-            "version": "v2.0.0-beta1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/snapappointments/bootstrap-select.git",
-                "reference": "c4860ac07c612fe07ab2aca0fb22111dee3dab60"
+                "url": "git@github.com:snapappointments/bootstrap-select.git",
+                "reference": "ec243882c07ea16bef828a908c753366636dd634"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/snapappointments/bootstrap-select/zipball/c4860ac07c612fe07ab2aca0fb22111dee3dab60",
-                "reference": "c4860ac07c612fe07ab2aca0fb22111dee3dab60"
+                "url": "https://api.github.com/repos/snapappointments/bootstrap-select/zipball/ec243882c07ea16bef828a908c753366636dd634",
+                "reference": "ec243882c07ea16bef828a908c753366636dd634"
             },
             "require": {
                 "bower-asset/jquery": ">=1.8"
@@ -269,7 +267,8 @@
             "type": "bower-asset",
             "license": [
                 "MIT"
-            ]
+            ],
+            "time": "2018-10-16T20:09:56+00:00"
         },
         {
             "name": "bower-asset/bootstrap.growl",
@@ -291,8 +290,7 @@
             "type": "bower-asset",
             "license": [
                 "MIT"
-            ],
-            "time": "2018-08-07T13:17:49+00:00"
+            ]
         },
         {
             "name": "bower-asset/fontawesome",
@@ -307,8 +305,7 @@
                 "url": "https://api.github.com/repos/FortAwesome/Font-Awesome/zipball/1c1b102b2ba19518d77e60e97cf1b4ebf133bba0",
                 "reference": "1c1b102b2ba19518d77e60e97cf1b4ebf133bba0"
             },
-            "type": "bower-asset",
-            "time": "2019-09-23T18:57:22+00:00"
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/inputmask",
@@ -383,8 +380,7 @@
                 "url": "https://api.github.com/repos/onokumus/metisMenu/zipball/b96b99f6b2f52bdb8789a18a241cf5d681969b6d",
                 "reference": "b96b99f6b2f52bdb8789a18a241cf5d681969b6d"
             },
-            "type": "bower-asset",
-            "time": "2019-03-07T17:42:35+00:00"
+            "type": "bower-asset"
         },
         {
             "name": "bower-asset/punycode",
@@ -3614,16 +3610,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/options-resolver.git",
-                "reference": "4c6fc48de227c6f4a200cd40b6234f69a533c166"
+                "reference": "9a47735b8a38789175c8d8c2d2dfd6a9aec6ef73"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/4c6fc48de227c6f4a200cd40b6234f69a533c166",
-                "reference": "4c6fc48de227c6f4a200cd40b6234f69a533c166",
+                "url": "https://api.github.com/repos/symfony/options-resolver/zipball/9a47735b8a38789175c8d8c2d2dfd6a9aec6ef73",
+                "reference": "9a47735b8a38789175c8d8c2d2dfd6a9aec6ef73",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.9"
+                "php": "^7.2.5"
             },
             "type": "library",
             "extra": {
@@ -3660,7 +3656,7 @@
                 "configuration",
                 "options"
             ],
-            "time": "2019-11-17T18:31:35+00:00"
+            "time": "2019-11-21T07:02:52+00:00"
         },
         {
             "name": "symfony/polyfill-ctype",
@@ -6775,16 +6771,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/service-contracts.git",
-                "reference": "9d99e1556417bf227a62e14856d630672bf10eaf"
+                "reference": "144c5e51266b281231e947b51223ba14acf1a749"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/9d99e1556417bf227a62e14856d630672bf10eaf",
-                "reference": "9d99e1556417bf227a62e14856d630672bf10eaf",
+                "url": "https://api.github.com/repos/symfony/service-contracts/zipball/144c5e51266b281231e947b51223ba14acf1a749",
+                "reference": "144c5e51266b281231e947b51223ba14acf1a749",
                 "shasum": ""
             },
             "require": {
-                "php": "^7.2.9",
+                "php": "^7.2.5",
                 "psr/container": "^1.0"
             },
             "suggest": {
@@ -6825,7 +6821,7 @@
                 "interoperability",
                 "standards"
             ],
-            "time": "2019-11-09T09:18:34+00:00"
+            "time": "2019-11-18T17:27:11+00:00"
         },
         {
             "name": "symfony/yaml",
