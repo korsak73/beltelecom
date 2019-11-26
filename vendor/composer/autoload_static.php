@@ -16,11 +16,10 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         '8cff32064859f4559445b89279f3199c' => __DIR__ . '/..' . '/php-http/message/src/filters.php',
         '0d59ee240a4cd96ddbb4ff164fccea4d' => __DIR__ . '/..' . '/symfony/polyfill-php73/bootstrap.php',
         '6124b4c8570aa390c21fafd04a26c69f' => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
         '180092cfc969a12e06f2132a203a3184' => __DIR__ . '/..' . '/codeception/verify/src/Codeception/function.php',
-        '538ca81a9a966a6716601ecf48f4eaef' => __DIR__ . '/..' . '/opis/closure/functions.php',
         '3f8bdd3b35094c73a26f0106e3c0f8b2' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/SendGrid.php',
         '9dda55337a76a24e949fbcc5d905a2c7' => __DIR__ . '/..' . '/sendgrid/sendgrid/lib/helpers/mail/Mail.php',
+        '2c102faa651ef8ea5874edb585946bce' => __DIR__ . '/..' . '/swiftmailer/swiftmailer/lib/swift_required.php',
     );
 
     public static $prefixLengthsPsr4 = array (
@@ -96,6 +95,7 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         ),
         'h' => 
         array (
+            'himiklab\\yii2\\recaptcha\\tests\\' => 30,
             'himiklab\\yii2\\recaptcha\\' => 24,
         ),
         'd' => 
@@ -139,10 +139,6 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
             'Psr\\Container\\' => 14,
             'Prophecy\\' => 9,
         ),
-        'O' => 
-        array (
-            'Opis\\Closure\\' => 13,
-        ),
         'M' => 
         array (
             'Mailgun\\' => 8,
@@ -185,7 +181,7 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         ),
         'yii\\jui\\' => 
         array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-jui/src',
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-jui',
         ),
         'yii\\httpclient\\' => 
         array (
@@ -197,7 +193,7 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         ),
         'yii\\faker\\' => 
         array (
-            0 => __DIR__ . '/..' . '/yiisoft/yii2-faker/src',
+            0 => __DIR__ . '/..' . '/yiisoft/yii2-faker',
         ),
         'yii\\debug\\' => 
         array (
@@ -327,7 +323,7 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         ),
         'kartik\\growl\\' => 
         array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-growl/src',
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-growl',
         ),
         'kartik\\grid\\' => 
         array (
@@ -371,11 +367,15 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         ),
         'kartik\\alert\\' => 
         array (
-            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-alert/src',
+            0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-alert',
         ),
         'kartik\\affix\\' => 
         array (
             0 => __DIR__ . '/..' . '/kartik-v/yii2-widget-affix',
+        ),
+        'himiklab\\yii2\\recaptcha\\tests\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/himiklab/yii2-recaptcha-widget/tests',
         ),
         'himiklab\\yii2\\recaptcha\\' => 
         array (
@@ -473,10 +473,6 @@ class ComposerStaticInit4823a70528c4e2275562c13f51877e01
         'Prophecy\\' => 
         array (
             0 => __DIR__ . '/..' . '/phpspec/prophecy/src/Prophecy',
-        ),
-        'Opis\\Closure\\' => 
-        array (
-            0 => __DIR__ . '/..' . '/opis/closure/src',
         ),
         'Mailgun\\' => 
         array (

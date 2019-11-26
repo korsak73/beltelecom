@@ -15,9 +15,8 @@ return array(
     '8cff32064859f4559445b89279f3199c' => $vendorDir . '/php-http/message/src/filters.php',
     '0d59ee240a4cd96ddbb4ff164fccea4d' => $vendorDir . '/symfony/polyfill-php73/bootstrap.php',
     '6124b4c8570aa390c21fafd04a26c69f' => $vendorDir . '/myclabs/deep-copy/src/DeepCopy/deep_copy.php',
-    '2c102faa651ef8ea5874edb585946bce' => $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
     '180092cfc969a12e06f2132a203a3184' => $vendorDir . '/codeception/verify/src/Codeception/function.php',
-    '538ca81a9a966a6716601ecf48f4eaef' => $vendorDir . '/opis/closure/functions.php',
     '3f8bdd3b35094c73a26f0106e3c0f8b2' => $vendorDir . '/sendgrid/sendgrid/lib/SendGrid.php',
     '9dda55337a76a24e949fbcc5d905a2c7' => $vendorDir . '/sendgrid/sendgrid/lib/helpers/mail/Mail.php',
+    '2c102faa651ef8ea5874edb585946bce' => $vendorDir . '/swiftmailer/swiftmailer/lib/swift_required.php',
 );

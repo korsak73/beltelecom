@@ -17,6 +17,7 @@ if(! empty($popular)){
 }
 ?>
 <!-- Slideshow 4 -->
+<?php if(!empty($print)) : ?>
     <div class="slider">
         <div class="callbacks_container">
             <ul class="rslides" id="slider4">
@@ -40,6 +41,7 @@ if(! empty($popular)){
 
         <div class="clearfix"></div>
     </div>
+<?php endif; ?>
     <!-- //Blog -->
     <section class="py-md-3 py-sm-3 py-3">
         <div class="container-fluid">

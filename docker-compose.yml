@@ -21,9 +21,9 @@ services:
       - PHP_IDE_CONFIG=serverName=docker-api
       - YII_DEBUG=true
       - YII_ENV=dev
-      - DB_DNS=mysql:host=mysql-beltelecom:33061;dbname=my_logodom
-      - DB_USER=user_logodom
-      - DB_PASSWORD=password_logodom
+      - DB_DNS=mysql:host=mysql-beltelecom:3306;dbname=my_beltelecom
+      - DB_USER=user_beltelecom
+      - DB_PASSWORD=password_beltelecom
     depends_on:
       - mysql-beltelecom
     networks:
@@ -51,12 +51,12 @@ services:
       dockerfile: ./docker/mysql/dev/Dockerfile
     container_name: "mysql.beltelecom"
     ports:
-      - 33061:3306
+      - 3306:3306
     environment:
-      - MYSQL_DATABASE=my_logodom
-      - MYSQL_USER=user_logodom
-      - MYSQL_PASSWORD=password_logodom
-      - MYSQL_ROOT_PASSWORD=root_logodom
+      - MYSQL_DATABASE=my_beltelecom
+      - MYSQL_USER=user_beltelecom
+      - MYSQL_PASSWORD=password_beltelecom
+      - MYSQL_ROOT_PASSWORD=root_beltelecom
     volumes:
       - db-data:/var/lib/mysql
     networks:
