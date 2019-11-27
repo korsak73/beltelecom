@@ -1,3 +1,8 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
 
 <!-- header -->
 <div class="header">
@@ -15,7 +20,12 @@
         </div>
         <div class="logo-nav">
             <div class="logo-nav-left">
-                <h1><a href="index.html">Белтелеком<span>digital networks</span></a></h1>
+                    <h1><a href="<?= Url::home()?>">
+                            <img src="public/images/logo.svg" title="Белтелеком">
+                        </a>
+                    </h1>
+                <!-- //logo -->
+<!--                <h1><a href="index.html">Белтелеком<span>digital networks</span></a></h1>-->
             </div>
             <div class="logo-nav-left1">
                 <nav class="navbar navbar-default">
@@ -30,7 +40,7 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
                         <ul class="nav navbar-nav">
-                            <li class="active"><a href="index.html">Home</a></li>
+                            <li class="active"><a href="<?= Url::home()?>">Главная</a></li>
                             <li class="agileits dropdown">
                                 <a href="#" data-toggle="dropdown" aria-expanded="true">about</a>
                                 <ul class="dropdown-menu agile_short_dropdown">

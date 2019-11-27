@@ -22,6 +22,48 @@ BeltelecomAsset::register($this);
         <?php $this->registerCsrfMetaTags() ?>
         <title><?= Html::encode($this->title) ?></title>
         <?php $this->head() ?>
+        <script type="application/x-javascript">
+            addEventListener("load", function () {
+                setTimeout(hideURLbar, 0);
+            }, false);
+
+            function hideURLbar() {
+                window.scrollTo(0, 1);
+            }
+        </script>
+        <!-- //for-mobile-apps -->
+        <link href="public/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- services -->
+        <!-- pop-up -->
+        <link href="public/css/popuo-box.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- //pop-up -->
+        <link href="public/css/easy-responsive-tabs.css" rel='stylesheet' type='text/css' />
+        <!-- //services -->
+        <link href="public/css/JiSlider.css" rel="stylesheet">
+        <link href="public/css/font-awesome.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="public/css/style.css" rel="stylesheet" type="text/css" media="all" />
+        <!-- js -->
+        <script src="public/js/jquery-2.2.3.min.js"></script>
+        <!--/js-->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic'
+              rel='stylesheet' type='text/css'>
+        <link href='//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
+              rel='stylesheet' type='text/css'>
+        <!-- nav smooth scroll -->
+        <script>
+            $(document).ready(function(){
+                $(".dropdown").hover(
+                    function() {
+                        $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+                        $(this).toggleClass('open');
+                    },
+                    function() {
+                        $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+                        $(this).toggleClass('open');
+                    }
+                );
+            });
+        </script>
     </head>
 <body>
 <?php $this->beginBody() ?>
@@ -137,28 +179,28 @@ BeltelecomAsset::register($this);
 				<div class="clearfix"></div>
 			</div>
 		</div>
-<!--		<script src="public/js/easy-responsive-tabs.js"></script>-->
+		<script src="public/js/easy-responsive-tabs.js"></script>
 		<script>
-			// $(document).ready(function () {
-			// 	$('#horizontalTab').easyResponsiveTabs({
-			// 		type: 'default', //Types: default, vertical, accordion
-			// 		width: 'auto', //auto or any width like 600px
-			// 		fit: true, // 100% fit in a container
-			// 		closed: 'accordion', // Start closed if in accordion view
-			// 		activate: function (event) { // Callback function if tab is switched
-			// 			var $tab = $(this);
-			// 			var $info = $('#tabInfo');
-			// 			var $name = $('span', $info);
-			// 			$name.text($tab.text());
-			// 			$info.show();
-			// 		}
-			// 	});
-			// 	$('#verticalTab').easyResponsiveTabs({
-			// 		type: 'vertical',
-			// 		width: 'auto',
-			// 		fit: true
-			// 	});
-			// });
+			$(document).ready(function () {
+				$('#horizontalTab').easyResponsiveTabs({
+					type: 'default', //Types: default, vertical, accordion
+					width: 'auto', //auto or any width like 600px
+					fit: true, // 100% fit in a container
+					closed: 'accordion', // Start closed if in accordion view
+					activate: function (event) { // Callback function if tab is switched
+						var $tab = $(this);
+						var $info = $('#tabInfo');
+						var $name = $('span', $info);
+						$name.text($tab.text());
+						$info.show();
+					}
+				});
+				$('#verticalTab').easyResponsiveTabs({
+					type: 'vertical',
+					width: 'auto',
+					fit: true
+				});
+			});
 		</script>
 		<!-- //agents section -->
 		<!-- markets -->
@@ -477,7 +519,7 @@ addEventListener("load", function () {
     
 JS;
     //маркер конца строки, обязательно сразу, без пробелов и табуляции
-    $this->registerJs($script, yii\web\View::POS_LOAD);
+//    $this->registerJs($script, yii\web\View::POS_LOAD);
     ?>
     <!--кнопка вверх-->
     <?= ScrollWidget::widget() ?>

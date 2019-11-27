@@ -132,6 +132,7 @@ input[type="submit"],
 
 .logo-nav-left1 {
     float: right;
+    margin-top: 1em;
 }
 
 .logo-nav-left1 ul li a {
