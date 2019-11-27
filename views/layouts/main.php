@@ -27,63 +27,7 @@ BeltelecomAsset::register($this);
 <?php $this->beginBody() ?>
 
 <?php echo $this->render('header-main.php')?>
-	<!-- banner -->
-	<div class="banner-silder">
-		<div id="JiSlider" class="jislider">
-			<ul>
-				<li>
-					<div class="w3layouts-banner-top">
 
-						<div class="container">
-							<div class="agileits-banner-info">
-
-								<h3>Welcome to cityline</h3>
-								<p>Sit amet neque semper euismod.</p>
-
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3layouts-banner-top w3layouts-banner-top1">
-						<div class="container">
-							<div class="agileits-banner-info">
-
-								<h3>Time to go Digital</h3>
-								<p>Amet sit neque semper euismod.</p>
-
-							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3layouts-banner-top w3layouts-banner-top2">
-						<div class="container">
-							<div class="agileits-banner-info">
-								<h3>Enjoy free live TV</h3>
-								<p>Neque amet sit semper euismod.</p>
-							</div>
-
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="w3layouts-banner-top w3layouts-banner-top3">
-						<div class="container">
-							<div class="agileits-banner-info">
-								<h3>Exclusive Digital services</h3>
-								<p>Semper neque amet sit euismod.</p>
-
-							</div>
-
-						</div>
-					</div>
-				</li>
-
-			</ul>
-		</div>
-	</div>
-	<!-- //banner -->
 	<div class="container">
 		<!-- services section -->
 		<div class="w3ls-section w3_agileits-services" id="services">
