@@ -19,7 +19,7 @@
         },
         "time": "2017-06-20T15:23:26+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "dosamigos\\transliterator\\": ""
@@ -115,7 +115,7 @@
         },
         "time": "2019-08-29T08:20:20+00:00",
         "type": "template",
-        "installation-source": "source",
+        "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
@@ -173,7 +173,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-0": {
                 "Behat\\Gherkin": "src/"
@@ -227,7 +227,7 @@
         },
         "time": "2019-10-29T17:21:20+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "boundstate\\mailgun\\": "src"
@@ -286,7 +286,7 @@
             "reference": "ab5fe9dae4fdb936eee698ce1850a263008f0a99"
         },
         "type": "bower-asset",
-        "installation-source": "source"
+        "installation-source": "dist"
     },
     {
         "name": "bower-asset/bootstrap",
@@ -330,7 +330,7 @@
             "bower-asset/jquery": ">=1.9.1,<4.0"
         },
         "type": "bower-asset",
-        "installation-source": "source",
+        "installation-source": "dist",
         "license": [
             "MIT"
         ]
@@ -354,7 +354,7 @@
             "bower-asset/jquery": ">=1.10.2"
         },
         "type": "bower-asset",
-        "installation-source": "source",
+        "installation-source": "dist",
         "license": [
             "MIT"
         ]
@@ -365,7 +365,7 @@
         "version_normalized": "5.11.2.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/FortAwesome/Font-Awesome.git",
+            "url": "git@github.com:FortAwesome/Font-Awesome.git",
             "reference": "1c1b102b2ba19518d77e60e97cf1b4ebf133bba0"
         },
         "dist": {
@@ -374,7 +374,7 @@
             "reference": "1c1b102b2ba19518d77e60e97cf1b4ebf133bba0"
         },
         "type": "bower-asset",
-        "installation-source": "source"
+        "installation-source": "dist"
     },
     {
         "name": "bower-asset/inputmask",
@@ -457,7 +457,7 @@
             "reference": "b96b99f6b2f52bdb8789a18a241cf5d681969b6d"
         },
         "type": "bower-asset",
-        "installation-source": "source"
+        "installation-source": "dist"
     },
     {
         "name": "bower-asset/punycode",
@@ -553,7 +553,7 @@
                 "dev-master": "1.2.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "cebe\\markdown\\": ""
@@ -746,7 +746,7 @@
         "extra": {
             "branch-alias": []
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Codeception\\": "src\\Codeception",
@@ -1045,7 +1045,7 @@
                 "dev-master": "1.2.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Doctrine\\Instantiator\\": "src/Doctrine/Instantiator/"
@@ -1198,7 +1198,7 @@
                 "dev-master": "1.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Fxp\\Composer\\AssetPlugin\\": ""
@@ -1257,7 +1257,7 @@
         "extra": {
             "branch-alias": []
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Faker\\": "src/Faker/"
@@ -1316,7 +1316,7 @@
                 "dev-master": "1.6-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "GuzzleHttp\\Psr7\\": "src/"
@@ -1376,7 +1376,7 @@
         },
         "time": "2019-05-14T07:40:36+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "himiklab\\yii2\\recaptcha\\": "src/",
@@ -1424,7 +1424,7 @@
                 "dev-master": "5.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\plugins\\fileinput\\": ""
@@ -1479,7 +1479,7 @@
                 "dev-master": "4.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "BSD-3-Clause"
@@ -1525,7 +1525,7 @@
                 "dev-master": "1.4.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\plugins\\depdrop\\": ""
@@ -1633,7 +1633,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\dialog\\": "src"
@@ -1741,7 +1741,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\base\\": "src"
@@ -1794,7 +1794,7 @@
                 "dev-master": "1.5.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\form\\": "src"
@@ -1843,7 +1843,7 @@
         },
         "time": "2014-11-09T04:56:27+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\affix\\": ""
@@ -1899,7 +1899,7 @@
                 "dev-master": "1.1.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\alert\\": ""
@@ -1956,7 +1956,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\color\\": "src"
@@ -2068,7 +2068,7 @@
                 "dev-master": "1.4.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\datetime\\": "src"
@@ -2125,7 +2125,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\depdrop\\": "src"
@@ -2181,7 +2181,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\file\\": "src"
@@ -2232,7 +2232,7 @@
         },
         "time": "2015-05-03T08:23:04+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\growl\\": ""
@@ -2288,7 +2288,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\range\\": "src"
@@ -2345,7 +2345,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\rating\\": "src"
@@ -2453,7 +2453,7 @@
         },
         "time": "2014-11-09T08:07:23+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\sidenav\\": ""
@@ -2509,7 +2509,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\spinner\\": "src"
@@ -2559,7 +2559,7 @@
         },
         "time": "2016-01-10T16:47:35+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\switchinput\\": ""
@@ -2616,7 +2616,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\time\\": "src"
@@ -2672,7 +2672,7 @@
                 "dev-master": "1.2.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\touchspin\\": "src"
@@ -2729,7 +2729,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "kartik\\typeahead\\": "src"
@@ -2868,7 +2868,7 @@
                 "dev-master": "3.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Mailgun\\": "src/"
@@ -2912,7 +2912,7 @@
                 "bower-asset-library": "vendor/bower"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "mihaildev\\ckeditor\\": ""
@@ -2967,7 +2967,7 @@
                 "bower-asset-library": "vendor/bower"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "mihaildev\\elfinder\\": ""
@@ -3021,7 +3021,7 @@
         },
         "time": "2019-08-09T12:45:53+00:00",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "DeepCopy\\": "src/DeepCopy/"
@@ -3206,7 +3206,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Client\\Common\\": "src/"
@@ -3270,7 +3270,7 @@
                 "dev-master": "1.7-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Discovery\\": "src/"
@@ -3330,7 +3330,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Client\\": "src/"
@@ -3404,7 +3404,7 @@
                 "dev-master": "1.8-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Message\\": "src/"
@@ -3457,7 +3457,7 @@
                 "dev-master": "1.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Message\\": "src/"
@@ -3517,7 +3517,7 @@
                 "dev-master": "1.1-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Message\\MultipartStream\\": "src/"
@@ -3569,7 +3569,7 @@
                 "dev-master": "1.1-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Http\\Promise\\": "src/"
@@ -3682,7 +3682,7 @@
                 "dev-master": "4.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "phpDocumentor\\Reflection\\": [
@@ -3733,7 +3733,7 @@
                 "dev-master": "1.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "phpDocumentor\\Reflection\\": "src"
@@ -3774,7 +3774,7 @@
         },
         "time": "2019-01-04T09:18:02+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "phpnt\\adminLTE\\": ""
@@ -3971,7 +3971,7 @@
         },
         "time": "2019-01-04T09:06:24+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "phpnt\\fontAwesome\\": ""
@@ -4021,7 +4021,7 @@
         },
         "time": "2018-12-06T14:40:23+00:00",
         "type": "yii2-extension",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "phpnt\\metismenu\\": ""
@@ -4191,7 +4191,7 @@
                 "dev-master": "5.3.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -4241,7 +4241,7 @@
                 "dev-master": "1.4.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -4336,7 +4336,7 @@
                 "dev-master": "1.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -4388,7 +4388,7 @@
                 "dev-master": "2.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -4533,7 +4533,7 @@
                 "dev-master": "5.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -4583,7 +4583,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Psr\\Container\\": "src/"
@@ -4635,7 +4635,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Psr\\Http\\Client\\": "src/"
@@ -4686,7 +4686,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Psr\\Http\\Message\\": "src/"
@@ -4739,7 +4739,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Psr\\Http\\Message\\": "src/"
@@ -4836,7 +4836,7 @@
                 "bower-asset-library": "vendor/bower"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "rmrevin\\yii\\fontawesome\\": ""
@@ -4890,7 +4890,7 @@
                 "dev-master": "1.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -5003,7 +5003,7 @@
                 "dev-master": "2.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -5111,7 +5111,7 @@
                 "dev-master": "3.1.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -5233,7 +5233,7 @@
                 "dev-master": "3.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -5280,7 +5280,7 @@
                 "dev-master": "1.1-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -5327,7 +5327,7 @@
                 "dev-master": "3.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "src/"
@@ -5475,7 +5475,7 @@
                 ]
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "notification-url": "https://packagist.org/downloads/",
         "license": [
             "MIT"
@@ -5611,7 +5611,7 @@
         },
         "time": "2019-08-20T14:15:16+00:00",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "classmap": [
                 "php"
@@ -5674,7 +5674,7 @@
                 "dev-master": "5.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "files": [
                 "lib/swift_required.php"
@@ -5736,7 +5736,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\BrowserKit\\": ""
@@ -5814,7 +5814,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\Console\\": ""
@@ -5865,7 +5865,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\CssSelector\\": ""
@@ -5932,7 +5932,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\DomCrawler\\": ""
@@ -6004,7 +6004,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\EventDispatcher\\": ""
@@ -6115,7 +6115,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\Finder\\": ""
@@ -6166,7 +6166,7 @@
                 "dev-master": "5.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\OptionsResolver\\": ""
@@ -6225,7 +6225,7 @@
                 "dev-master": "1.12-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Ctype\\": ""
@@ -6285,7 +6285,7 @@
                 "dev-master": "1.12-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Mbstring\\": ""
@@ -6343,7 +6343,7 @@
                 "dev-master": "1.12-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Polyfill\\Php73\\": ""
@@ -6407,7 +6407,7 @@
                 "dev-master": "2.0-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Contracts\\Service\\": ""
@@ -6473,7 +6473,7 @@
                 "dev-master": "4.4-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "Symfony\\Component\\Yaml\\": ""
@@ -6522,7 +6522,7 @@
         },
         "time": "2015-10-11T21:40:43+00:00",
         "type": "library",
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "tebazil\\dbseeder\\": "src"
@@ -6756,7 +6756,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\": ""
@@ -6849,7 +6849,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\bootstrap\\": "src"
@@ -6986,7 +6986,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\composer\\": ""
@@ -7039,7 +7039,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\debug\\": "src"
@@ -7088,7 +7088,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\faker\\": ""
@@ -7139,7 +7139,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\gii\\": "src"
@@ -7190,7 +7190,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\httpclient\\": "src"
@@ -7240,7 +7240,7 @@
                 "dev-master": "2.0.x-dev"
             }
         },
-        "installation-source": "source",
+        "installation-source": "dist",
         "autoload": {
             "psr-4": {
                 "yii\\jui\\": ""
