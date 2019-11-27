@@ -15,7 +15,7 @@
         </div>
         <div class="logo-nav">
             <div class="logo-nav-left">
-                <h1><a href="index.html">City Line<span>digital networks</span></a></h1>
+                <h1><a href="index.html">Белтелеком<span>digital networks</span></a></h1>
             </div>
             <div class="logo-nav-left1">
                 <nav class="navbar navbar-default">
