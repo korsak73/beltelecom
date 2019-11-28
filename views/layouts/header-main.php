@@ -80,10 +80,11 @@ use yii\helpers\Url;
 <div class="general_social_icons">
     <nav class="wthree-social">
         <ul>
-            <li class="w3_facebook"><a href="#"> <i class="fa fa-facebook"></i>Facebook</a></li>
-            <li class="w3_twitter"><a href="#"><i class="fa fa-twitter"></i>Twitter </a></li>
-            <li class="w3_dribbble"><a href="#"> <i class="fa fa-dribbble"></i>Dribbble</a></li>
-            <li class="w3_g_plus"><a href="#"><i class="fa fa-google-plus"></i>Google+ </a></li>
+            <li class="w3_facebook"><a href="https://www.facebook.com/beltelecomby"> <i class="fa fa-facebook"></i>Facebook</a></li>
+            <li class="w3_twitter"><a href="https://twitter.com/BeltelecomBy"><i class="fa fa-twitter"></i>Twitter </a></li>
+            <li class="w3_dribbble"><a href="https://www.instagram.com/beltelecomby"> <i class="fa fa-instagram"></i>Dribbble</a></li>
+            <li class="w3_g_plus"><a href="https://vk.com/bybeltelecom"><i class="fa fa-vk"></i>Google+ </a></li>
+            <li class="w3_dribbble"><a href="https://ok.ru/beltelecomby"> <i class="fa fa-ok"></i>Dribbble</a></li>
         </ul>
     </nav>
 </div>
@@ -116,9 +117,9 @@ use yii\helpers\Url;
 
                     <div class="container">
                         <div class="agileits-banner-info">
-
-                            <h3>Welcome to cityline</h3>
-                            <p>Sit amet neque semper euismod.</p>
+<!---->
+<!--                            <h3>Welcome to cityline</h3>-->
+<!--                            <p>Sit amet neque semper euismod.</p>-->
 
                         </div>
                     </div>
@@ -129,8 +130,8 @@ use yii\helpers\Url;
                     <div class="container">
                         <div class="agileits-banner-info">
 
-                            <h3>Time to go Digital</h3>
-                            <p>Amet sit neque semper euismod.</p>
+<!--                            <h3>Time to go Digital</h3>-->
+<!--                            <p>Amet sit neque semper euismod.</p>-->
 
                         </div>
                     </div>
@@ -140,8 +141,8 @@ use yii\helpers\Url;
                 <div class="w3layouts-banner-top w3layouts-banner-top2">
                     <div class="container">
                         <div class="agileits-banner-info">
-                            <h3>Enjoy free live TV</h3>
-                            <p>Neque amet sit semper euismod.</p>
+<!--                            <h3>Enjoy free live TV</h3>-->
+<!--                            <p>Neque amet sit semper euismod.</p>-->
                         </div>
 
                     </div>
@@ -151,8 +152,8 @@ use yii\helpers\Url;
                 <div class="w3layouts-banner-top w3layouts-banner-top3">
                     <div class="container">
                         <div class="agileits-banner-info">
-                            <h3>Exclusive Digital services</h3>
-                            <p>Semper neque amet sit euismod.</p>
+<!--                            <h3>Exclusive Digital services</h3>-->
+<!--                            <p>Semper neque amet sit euismod.</p>-->
 
                         </div>
 
