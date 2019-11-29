@@ -1,5 +1,6 @@
 <?php
 
+use app\models\Users;
 use yii\helpers\Url;
 
 ?>
@@ -10,22 +11,43 @@ use yii\helpers\Url;
         <div class="header-grid">
             <div class="header-grid-left">
                 <ul>
-                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">cityline.com</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 892</li>
-                    <li><i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="#" class="login" data-toggle="modal" data-target="#myModal4">Login</a></li>
-                    <li><i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="#" class="login reg"  data-toggle="modal" data-target="#myModal5">Register</a></li>
+                    <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">beltelecom.by</a></li>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>123</li>
+                    <?php if(! Yii::$app->user->isGuest): ?>
+                        <?php if( Users::isIdentityAdmin(Yii::$app->user->identity->getId())): ?>
+                            <li class="nav-item">
+                                <a class="nav-link" href="<?= Url::to(['/admin/default/index'])?>"><i class="fas fa-user-alt"></i> Администратор</a>
+                            </li>
+                        <?php endif;?>
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= Url::to(['/auth/logout'])?>"><i class="fas fa-user-alt"></i> <?= Yii::$app->user->identity->name ?> (Выход)</a>
+                        </li>
+                    <?php endif;?>
+
+                    <?php if(Yii::$app->user->isGuest): ?>
+                        <li class="nav-item">
+                            <i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="<?= Url::to(['/auth/signup'])?>" class="login reg"  data-toggle="modal" data-target="#myModal5">Регистрация</a>
+                        </li>
+                        <li class="nav-item">
+                            <i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="<?= Url::to(['/auth/login'])?>" class="login" data-toggle="modal" data-target="#myModal4">Вход</a></li>
+                        </li>
+                    <?php endif;?>
+<!--                    <li>-->
+<!--                        <i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="--><?//= Url::to(['/auth/login'])?><!--" class="login" data-toggle="modal" data-target="#myModal4">Вход</a>-->
+<!--                    </li>-->
+<!--                    <li>-->
+<!--                        <i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="--><?//= Url::to(['/auth/signup'])?><!--" class="login reg"  data-toggle="modal" data-target="#myModal5">Регистрация</a>-->
+<!--                    </li>-->
                 </ul>
             </div>
             <div class="clearfix"> </div>
         </div>
         <div class="logo-nav">
             <div class="logo-nav-left">
-                    <h1><a href="<?= Url::home()?>">
-                            <img src="public/images/logo.svg" title="Белтелеком">
-                        </a>
-                    </h1>
-                <!-- //logo -->
-<!--                <h1><a href="index.html">Белтелеком<span>digital networks</span></a></h1>-->
+                <h1><a href="<?= Url::home()?>">
+                        <img src="public/images/logo.svg" title="Белтелеком">
+                    </a>
+                </h1>
             </div>
             <div class="logo-nav-left1">
                 <nav class="navbar navbar-default">
@@ -80,11 +102,11 @@ use yii\helpers\Url;
 <div class="general_social_icons">
     <nav class="wthree-social">
         <ul>
-            <li class="w3_facebook"><a href="https://www.facebook.com/beltelecomby"> <i class="fa fa-facebook"></i>Facebook</a></li>
-            <li class="w3_twitter"><a href="https://twitter.com/BeltelecomBy"><i class="fa fa-twitter"></i>Twitter </a></li>
-            <li class="w3_dribbble"><a href="https://www.instagram.com/beltelecomby"> <i class="fa fa-instagram"></i>Dribbble</a></li>
-            <li class="w3_g_plus"><a href="https://vk.com/bybeltelecom"><i class="fa fa-vk"></i>Google+ </a></li>
-            <li class="w3_dribbble"><a href="https://ok.ru/beltelecomby"> <i class="fa fa-ok"></i>Dribbble</a></li>
+            <li class="w3_facebook"><a href="https://www.facebook.com/beltelecomby"> <i class="fa fa-facebook"></i>Фейсбук</a></li>
+            <li class="w3_twitter"><a href="https://twitter.com/BeltelecomBy"><i class="fa fa-twitter"></i>Твиттер </a></li>
+            <li class="w3_dribbble"><a href="https://www.instagram.com/beltelecomby"> <i class="fa fa-instagram"></i>Инстаграмм</a></li>
+            <li class="w3_g_plus"><a href="https://vk.com/bybeltelecom"><i class="fa fa-vk"></i>В Контакте </a></li>
+            <li class="w3_dribbble"><a href="https://ok.ru/beltelecomby"> <i class="fab fa-odnoklassniki"></i>Одноклассники</a></li>
         </ul>
     </nav>
 </div>

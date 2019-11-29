@@ -38,7 +38,7 @@
         "phpnt/font-awesome": "*",
         "phpnt/yii2-metismenu": "*",
         "phpnt/bootstrap-select": "^0.0.1",
-        "bower-asset/admin-lte": "dev-master",
+        "bower-asset/admin-lte": "*",
         "phpnt/admin-lte": "*",
         "himiklab/yii2-recaptcha-widget" : "*",
         "fxp/composer-asset-plugin" : "~1.4"

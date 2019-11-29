@@ -88,7 +88,7 @@
         <div class="clearfix"> </div>
     </div>
     <div class="wthree_footer_copy">
-        <p>©<?= date('Y') ?> Лого Дом. Design by <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a></p>
+        <p>© РУП "Белтелеком", <?= date('Y') ?>. УНП 101007741. Все права защищены. Design by <a href="http://www.W3Layouts.com" target="_blank">W3Layouts</a></p>
     </div>
 </div>
 <!-- //footer -->
