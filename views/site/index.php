@@ -16,32 +16,89 @@ if(! empty($popular)){
     $print = $popular[$article];
 }
 ?>
-<!-- Slideshow 4 -->
-<?php if(!empty($print)) : ?>
-    <div class="slider">
-        <div class="callbacks_container">
-            <ul class="rslides" id="slider4">
-                <li>
-                    <div class="<?= $v;?>">
-                        <div class="container">
-                            <div class="slider-info ">
-                                <h5><?= $print->title ?></h5>
-                                <div class="bottom-info">
-                                    <p><?= $print->description ?></p>
-                                </div>
-                                <div class="outs_more-buttn">
-                                    <a href="<?= Url::toRoute(['site/view','id'=>$print->id]);?>">Подробнее ..</a>
-                                </div>
-                            </div>
+<!-- banner -->
+<div class="banner-silder">
+    <div id="JiSlider" class="jislider">
+        <ul>
+            <li>
+                <div class="w3layouts-banner-top">
+
+                    <div class="container">
+                        <div class="agileits-banner-info">
+                            <!---->
+                            <!--                            <h3>Welcome to cityline</h3>-->
+                            <!--                            <p>Sit amet neque semper euismod.</p>-->
+
                         </div>
                     </div>
-                </li>
-            </ul>
-        </div>
+                </div>
+            </li>
+            <li>
+                <div class="w3layouts-banner-top w3layouts-banner-top1">
+                    <div class="container">
+                        <div class="agileits-banner-info">
 
-        <div class="clearfix"></div>
+                            <!--                            <h3>Time to go Digital</h3>-->
+                            <!--                            <p>Amet sit neque semper euismod.</p>-->
+
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="w3layouts-banner-top w3layouts-banner-top2">
+                    <div class="container">
+                        <div class="agileits-banner-info">
+                            <!--                            <h3>Enjoy free live TV</h3>-->
+                            <!--                            <p>Neque amet sit semper euismod.</p>-->
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="w3layouts-banner-top w3layouts-banner-top3">
+                    <div class="container">
+                        <div class="agileits-banner-info">
+                            <!--                            <h3>Exclusive Digital services</h3>-->
+                            <!--                            <p>Semper neque amet sit euismod.</p>-->
+
+                        </div>
+
+                    </div>
+                </div>
+            </li>
+
+        </ul>
     </div>
-<?php endif; ?>
+</div>
+<!-- //banner -->
+<!-- Slideshow 4 -->
+<?php //if(!empty($print)) : ?>
+<!--    <div class="slider">-->
+<!--        <div class="callbacks_container">-->
+<!--            <ul class="rslides" id="slider4">-->
+<!--                <li>-->
+<!--                    <div class="--><?//= $v;?><!--">-->
+<!--                        <div class="container">-->
+<!--                            <div class="slider-info ">-->
+<!--                                <h5>--><?//= $print->title ?><!--</h5>-->
+<!--                                <div class="bottom-info">-->
+<!--                                    <p>--><?//= $print->description ?><!--</p>-->
+<!--                                </div>-->
+<!--                                <div class="outs_more-buttn">-->
+<!--                                    <a href="--><?//= Url::toRoute(['site/view','id'=>$print->id]);?><!--">Подробнее ..</a>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </li>-->
+<!--            </ul>-->
+<!--        </div>-->
+<!---->
+<!--        <div class="clearfix"></div>-->
+<!--    </div>-->
+<?php //endif; ?>
     <!-- //Blog -->
     <section class="py-md-3 py-sm-3 py-3">
         <div class="container-fluid">
@@ -142,58 +199,6 @@ if(! empty($popular)){
 <!--                    </div>-->
                 </div>
                 <div class="col-lg-4">
-                    <!--map-->
-<!--                    <div class="address_mail_footer_grids">-->
-<!--                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">-->
-<!--                            <h3>Where Are We</h3>-->
-<!--                        </div>-->
-<!--                      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3539.812628729253!2d153.014155!3d-27.4750921!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b915a0835840a2f%3A0xdd5e3f5c208dc0e1!2sMelbourne+St%2C+South+Brisbane+QLD+4101%2C+Australia!5e0!3m2!1sen!2sin!4v1492257477691"></iframe>-->
-<!--                    </div>-->
-<!--                     //map-->
-<!--                    About-->
-<!--                    <div class="mt-lg-4 mt-3 address_mail_footer_grids">-->
-<!--                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">-->
-<!--                            <h3>About Us</h3>-->
-<!--                        </div>-->
-<!--                        <div class="wthree-about-us-info text-center">-->
-<!--                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>-->
-<!--                        </div>-->
-<!--                        <div class="my-3 icons-social text-center">-->
-<!--                            <h4> Follow Us</h4>-->
-<!--                        </div>-->
-<!--                        <div class="icons text-center">-->
-<!--                            <ul>-->
-<!--                                <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>-->
-<!--                                <li><a href="#"><span class="fas fa-envelope"></span></a></li>-->
-<!--                                <li><a href="#"><span class="fas fa-rss"></span></a></li>-->
-<!--                                <li><a href="#"><span class="fab fa-twitter"></span></a></li>-->
-<!--                                <li><a href="#"><span class="fab fa-pinterest-p"></span></a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="blog-abut-img mt-3">-->
-<!--                            <img src="/public/images/aa1.jpg" class="img-fluid" alt="">-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                   //About-->
-<!--                    News Letter-->
-<!--                    <div class="mt-lg-4 mt-3 address_mail_footer_grids">-->
-<!--                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">-->
-<!--                            <h3>News Letter</h3>-->
-<!--                        </div>-->
-<!--                        <div class="news-about-us">-->
-<!--                            <form action="#" method="post">-->
-<!--                                <div class=" subscribe-form ">-->
-<!--                                    <div class="form-group contact-forms">-->
-<!--                                        <input type="email" class="form-control" placeholder="Enter" required="">-->
-<!--                                    </div>-->
-<!--                                    <div class="click-subscribe">-->
-<!--                                        <button type="submit" class="btn btn-block click-me">Subscribe</button>-->
-<!--                                    </div>-->
-<!--                                </div>-->
-<!--                            </form>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                    <!--//News Letter-->
                     <!--Categories-->
                     <div class="mt-lg-4 mt-3 address_mail_footer_grids">
                         <div class="title text-center mb-lg-4 mb-md-3 mb-3">
@@ -354,59 +359,6 @@ if(! empty($popular)){
     </section>
     <!-- //Blog -->
     <!--Gallery-->
-<!--    <section class="py-lg-5 py-md-4 py-sm-3 py-3">-->
-<!--        <div class="container-fluid">-->
-<!--            <div class="hover12">-->
-<!--                <ul id="flexiselDemo3">-->
-<!--                    <li>-->
-<!--                        <div class=" snap-img">-->
-<!--                            <div class=" agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                                <div class="w3_agile_gallery_effect">-->
-<!--                                    <a href="/public/images/g3.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                        <figure>    <img src="/public/images/g3.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <div class="snap-img">-->
-<!--                            <div class=" agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                                <div class="w3_agile_gallery_effect">-->
-<!--                                    <a href="/public/images/g1.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                        <figure>    <img src="/public/images/g1.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <div class=" snap-img">-->
-<!--                            <div class="agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                                <div class="w3_agile_gallery_effect">-->
-<!--                                    <a href="/public/images/g4.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                        <figure>    <img src="/public/images/g4.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <div class="snap-img">-->
-<!--                            <div class="agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                                <div class="w3_agile_gallery_effect">-->
-<!--                                    <a href="/public/images/g2.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                        <figure>    <img src="/public/images/g2.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                    </a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </li>-->
-<!--                </ul>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--        <div class="clearfix"></div>-->
-<!--    </section>-->
 <section class="py-lg-5 py-md-4 py-sm-3 py-3">
     <div class="container-fluid">
         <div class="hover12">

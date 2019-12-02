@@ -1,78 +1,96 @@
 <?php
 
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap\ActiveForm */
-/* @var $model app\models\ContactForm */
+use yii\helpers\Url;
 
-use yii\helpers\Html;
-use yii\bootstrap\ActiveForm;
-
-//$this->title = 'Контакты';
-$this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="site-contact">
-    <h1><?= Html::encode($this->title) ?></h1>
-    <section class="contact py-lg-4 py-md-3 py-sm-3 py-3">
-        <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Контакты</h3>
-        <div class="address_mail_footer_grids">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2350.1575004790416!2d27.484717816168416!3d53.91117708010131!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46dbc538ea488def%3A0xf891ed1ceb6b22a2!2z0YPQuy4g0KHQtdGA0LTQuNGH0LAgNywg0JzQuNC90YHQug!5e0!3m2!1sru!2sby!4v1570690547156!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+<!-- //header -->
+    <div class="w3ls-banner contact-agileinfo">
+        <div class="container">
+            <h2 class="w3ls-title">Need help?</h2>
+            <h3 class="w3-subtitle">we're here for you!</h3>
         </div>
-        <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-        <div class="row w3pvt-info-para pt-lg-5 pt-md-4 pt-3">
-            <!--contact-map -->
-            <div class="col-lg-6 col-md-6">
-                <?php if (Yii::$app->session->hasFlash('contactFormSubmitted')): ?>
-                    <div class="alert alert-success alert-dismissable">
-                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
-                        <h4><i class="icon fa fa-check"></i> Благодарим Вас за обращение к нам. Будем рады ответить.</h4>
+    </div>
+    <!-- //banner -->
+    <!-- breadcrumbs -->
+    <div class="w3layouts-breadcrumbs text-center">
+        <div class="container">
+            <span class="agile-breadcrumbs"><a href="<?= Url::home()?>">Главная</a> > <span>Контакты</span></span>
+        </div>
+    </div>
+    <!-- //breadcrumbs -->
+    <div class="w3l-main-contact">
+        <div class="container">
+            <div class="col-md-3 w3_agileits-contact-inner">
+                <ul class="w3-inner-contact">
+                    <li><a href="cabletv.html">digital cable tv</a></li>
+                    <li><a href="broadband.html">broadband</a></li>
+                   <li class="active"><a href="contact.html">customer care</a></li>
+                    <li><a href="faq.html">faq</a></li>
+                     <li><a href="media.html">mediacontact</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 agileinfo-contact-main-address">
+                <h4 class="w3ls-inner-title">help at hand</h4>
+                <p>we aim to provide our customers with best possible services. In case you have any suggestion / feedback,
+                    we would be delightful to assist you at the earliest.</p>
+                <div class="list_agileits_w3layouts">
+                    <div class="section_class_agileits sec-left">
+                        <label class="contact-form-w3ls">Select service type<span>*</span></label>
+                        <select>
+                            <option value="0"> Select </option>
+                            <option value="1">Digital TV </option>
+                            <option value="2">Broadband</option>   
+                    </select>
                     </div>
-                <?php endif; ?>
-                    <?php $form = ActiveForm::begin(['id' => 'contact-form']); ?>
-                        <div class="w3pvt-wls-contact-mid">
-                            <div class="form-group contact-forms">
-                                <?= $form->field($model, 'name')->textInput(['autofocus' => true]) ?>
-                            </div>
-                            <div class="form-group contact-forms">
-                                <?= $form->field($model, 'email') ?>
-                            </div>
-                            <div class="form-group contact-forms">
-                                <?= $form->field($model, 'subject') ?>
-                            </div>
-                            <div class="form-group contact-forms">
-                                <?= $form->field($model, 'body')->textarea(['rows' => 6]) ?>
-                            </div>
-                            <div class="form-group contact-forms">
-                                <?= $form->field($model, 'reCaptcha')->widget(\himiklab\yii2\recaptcha\ReCaptcha::className())?>
-                            </div>
-                            <?= Html::submitButton('Отправить', ['class' => 'btn sent-butnn', 'name' => 'contact-button']) ?>
+                    <div class="section_class_agileits sec-right">
+                        <label class="contact-form-w3ls">Select enquiry type<span>*</span></label>
+                        <select>
+                            <option value="0">Select </option>
+                            <option value="1">Request</option>
+                            <option value="3">Query</option>
+                            <option value="2">Complaint</option>
+                            <option value="1">Feedback</option>
+				         </select>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="agileits-main-right">
+                    <h5>Fill in your details</h5>
+                    <form action="#" method="post" class="agile_form">
+                        <div class="w3ls-text sec-left">
+                            <label class="contact-form-w3ls">Mobile no.<span>*</span></label>
+                            <input  placeholder=" " name="first name" type="text" required="">
+                        </div>	
+                        <div class="w3ls-text sec-right">
+                            <label class="contact-form-w3ls">Email<span>*</span></label>
+                            <input  placeholder=" " name="first name" type="email" required="">
+                        </div>	
+                        <div class="clearfix"></div>
+                        <div class="w3ls-text sec-left">
+                            <label class="contact-form-w3ls">Name<span>*</span></label>
+                            <input  placeholder=" " name="first name" type="text" required="">
                         </div>
-                    <?php ActiveForm::end(); ?>
-            </div>
-            <!--//contact-map -->
-            <!--contact-form-->
-            <div class="col-lg-6 col-md-6 contact-form">
-                <div class="contact-list-grid">
-                    <h4>Адрес</h4>
-                    <p class="pt-2">Минск</p>
-                    <p>Беларусь</p>
-                </div>
-                <div class="contact-list-grid mt-3">
-                    <h4>Email</h4>
-                    <p class="pt-2"><a href="mailto:info@example.com">volhakorsakova@gmail.com</a>
-                    </p>
-                </div>
-                <div class="contact-list-grid mt-3">
-                    <h4>Телефоны</h4>
-                    <p class="pt-2">(+375) 29 694-30-27</p>
-                    <p>(+375) 29 644-11-26</p>
-                </div>
-            </div>
+                        <div class="section_class_agileits sec-right">
+                            <label class="contact-form-w3ls">Select Place<span>*</span></label>
+                            <select>
+                                <option value="0">Select </option>
+                                <option value="1">City1</option>
+                                <option value="3">City2</option>
+                                <option value="2">City3</option>
+                                <option value="1">City4</option>
+                            </select>
+                        </div>
+                        <div class="clearfix"></div>
+                        <label class="contact-form-w3ls">What would you like us to assist you with?<span>*</span></label>
+                        <textarea  class="w3l_summary"  required=""></textarea>
+                        <input type="submit" value="Submit">
+                        <p><span>*</span>marked fields are mandatory</p>
+
+                    </form>
+		        </div>
+		        <div class="clearfix">	</div>
+	        </div>		
+         </div>
+        <div class="clearfix"></div>
         </div>
-        </div>
-    </section>
-</div>
-<?php
-$js = <<< JS
-        $('.header-w3layouts').attr('hidden', true);
-JS;
-$this->registerJs($js); ?>
+    	<!-- footer -->

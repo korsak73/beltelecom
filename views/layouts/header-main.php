@@ -32,12 +32,6 @@ use yii\helpers\Url;
                             <i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="<?= Url::to(['/auth/login'])?>" class="login" data-toggle="modal" data-target="#myModal4">Вход</a></li>
                         </li>
                     <?php endif;?>
-<!--                    <li>-->
-<!--                        <i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="--><?//= Url::to(['/auth/login'])?><!--" class="login" data-toggle="modal" data-target="#myModal4">Вход</a>-->
-<!--                    </li>-->
-<!--                    <li>-->
-<!--                        <i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="--><?//= Url::to(['/auth/signup'])?><!--" class="login reg"  data-toggle="modal" data-target="#myModal5">Регистрация</a>-->
-<!--                    </li>-->
                 </ul>
             </div>
             <div class="clearfix"> </div>
@@ -89,7 +83,7 @@ use yii\helpers\Url;
                             </li>
                             <li><a href="blog.html">Blog</a></li>
                             <li><a href="report.html">Report Issues</a></li>
-                            <li><a href="contact.html">contact us</a></li>
+                            <li><a href="<?= Url::to(['/site/contact'])?>">Обратная связь</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -130,60 +124,3 @@ use yii\helpers\Url;
     </div>
 <?php endif; ?>
 <!-- //header -->
-<!-- banner -->
-<div class="banner-silder">
-    <div id="JiSlider" class="jislider">
-        <ul>
-            <li>
-                <div class="w3layouts-banner-top">
-
-                    <div class="container">
-                        <div class="agileits-banner-info">
-<!---->
-<!--                            <h3>Welcome to cityline</h3>-->
-<!--                            <p>Sit amet neque semper euismod.</p>-->
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top1">
-                    <div class="container">
-                        <div class="agileits-banner-info">
-
-<!--                            <h3>Time to go Digital</h3>-->
-<!--                            <p>Amet sit neque semper euismod.</p>-->
-
-                        </div>
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top2">
-                    <div class="container">
-                        <div class="agileits-banner-info">
-<!--                            <h3>Enjoy free live TV</h3>-->
-<!--                            <p>Neque amet sit semper euismod.</p>-->
-                        </div>
-
-                    </div>
-                </div>
-            </li>
-            <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top3">
-                    <div class="container">
-                        <div class="agileits-banner-info">
-<!--                            <h3>Exclusive Digital services</h3>-->
-<!--                            <p>Semper neque amet sit euismod.</p>-->
-
-                        </div>
-
-                    </div>
-                </div>
-            </li>
-
-        </ul>
-    </div>
-</div>
-<!-- //banner -->
