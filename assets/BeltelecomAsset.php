@@ -47,8 +47,8 @@ class BeltelecomAsset extends AssetBundle
         'public/js/owl.carousel.js',
         'public/js/jquery.magnific-popup.js',
         'public/js/easy-responsive-tabs.js',
-//        'public/js/scripts.js',
-//        'public/js/bootstrap.js'
+        'public/js/scripts.js',
+        'public/js/bootstrap.js'
     ];
     public $depends = [
         'yii\web\YiiAsset',

@@ -73,6 +73,39 @@ class SiteController extends AppController
      */
     public function actionIndex()
     {
+//        $model = new ContactUsForm();
+
+        $this->setMeta('CityLine a corporate Category Flat Bootstrap Responsive Website Template | Home :: w3layouts', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design', 'description');
+
+//        $data = Articles::getAll(2);
+//        $popular = Articles::getPopular();
+//        $recent = Articles::getRecent();
+//        $categories = Categories::getAllActive();
+//        $tags = Tags::getAllActive();
+//
+//        $this->on(yii\web\Controller::EVENT_AFTER_ACTION, function ($event) {
+//            \app\modules\statistics\CountKsl::init();
+//        });
+
+        return $this->render('index', [
+//            'articles' => $data['articles'],
+//            'pagination' =>  $data['pagination'],
+//            'recent' => $recent,
+//            'popular' => $popular,
+//            'categories' => $categories,
+//            'tags' => $tags,
+//            'contactUsForm' => $model
+        ]);
+    }
+
+    /**
+     * Displays homepage.
+     *
+     * @return string
+     */
+    public function actionBlog()
+    {
         $model = new ContactUsForm();
 
         $this->setMeta('CityLine a corporate Category Flat Bootstrap Responsive Website Template | Home :: w3layouts', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -88,7 +121,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             \app\modules\statistics\CountKsl::init();
         });
 
-        return $this->render('index', [
+        return $this->render('blog', [
             'articles' => $data['articles'],
             'pagination' =>  $data['pagination'],
             'recent' => $recent,

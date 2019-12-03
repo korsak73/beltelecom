@@ -190,7 +190,10 @@ input[type="submit"],
     background-color: #fff;
     color: #03b9f8;
 }
-
+.dropdown-menu > li > a.active {
+    background-color: #fff;
+    color: #03b9f8;
+}
 .nav .open>a,
 .nav .open>a:hover,
 .nav .open>a:focus {

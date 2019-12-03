@@ -3,6 +3,12 @@
 use app\models\Users;
 use yii\helpers\Url;
 
+//foreach ([
+//             '01'
+//         ] as $js) {
+//    $this->registerJsFile('/public/js/' . $js . '.js?' . date('U'), [ // .min
+//    ]);
+//}
 ?>
 
 <!-- header -->
@@ -55,8 +61,11 @@ use yii\helpers\Url;
                         </button>
                     </div>
                     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
-                        <ul class="nav navbar-nav">
-                            <li class="active"><a href="<?= Url::home()?>">Главная</a></li>
+                        <ul id="blah" class="nav navbar-nav">
+
+                            <li <?php if (Yii::$app->controller->action->id == 'index'):?>class="active"<?php endif?>>
+                                <a href="<?= Url::home()?>">Главная</a>
+                            </li>
                             <li class="agileits dropdown">
                                 <a href="#" data-toggle="dropdown" aria-expanded="true">about</a>
                                 <ul class="dropdown-menu agile_short_dropdown">
@@ -81,9 +90,13 @@ use yii\helpers\Url;
                                     <li><a href="pay.html">Broadband</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
+                            <li <?php if (Yii::$app->controller->action->id == 'blog'):?>class="active"<?php endif?>>
+                                <a href="<?= Url::to(['/site/blog'])?>">Blog</a>
+                            </li>
                             <li><a href="report.html">Report Issues</a></li>
-                            <li><a href="<?= Url::to(['/site/contact'])?>">Обратная связь</a></li>
+                            <li data-target="contact" <?php if (Yii::$app->controller->action->id == 'contact'):?>class="active"<?php endif?>>
+                                <a href="<?= Url::to(['/site/contact'])?>">Обратная связь</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>
@@ -124,3 +137,13 @@ use yii\helpers\Url;
     </div>
 <?php endif; ?>
 <!-- //header -->
+
+<?php
+//$script = <<< JS
+//$(document).on("click", "#contact" , function(event, data, status, xhr, options) {
+//
+//       $("#contact").attr("class", "active");
+//  });
+//
+//JS;
+//$this->registerJs($script, yii\web\View::POS_HEAD);?>

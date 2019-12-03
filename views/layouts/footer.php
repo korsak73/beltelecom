@@ -80,10 +80,16 @@
             </div>
         </div>
         <div class="col-md-4 col-sm-4  col-xs-4 w3_footer_grid agile_footer_grids_w3_footer">
-            <div class="w3_footer_grid_bottom contact">
-                <h3>our branches</h3>
-                <img src="public/images/map.jpg" class="img-responsive" alt=""/>
+            <h3 class="title text-center mb-md-4 mb-sm-3 mb-3 mb-2">Контакты</h3>
+            <div class="address_mail_footer_grids">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2350.7048924700052!2d27.5595628!3d53.901449!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd092e551a999b635!2z0KHQtdGA0LLQuNGB0L3Ri9C5INGG0LXQvdGC0YAg0JHQtdC70YLQtdC70LXQutC-0Lw!5e0!3m2!1sru!2sby!4v1575377678491!5m2!1sru!2sby" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
             </div>
+
+<!--            <div class="w3_footer_grid_bottom contact">-->
+<!--                -->
+<!--                <h3>our branches</h3>-->
+<!--                <img src="public/images/map.jpg" class="img-responsive" alt=""/>-->
+<!--            </div>-->
         </div>
         <div class="clearfix"> </div>
     </div>

@@ -2,7 +2,7 @@
  common scripts
  --------------------------------------------- */
 // (function () {
-(function ($) {
+(function () {
     'use strict'; // use strict to start
 
     /* === Stickit === */
@@ -59,15 +59,15 @@
     // }());
     /* === Search === */
 
-    (function () {
-        addEventListener("load", function () {
-            setTimeout(hideURLbar, 0);
-        }, false);
-
-        function hideURLbar() {
-            window.scrollTo(0, 1);
-        }
-    }());
+    // (function () {
+    //     addEventListener("load", function () {
+    //         setTimeout(hideURLbar, 0);
+    //     }, false);
+    //
+    //     function hideURLbar() {
+    //         window.scrollTo(0, 1);
+    //     }
+    // }());
     // addEventListener("load", function () {
     //     setTimeout(hideURLbar, 0);
     // }, false);
@@ -86,15 +86,15 @@
     // }());
 
     //You can also use "$(window).load(function() {"
-    $(function () {
-        $(window).load(function () {
-            $('#JiSlider').JiSlider({
-                color: '#fff',
-                start:1,
-                reverse: false
-            }).addClass('ff')
-        })
-    }());
+    // $(function () {
+    //     $(window).load(function () {
+    //         $('#JiSlider').JiSlider({
+    //             color: '#fff',
+    //             start:1,
+    //             reverse: false
+    //         }).addClass('ff')
+    //     })
+    // }());
 
 // $(function () {
 //     $(window).load(function () {
@@ -195,41 +195,41 @@
     //     });
     // }());
 
-    (function () {
-        // $(document).ready(function() {
-            $("#owl-demo").owlCarousel({
-                items :1,
-                lazyLoad : true,
-                autoPlay : false,
-                navigation :true,
-                navigationText :  false,
-                pagination : true,
-            });
-        // });
-    }());
+    // (function () {
+    //     // $(document).ready(function() {
+    //         $("#owl-demo").owlCarousel({
+    //             items :1,
+    //             lazyLoad : true,
+    //             autoPlay : false,
+    //             navigation :true,
+    //             navigationText :  false,
+    //             pagination : true,
+    //         });
+    //     // });
+    // }());
 
     // (function () {
-        jQuery(document).ready(function ($) {
-            window.onload = function () {
-                document.getElementById("password1").onchange = validatePassword;
-                document.getElementById("password2").onchange = validatePassword;
-            }
-            function validatePassword(){
-                var pass2=document.getElementById("password2").value;
-                var pass1=document.getElementById("password1").value;
-                if(pass1!=pass2)
-                    document.getElementById("password2").setCustomValidity("Passwords Don't Match");
-                else
-                    document.getElementById("password2").setCustomValidity('');
-                //empty string means no validation error
-            }
+    //     jQuery(document).ready(function ($) {
+    //         window.onload = function () {
+    //             document.getElementById("password1").onchange = validatePassword;
+    //             document.getElementById("password2").onchange = validatePassword;
+    //         }
+    //         function validatePassword(){
+    //             var pass2=document.getElementById("password2").value;
+    //             var pass1=document.getElementById("password1").value;
+    //             if(pass1!=pass2)
+    //                 document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+    //             else
+    //                 document.getElementById("password2").setCustomValidity('');
+    //             //empty string means no validation error
+    //         }
     //         $(".scroll").click(function (event) {
     //             event.preventDefault();
     //             $('html,body').animate({
     //                 scrollTop: $(this.hash).offset().top
     //             }, 900);
     //         });
-        });
+    //     });
     // }());
 
     // (function () {
@@ -247,18 +247,18 @@
     //     });
     // }());
 // (function () {
-    $(document).ready(function(){
-        $(".dropdown").hover(
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
-                $(this).toggleClass('open');
-            },
-            function() {
-                $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
-                $(this).toggleClass('open');
-            }
-        );
-    });
+//     $(document).ready(function(){
+//         $(".dropdown").hover(
+//             function() {
+//                 $('.dropdown-menu', this).stop( true, true ).slideDown("fast");
+//                 $(this).toggleClass('open');
+//             },
+//             function() {
+//                 $('.dropdown-menu', this).stop( true, true ).slideUp("fast");
+//                 $(this).toggleClass('open');
+//             }
+//         );
+//     });
 // }());
 
 // (function () {
@@ -283,43 +283,43 @@
         });
     });
 // }());
-
+//
 // (function () {
-    jQuery(document).ready(function () {
-        $("div").on('pjax:send', function () {
-            $("#pjax-reload-block").removeClass('display-none');
-        });
-        $("div").on('pjax:complete', function () {
-            $("#pjax-reload-block").addClass('display-none');
-        });
-
-        // добавление элементов списка
-    //     $(document).delegate("button.add-item", "click", function(e){
-    //         var qntt = $('.list-wrapper .list-item').length;
-    //         var lastItem = $('.list-wrapper .list-item').last();
-    //         var classes = lastItem.attr('class');
-    //         var firstRes = classes.split(' ');
-    //         var secondRes = firstRes[2].split('-');
-    //         var indexNumber = Number(secondRes[3])+1;
-    //
-    //         var str = '';
-    //         str += '<div class="form-group list-item field-fieldform-item-'+indexNumber+'">';
-    //         str += '<div class="input-group control-group after-add-more">';
-    //         str += '<input type="text" id="fieldform-item-'+indexNumber+'" class="form-control" name="FieldForm[list]['+indexNumber+']" value="">';
-    //         str += '<div class="input-group-btn">';
-    //         str += '<button class="btn btn-danger remove-item" type="button"><i class="fa fa-times"></i></button>';
-    //         str += '</div>';
-    //         str += '</div>';
-    //         str += '</div>';
-    //
-    //         $('.list-wrapper').append(str);
-    //     });
-    //
-    //     $(document).delegate('button.remove-item', 'click', function(e) {
-    //         $(this).closest('.list-wrapper .list-item').remove();
-    //     });
-    // });
-}());
+//     jQuery(document).ready(function () {
+//         $("div").on('pjax:send', function () {
+//             $("#pjax-reload-block").removeClass('display-none');
+//         });
+//         $("div").on('pjax:complete', function () {
+//             $("#pjax-reload-block").addClass('display-none');
+//         });
+//
+//         // добавление элементов списка
+//         $(document).delegate("button.add-item", "click", function(e){
+//             var qntt = $('.list-wrapper .list-item').length;
+//             var lastItem = $('.list-wrapper .list-item').last();
+//             var classes = lastItem.attr('class');
+//             var firstRes = classes.split(' ');
+//             var secondRes = firstRes[2].split('-');
+//             var indexNumber = Number(secondRes[3])+1;
+//
+//             var str = '';
+//             str += '<div class="form-group list-item field-fieldform-item-'+indexNumber+'">';
+//             str += '<div class="input-group control-group after-add-more">';
+//             str += '<input type="text" id="fieldform-item-'+indexNumber+'" class="form-control" name="FieldForm[list]['+indexNumber+']" value="">';
+//             str += '<div class="input-group-btn">';
+//             str += '<button class="btn btn-danger remove-item" type="button"><i class="fa fa-times"></i></button>';
+//             str += '</div>';
+//             str += '</div>';
+//             str += '</div>';
+//
+//             $('.list-wrapper').append(str);
+//         });
+//
+//         $(document).delegate('button.remove-item', 'click', function(e) {
+//             $(this).closest('.list-wrapper .list-item').remove();
+//         });
+//     });
+// // }());
 // }(jQuery));
 })();
 
