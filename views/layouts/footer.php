@@ -2,7 +2,7 @@
 <div class="footer">
     <div class="w3layouts-main-footer">
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>Quick links</h3>
+            <h3>Для дома</h3>
             <ul class="w3_footer_grid_list">
                 <li><a href="about.html">About us</a></li>
                 <li><a href="media.html">media</a></li>
@@ -11,49 +11,49 @@
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>Digital TV</h3>
+            <h3>Для дома</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="packs.html">DTH Packs</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="cabletv.html">contact</a></li>
+                <li><a href="packs.html">Пакеты</a></li>
+                <li><a href="faq.html">Интернет</a></li>
+                <li><a href="cabletv.html">Телевидение</a></li>
                 <li><a href="pay.html">quick pay</a></li>
                 <li><a href="media.html">support</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>Broad Band</h3>
+            <h3>Для бизнеса</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="bbhome.html">Plans</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="broadband.html">contact</a></li>
+                <li><a href="bbhome.html">Телевидение</a></li>
+                <li><a href="faq.html">Умный дом</a></li>
+                <li><a href="broadband.html">Видеоконтроль</a></li>
+                <li><a href="pay.html">Интернет</a></li>
+                <li><a href="media.html">Прочие услуги</a></li>
+            </ul>
+        </div>
+        <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
+            <h3>Новости</h3>
+            <ul class="w3_footer_grid_list">
+                <li><a href="media.html">Центральные новости</a></li>
+                <li><a href="faq.html">Новости филиалов</a></li>
+                <li><a href="contact.html">Закупки</a></li>
                 <li><a href="pay.html">quick pay</a></li>
-                <li><a href="media.html">support</a></li>
+                <li><a href="media.html">Технические работы</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>Advertise</h3>
+            <h3>О компании</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="media.html">Media</a></li>
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="contact.html">contact</a></li>
-                <li><a href="pay.html">quick pay</a></li>
-                <li><a href="media.html">support</a></li>
+                <li><a href="faq.html">Руководство</a></li>
+                <li><a href="privacy.html">Компания</a></li>
+                <li><a href="terms.html">Правовая информация</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>policy info</h3>
+            <h3>Обратная связь</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="faq.html">FAQ</a></li>
-                <li><a href="privacy.html">privacy policy</a></li>
-                <li><a href="terms.html">terms of use</a></li>
-            </ul>
-        </div>
-        <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>Support</h3>
-            <ul class="w3_footer_grid_list">
-                <li><a href="contact.html">support</a></li>
-                <li><a href="privacy.html">privacy policy</a></li>
-                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contact.html">Контакты</a></li>
+                <li><a href="privacy.html">Пресс-центр</a></li>
+                <li><a href="faq.html">Сервисные центры и пункты</a></li>
             </ul>
         </div>
         <div class="clearfix"> </div>
@@ -61,21 +61,34 @@
     <div class="agile_footer_grids">
         <div class="col-md-4 col-sm-4 col-xs-4 w3_footer_grid agile_footer_grids_w3_footer">
             <div class="w3_footer_grid_bottom contact">
-                <h3>Contact Info</h3>
+                <h3>Контакты для деловых партнеров
+                </h3>
                 <ul>
-                    <li><span class="fa fa-map-marker" aria-hidden="true"></span><p>1234k Avenue, 4th block,New York City.</p></li>
-                    <li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:info@example.com">info@example.com</a></li>
-                    <li><span class="fa fa-phone" aria-hidden="true"></span><p>+1234 567 567</p></li>
+                    <li><span class="fa fa-map-marker" aria-hidden="true"></span><p>
+                            Республиканское унитарное предприятие электросвязи "Белтелеком"
+                            Адрес: ул. Энгельса, 6, 220030, г. Минск, Республика Беларусь
+                           </p></li>
+                    <li><span class="fa fa-envelope-o" aria-hidden="true"></span><a href="mailto:info@example.com"> info@main.beltelecom.by</a></li>
+                    <li><span class="fa fa-phone" aria-hidden="true"></span><p>+тел.: +375 17 2171005 (приемная генерального директора)
+                            факс: +375 17 3274422</p></li>
                 </ul>
             </div>
         </div>
         <div class="col-md-4 col-sm-4  col-xs-4 w3_footer_grid agile_footer_grids_w3_footer">
             <div class="w3_footer_grid_bottom">
-                <h3>Legal</h3>
+                <h3>Пресс-центр</h3>
                 <ul class="w3_footer_grid_list">
-                    <li><a href="terms.html">Terms & Conditions</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                    <li><a href="terms.html">Disclaimer</a></li>
+                    <li><a href="terms.html">Фирменный стиль
+                            Логотип и знак «Белтелеком» – основа фирменного стиля.
+                            Логотип, знак и фирменный блок имеют установленные размеры и пропорции.
+
+                            Для корректного отображения фирменных элементов компании предлагаем воспользоваться оригинальными файлами:</a></li>
+                    <li><a href="privacy.html">Время работы
+
+                            С 8:30 до 17:15, кроме выходных.</a></li>
+                    <li><a href="terms.html">Контакты для средств массовой информации
+
+                            Представители средств массовой информации могут обратиться в группу по связям с общественностью, чтобы получить информацию о деятельности, услугах компании, а также по другим вопросам, относящимся к компетенции РУП «Белтелеком». Для оперативной работы просим направлять запрос на е-mail: ekaterinamd@main.beltelecom.by или mariaGB@main.beltelecom.by.</a></li>
                 </ul>
             </div>
         </div>

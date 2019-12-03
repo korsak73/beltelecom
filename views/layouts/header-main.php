@@ -91,7 +91,7 @@ use yii\helpers\Url;
                                 </ul>
                             </li>
                             <li <?php if (Yii::$app->controller->action->id == 'blog'):?>class="active"<?php endif?>>
-                                <a href="<?= Url::to(['/site/blog'])?>">Blog</a>
+                                <a href="<?= Url::to(['/site/blog'])?>">Новости</a>
                             </li>
                             <li><a href="report.html">Report Issues</a></li>
                             <li data-target="contact" <?php if (Yii::$app->controller->action->id == 'contact'):?>class="active"<?php endif?>>

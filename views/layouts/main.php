@@ -70,6 +70,7 @@ BeltelecomAsset::register($this);
 <?php $this->beginBody() ?>
 
 <?php echo $this->render('header-main.php')?>
+
 <?= $content ?>
 
 	  <!-- Modal1 -->

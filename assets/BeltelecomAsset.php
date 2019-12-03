@@ -22,6 +22,7 @@ class BeltelecomAsset extends AssetBundle
     public $css = [
         'public/css/about.css',
         'public/css/bootstrap.css',
+//        'public/css/bootstrap.min.css',
         'public/css/admin-lte-extend.css',
         'public/css/easy-responsive-tabs.css',
         'public/css/flexslider.css',
@@ -33,6 +34,7 @@ class BeltelecomAsset extends AssetBundle
         'public/css/products.css',
         'public/css/services.css',
         'public/css/single.css',
+        'public/css/style1.css',
         'public/css/style.css',
         '//fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic',
         '//fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic'
