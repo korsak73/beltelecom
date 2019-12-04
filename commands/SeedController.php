@@ -32,7 +32,7 @@ class SeedController extends Controller
             'created_at' =>$faker->unixTime,
             'updated_at' =>null
 
-        ])->rowQuantity(1);
+        ])->rowQuantity(10);
 
         $seeder->table('{{%users}}')->columns([
             'id', //automatic pk

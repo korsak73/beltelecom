@@ -7,6 +7,7 @@ use app\models\Articles;
 use app\models\Categories;
 use app\models\CommentForm;
 use app\models\forms\ContactUsForm;
+use app\models\LoginForm;
 use app\models\SignupForm;
 use app\models\Subscriptions;
 use app\models\Tags;
@@ -73,10 +74,16 @@ class SiteController extends AppController
      */
     public function actionIndex()
     {
+        $modelLoginForm = new LoginForm();
+        $modelSignupForm = new SignupForm();
+
         $this->setMeta('Главная | Белтелеком', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design', 'description');
 
-        return $this->render('index');
+        return $this->render('index', [
+            'modelLoginForm' => $modelLoginForm,
+            'modelSignupForm' => $modelSignupForm
+        ]);
     }
 
     /**

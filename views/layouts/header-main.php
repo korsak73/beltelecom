@@ -19,7 +19,7 @@ use yii\helpers\Url;
                 <ul>
                     <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">beltelecom.by</a></li>
                     <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>123</li>
-                    <?php if(! Yii::$app->user->isGuest): ?>
+                    <?php if(! Yii::$app->user->isGuest):?>
                         <?php if( Users::isIdentityAdmin(Yii::$app->user->identity->getId())): ?>
                             <li class="nav-item">
                                 <a class="nav-link" href="<?= Url::to(['/admin/default/index'])?>"><i class="fas fa-user-alt"></i> Администратор</a>
@@ -32,10 +32,10 @@ use yii\helpers\Url;
 
                     <?php if(Yii::$app->user->isGuest): ?>
                         <li class="nav-item">
-                            <i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="<?= Url::to(['/auth/signup'])?>" class="login reg"  data-toggle="modal" data-target="#myModal5">Регистрация</a>
+                            <i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="<?= Url::to(['/auth/signup'])?>" class="login reg"  data-toggle="modal" data-target="#myModal5" id="header-signup">Регистрация</a>
                         </li>
                         <li class="nav-item">
-                            <i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="<?= Url::to(['/auth/login'])?>" class="login" data-toggle="modal" data-target="#myModal4">Вход</a></li>
+                            <i class="glyphicon glyphicon-log-in" aria-hidden="true"></i><a href="<?= Url::to(['/auth/login'])?>" class="login" data-toggle="modal" data-target="login"  id="header-login">Вход</a></li>
                         </li>
                     <?php endif;?>
                 </ul>

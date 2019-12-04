@@ -2,9 +2,9 @@
 
 //use phpnt\bootstrapNotify\BootstrapNotify;
 //use phpnt\bootstrapSelect\BootstrapSelectAsset;
-use yii\bootstrap4\ActiveForm;
+use yii\bootstrap\ActiveForm;
 use yii\helpers\Url;
-use yii\bootstrap\Html;
+use yii\helpers\Html;
 
 /* @var $this yii\web\View */
 /* @var $page array */
@@ -15,7 +15,7 @@ use yii\bootstrap\Html;
 <!--    --><?php //BootstrapSelectAsset::register($this) ?>
 <!--    --><?//= BootstrapNotify::widget() ?>
     <?php $form = ActiveForm::begin([
-        'id' => 'form',
+        'id' => 'form-signup',
         'action' => Url::to(['/auth/signup/']),
         'options' => ['data-pjax' => true]
     ]); ?>
@@ -26,7 +26,7 @@ use yii\bootstrap\Html;
                                                 {input}<span class="input-group-addon"><i class="fas fa-user" aria-hidden="true"></i></span>
                                              </div>
                                             <i>{hint}</i>{error}'])
-                ->textInput(['placeholder' => $modelSignupForm->getAttributeLabel('email')]) ?>
+                ->textInput(['placeholder' => $modelSignupForm->getAttributeLabel('email'), 'class' => 'login-form']) ?>
         </div>
         <div class="col-sm-12">
             <?= $form->field($modelSignupForm, 'email', ['template' => '{label} 
@@ -34,7 +34,7 @@ use yii\bootstrap\Html;
                                                 {input}<span class="input-group-addon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
                                              </div>
                                             <i>{hint}</i>{error}'])
-                ->textInput(['placeholder' => $modelSignupForm->getAttributeLabel('email')]) ?>
+                ->textInput(['placeholder' => $modelSignupForm->getAttributeLabel('email'), 'class' => 'login-form']) ?>
         </div>
         <div class="col-sm-12">
             <?= $form->field($modelSignupForm, 'password', ['template' => '{label} 
@@ -42,7 +42,7 @@ use yii\bootstrap\Html;
                                                 {input}<span class="input-group-addon"><i class="fa fa-lock" aria-hidden="true"></i></span>
                                              </div>
                                             <i>{hint}</i>{error}'])
-                ->passwordInput(['placeholder' => $modelSignupForm->getAttributeLabel('password')]) ?>
+                ->passwordInput(['placeholder' => $modelSignupForm->getAttributeLabel('password'), 'class' => 'login-form']) ?>
         </div>
         <div class="col-md-6">
             <?= $form->field($modelSignupForm, 'reCaptcha')->widget(\himiklab\yii2\recaptcha\ReCaptcha::className())?>
@@ -56,12 +56,12 @@ use yii\bootstrap\Html;
     <?php ActiveForm::end(); ?>
     <?php
     $js = <<< JS
-        $('#form').on('beforeSubmit', function () { 
+        $('#form-signup').on('beforeSubmit', function () { 
             var form = $(this);
                 $.pjax({
                     type: form.attr('method'),
                     url: form.attr('action'),
-                    data: new FormData($('#form')[0]),
+                    data: new FormData($('#form-signup')[0]),
                     container: "#elements-form-block",
                     push: false,
                     scrollTo: false,

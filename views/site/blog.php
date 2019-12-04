@@ -99,13 +99,13 @@ use yii\widgets\LinkPager; ?>
                 <!--//end-blog-pagenate-->
             </div>
             <div class="col-md-5 blog-right">
-                <h4 class="widget-title">My Cityline app</h4>
-                <h5 class="h-t">Manage all your accounts anytime. anywhere.</h5>
-                <ul class="app-w3ls">
-                    <li><a href="#"><img src="public/images/1.png" alt=""></a></li>
-                    <li><a href="#"><img src="public/images/2.png" alt=""></a></li>
-                </ul>
-                <div class="clearfix"></div>
+<!--                <h4 class="widget-title">My Cityline app</h4>-->
+<!--                <h5 class="h-t">Manage all your accounts anytime. anywhere.</h5>-->
+<!--                <ul class="app-w3ls">-->
+<!--                    <li><a href="#"><img src="public/images/1.png" alt=""></a></li>-->
+<!--                    <li><a href="#"><img src="public/images/2.png" alt=""></a></li>-->
+<!--                </ul>-->
+<!--                <div class="clearfix"></div>-->
                 <div class="w3ls-section widget-side">
                     <?php if(!empty($categories)) : ?>
                     <h4 class="widget-title">Рубрики</h4>

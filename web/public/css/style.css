@@ -3394,3 +3394,16 @@ p.privacy-para {
         opacity: 1;
     }
 }
+
+.login-form{
+    width: 100% !important;
+}
+/*#bs-megadropdown-tabs ul {*/
+/*    list-style: none !important;*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*#bs-megadropdown-tabs li {*/
+/*    display: inline-block!important;*/
+/*}*/

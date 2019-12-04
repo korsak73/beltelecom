@@ -2,8 +2,53 @@
  common scripts
  --------------------------------------------- */
 // (function () {
-(function () {
+$(function () {
     'use strict'; // use strict to start
+
+    $(document).on("click", '#header-login', function () {
+// debugger;
+        let href = $(this).attr("href");
+        $("#form").attr("action", href);
+        $("#modalHeader h3").text('Создать транспорт');
+        // $('#form-01-06').yiiActiveForm('resetForm');
+
+        // $("#datatransport-category_id").val(0).trigger("change");
+        // $("#datatransport-type_id").val(0).trigger("change");
+        // $("#sup-cargo").val(0).trigger("change");
+        // $("#datatransport-amount").val('');
+        // $("#datatransport-volume").val('');
+        // $("#datatransport-capacity").val('');
+        // $("#datatransport-is_navigate").prop('checked', false);
+        // $("#datatransport-description").val('');
+        // $("#datatransport-other_cargo").val('');
+
+        $("#users-login").modal("show");
+
+        return false;
+    });
+
+    $(document).on("click", '#header-signup', function () {
+// debugger;
+        let href = $(this).attr("href");
+        $("#form").attr("action", href);
+        $("#modalHeader h3").text('Создать транспорт');
+        // $('#form-01-06').yiiActiveForm('resetForm');
+
+        // $("#datatransport-category_id").val(0).trigger("change");
+        // $("#datatransport-type_id").val(0).trigger("change");
+        // $("#sup-cargo").val(0).trigger("change");
+        // $("#datatransport-amount").val('');
+        // $("#datatransport-volume").val('');
+        // $("#datatransport-capacity").val('');
+        // $("#datatransport-is_navigate").prop('checked', false);
+        // $("#datatransport-description").val('');
+        // $("#datatransport-other_cargo").val('');
+
+        $("#users-signup").modal("show");
+
+        return false;
+    });
+
 
     /* === Stickit === */
 
@@ -262,65 +307,66 @@
 // }());
 
 // (function () {
-    $(document).ready(function () {
-        $('#horizontalTab').easyResponsiveTabs({
-            type: 'default', //Types: default, vertical, accordion
-            width: 'auto', //auto or any width like 600px
-            fit: true, // 100% fit in a container
-            closed: 'accordion', // Start closed if in accordion view
-            activate: function (event) { // Callback function if tab is switched
-                var $tab = $(this);
-                var $info = $('#tabInfo');
-                var $name = $('span', $info);
-                $name.text($tab.text());
-                $info.show();
-            }
-        });
-        $('#verticalTab').easyResponsiveTabs({
-            type: 'vertical',
-            width: 'auto',
-            fit: true
-        });
-    });
-// }());
-//
-// (function () {
-//     jQuery(document).ready(function () {
-//         $("div").on('pjax:send', function () {
-//             $("#pjax-reload-block").removeClass('display-none');
+//     $(document).ready(function () {
+//         $('#horizontalTab').easyResponsiveTabs({
+//             type: 'default', //Types: default, vertical, accordion
+//             width: 'auto', //auto or any width like 600px
+//             fit: true, // 100% fit in a container
+//             closed: 'accordion', // Start closed if in accordion view
+//             activate: function (event) { // Callback function if tab is switched
+//                 var $tab = $(this);
+//                 var $info = $('#tabInfo');
+//                 var $name = $('span', $info);
+//                 $name.text($tab.text());
+//                 $info.show();
+//             }
 //         });
-//         $("div").on('pjax:complete', function () {
-//             $("#pjax-reload-block").addClass('display-none');
-//         });
-//
-//         // добавление элементов списка
-//         $(document).delegate("button.add-item", "click", function(e){
-//             var qntt = $('.list-wrapper .list-item').length;
-//             var lastItem = $('.list-wrapper .list-item').last();
-//             var classes = lastItem.attr('class');
-//             var firstRes = classes.split(' ');
-//             var secondRes = firstRes[2].split('-');
-//             var indexNumber = Number(secondRes[3])+1;
-//
-//             var str = '';
-//             str += '<div class="form-group list-item field-fieldform-item-'+indexNumber+'">';
-//             str += '<div class="input-group control-group after-add-more">';
-//             str += '<input type="text" id="fieldform-item-'+indexNumber+'" class="form-control" name="FieldForm[list]['+indexNumber+']" value="">';
-//             str += '<div class="input-group-btn">';
-//             str += '<button class="btn btn-danger remove-item" type="button"><i class="fa fa-times"></i></button>';
-//             str += '</div>';
-//             str += '</div>';
-//             str += '</div>';
-//
-//             $('.list-wrapper').append(str);
-//         });
-//
-//         $(document).delegate('button.remove-item', 'click', function(e) {
-//             $(this).closest('.list-wrapper .list-item').remove();
+//         $('#verticalTab').easyResponsiveTabs({
+//             type: 'vertical',
+//             width: 'auto',
+//             fit: true
 //         });
 //     });
-// // }());
-// }(jQuery));
-})();
+// }());
+//
+    (function () {
+        jQuery(document).ready(function () {
+            $("div").on('pjax:send', function () {
+                $("#pjax-reload-block").removeClass('display-none');
+            });
+            $("div").on('pjax:complete', function () {
+                $("#pjax-reload-block").addClass('display-none');
+            });
+
+            // добавление элементов списка
+            $(document).delegate("button.add-item", "click", function(e){
+                var qntt = $('.list-wrapper .list-item').length;
+                var lastItem = $('.list-wrapper .list-item').last();
+                var classes = lastItem.attr('class');
+                var firstRes = classes.split(' ');
+                var secondRes = firstRes[2].split('-');
+                var indexNumber = Number(secondRes[3])+1;
+
+                var str = '';
+                str += '<div class="form-group list-item field-fieldform-item-'+indexNumber+'">';
+                str += '<div class="input-group control-group after-add-more">';
+                str += '<input type="text" id="fieldform-item-'+indexNumber+'" class="form-control" name="FieldForm[list]['+indexNumber+']" value="">';
+                str += '<div class="input-group-btn">';
+                str += '<button class="btn btn-danger remove-item" type="button"><i class="fa fa-times"></i></button>';
+                str += '</div>';
+                str += '</div>';
+                str += '</div>';
+
+                $('.list-wrapper').append(str);
+            });
+
+            $(document).delegate('button.remove-item', 'click', function(e) {
+                $(this).closest('.list-wrapper .list-item').remove();
+            });
+        });
+    }());
+
+// })(jQuery);
+});
 
 

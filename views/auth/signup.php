@@ -5,7 +5,7 @@
 /* @var $page array */
 /* @var $modelSignupForm app\models\SignupForm */
 
-use yii\bootstrap4\Modal;
+use yii\bootstrap\Modal;
 
 $header =
 //    isset(Yii::$app->authClientCollection) ? '<div class="col-md-12 m-b-sm">' . Yii::t('app', 'Войти используя социальную сеть') . ':</div>'.AuthChoice::widget([
@@ -23,12 +23,12 @@ $header =
                     Modal::begin([
                         'id' => 'users-signup',
                         'size' => 'modal-md',
-                        'title' => $header,
-                        'clientOptions' => ['show' => true],
+                        'header' => $header,
+                        'clientOptions' => ['show' => false],
                         'options' => [],
                     ]);
                 ?>
-                    <?= $this->render('_signup-form', ['modelSignupForm' => $modelSignupForm]) ?>
+                    <?= $this->render('@app/views/auth/_signup-form', ['modelSignupForm' => $modelSignupForm]) ?>
 
                     <div class="clearfix"></div>
                 <?php

@@ -139,8 +139,8 @@ BeltelecomAsset::register($this);
 <footer>
     <?=$this->render('footer.php')?>
 </footer>
-<?php //Pjax::begin(['id' => 'pjaxModalUniversal']); ?><!----><?php //Pjax::end(); ?>
-<?php //Pjax::begin(['id' => 'pjaxModalUniversal2']); ?><!----><?php //Pjax::end(); ?>
+<?php Pjax::begin(['id' => 'pjaxModalUniversal']); ?><?php Pjax::end(); ?>
+<?php Pjax::begin(['id' => 'pjaxModalUniversal2']); ?><?php Pjax::end(); ?>
 <!--<div id="pjax-reload-block" class="display-none">-->
 <!--    <div class="pjax-reload-block">-->
 <!--        <div class="sk-spinner sk-spinner-fading-circle">-->

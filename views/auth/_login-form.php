@@ -21,17 +21,22 @@ AnimateCssAsset::register($this);
         ]); ?>
 
         <div class="col-md-12">
-            <?= $form->field($modelLoginForm, 'email', ['template' => '{label}<div class="input-group">{input}
-                            <span class="input-group-addon"><i class="fas fa-envelope"></i></span>
-                         </div><i>{hint}</i>{error}'])
-                ->textInput(['placeholder' => $modelLoginForm->getAttributeLabel('email')]) ?>
+            <?= $form->field($modelLoginForm, 'email', [
+                    'template' => '{label}<div class="input-group">{input}
+                                            <span class="input-group-addon">
+                                               <i class="fas fa-envelope"></i>
+                                             </span>
+                                            </div>
+                                        <i>{hint} </i>{error}'
+            ])
+                ->textInput(['placeholder' => $modelLoginForm->getAttributeLabel('email'), 'class' => 'login-form']) ?>
         </div>
 
         <div class="col-md-12">
             <?= $form->field($modelLoginForm, 'password', ['template' => '{label}<div class="input-group">{input}
                             <span class="input-group-addon"><i class="fas fa-lock"></i></span>
                          </div><i>{hint}</i>{error}'])
-                ->passwordInput(['placeholder' => $modelLoginForm->getAttributeLabel('password')]) ?>
+                ->passwordInput(['placeholder' => $modelLoginForm->getAttributeLabel('password'), 'class' => 'login-form']) ?>
         </div>
 
         <div class="col-md-12">
@@ -101,7 +106,7 @@ AnimateCssAsset::register($this);
         });
 JS;
         $this->registerJs($js); ?>
-    </div>
-</div>
+<!--    </div>-->
+<!--</div>-->
 
 

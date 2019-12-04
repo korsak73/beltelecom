@@ -4,7 +4,7 @@
 /* @var $form yii\bootstrap\ActiveForm */
 /* @var $modelLoginForm app\models\LoginForm */
 
-use yii\bootstrap4\Modal;
+use yii\bootstrap\Modal;
 //use common\widgets\oAuth\AuthChoice;
 
 $header =
@@ -24,13 +24,13 @@ $header =
                 Modal::begin([
                     'id' => 'users-login',
                     'size' => 'modal-md',
-                    'title' => $header,
-                    'clientOptions' => ['show' => true],
+                    'header' => $header,
+                    'clientOptions' => ['show' => false],
                     'options' => [],
                 ]);
                 ?>
 
-                <?= $this->render('_login-form', ['modelLoginForm' => $modelLoginForm]) ?>
+                <?= $this->render('@app/views/auth/_login-form', ['modelLoginForm' => $modelLoginForm]) ?>
 
                 <div class="clearfix"></div>
                 <?php
@@ -41,3 +41,4 @@ $header =
     </div>
     <!--    </div>-->
 </section>
+<div class="clearfix"> </div>

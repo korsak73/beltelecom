@@ -25,15 +25,16 @@ class AppAsset extends AssetBundle
     ];
     public $js = [
 //        'public/js/app.min.js',
+//        'public/js/JiSlider.js',
     ];
     public $depends = [
         'yii\web\YiiAsset',
         'yii\bootstrap\BootstrapAsset',
         'yii\bootstrap\BootstrapPluginAsset',
         'phpnt\fontAwesome\FontAwesomeAsset',
-        'phpnt\adminLTE\AdminLteAsset',
-        'phpnt\metismenu\MetisMenuAsset',
-        'phpnt\bootstrapSelect\BootstrapSelectAsset'
+//        'phpnt\adminLTE\AdminLteAsset',
+//        'phpnt\metismenu\MetisMenuAsset',
+//        'phpnt\bootstrapSelect\BootstrapSelectAsset'
     ];
 
 //    public $jsOptions = [

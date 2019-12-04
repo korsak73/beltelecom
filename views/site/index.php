@@ -1,20 +1,27 @@
 <?php
 
+use yii\bootstrap\Modal;
+use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use yii\widgets\LinkPager;
-$list = [
-    '0' => 'slider-img one-img',
-    '1' => 'slider-img two-img',
-    '2' => 'slider-img three-img',
-];
-$k = array_rand($list);
-$v = $list[$k];
+//$list = [
+//    '0' => 'slider-img one-img',
+//    '1' => 'slider-img two-img',
+//    '2' => 'slider-img three-img',
+//];
+//$k = array_rand($list);
+//$v = $list[$k];
+//
+//if(! empty($popular)){
+//    $article = array_rand($popular);
+//    $print = $popular[$article];
+//}
 
-if(! empty($popular)){
-    $article = array_rand($popular);
-    $print = $popular[$article];
-}
+/* @var $modelLoginForm app\models\LoginForm */
+/* @var $modelSignupForm app\models\SignupForm */
+ /* @var $form yii\bootstrap\ActiveForm */
+
 ?>
 <!-- banner -->
 <div class="banner-silder">
@@ -350,87 +357,11 @@ if(! empty($popular)){
     				</div>
     			</div>
 </div>
-<!-- //banner -->
-<!-- Slideshow 4 -->
-<?php //if(!empty($print)) : ?>
-<!--    <div class="slider">-->
-<!--        <div class="callbacks_container">-->
-<!--            <ul class="rslides" id="slider4">-->
-<!--                <li>-->
-<!--                    <div class="--><?//= $v;?><!--">-->
-<!--                        <div class="container">-->
-<!--                            <div class="slider-info ">-->
-<!--                                <h5>--><?//= $print->title ?><!--</h5>-->
-<!--                                <div class="bottom-info">-->
-<!--                                    <p>--><?//= $print->description ?><!--</p>-->
-<!--                                </div>-->
-<!--                                <div class="outs_more-buttn">-->
-<!--                                    <a href="--><?//= Url::toRoute(['site/view','id'=>$print->id]);?><!--">Подробнее ..</a>-->
-<!--                                </div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!---->
-<!--        <div class="clearfix"></div>-->
-<!--    </div>-->
-<?php //endif; ?>
 
-    <!--Gallery-->
-<!--<section class="py-lg-5 py-md-4 py-sm-3 py-3">-->
-<!--    <div class="container-fluid">-->
-<!--        <div class="hover12">-->
-<!--            <ul id="flexiselDemo3">-->
-<!--                <li>-->
-<!--                    <div class=" snap-img">-->
-<!--                        <div class=" agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                            <div class="w3_agile_gallery_effect">-->
-<!--                                <a href="public/images/g3.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                    <figure>    <img src="public/images/g3.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <div class="snap-img">-->
-<!--                        <div class=" agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                            <div class="w3_agile_gallery_effect">-->
-<!--                                <a href="public/images/g1.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                    <figure>    <img src="public/images/g1.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <div class=" snap-img">-->
-<!--                        <div class="agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                            <div class="w3_agile_gallery_effect">-->
-<!--                                <a href="public/images/g4.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                    <figure>    <img src="public/images/g4.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--                <li>-->
-<!--                    <div class="snap-img">-->
-<!--                        <div class="agileits_w3layouts_gallery_grid1 hover08">-->
-<!--                            <div class="w3_agile_gallery_effect">-->
-<!--                                <a href="public/images/g2.jpg" data-lightbox="example-set" data-title="Lorem Ipsum is simply dummy the when an unknown galley of type and scrambled it to make a type specimen.">-->
-<!--                                    <figure>    <img src="public/images/g2.jpg" alt=" " class="img-fluid"> </figure>-->
-<!--                                </a>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </li>-->
-<!--            </ul>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--    <div class="clearfix"></div>-->
-<!--</section>-->
-    <!--//Gallery-->
+<?= $this->render('@app/views/auth/login', [
+    'modelLoginForm' => $modelLoginForm,
+])?>
+<?= $this->render('@app/views/auth/signup', [
+    'modelSignupForm' => $modelSignupForm,
+])?>
 

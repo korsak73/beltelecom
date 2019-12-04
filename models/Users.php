@@ -190,7 +190,7 @@ class Users extends BaseModel implements IdentityInterface
 
     public function getId()
     {
-        return $this->id;
+        return $this->getPrimaryKey();
     }
 
     public function getAuthKey()
