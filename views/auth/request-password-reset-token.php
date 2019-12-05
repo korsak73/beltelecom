@@ -1,6 +1,6 @@
 <?php
 
-use yii\bootstrap4\Modal;
+use yii\bootstrap\Modal;
 
 /* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
 /* @var $this yii\web\View */
@@ -9,9 +9,10 @@ use yii\bootstrap4\Modal;
 Modal::begin([
     'id' => 'request-password-reset-token-modal',
     'size' => 'modal-sm',
-    'title' => false,
-    'clientOptions' => ['show' => true],
+    'header' => '<h3 class="col-md-12 text-center"  style="color: #286090"></h3>',
+    'clientOptions' => ['show' => false],
     'options' => [],
+    'headerOptions' => ['id' => 'modalHeader'],
 ]);
 ?>
 

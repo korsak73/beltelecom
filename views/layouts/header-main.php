@@ -22,11 +22,11 @@ use yii\helpers\Url;
                     <?php if(! Yii::$app->user->isGuest):?>
                         <?php if( Users::isIdentityAdmin(Yii::$app->user->identity->getId())): ?>
                             <li class="nav-item">
-                                <a class="nav-link" href="<?= Url::to(['/admin/default/index'])?>"><i class="fas fa-user-alt"></i> Администратор</a>
+                                <a href="<?= Url::to(['/admin/default/index'])?>"><i class="glyphicon glyphicon-briefcase"></i> Администратор</a>
                             </li>
                         <?php endif;?>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?= Url::to(['/auth/logout'])?>"><i class="fas fa-user-alt"></i> <?= Yii::$app->user->identity->name ?> (Выход)</a>
+                            <a href="<?= Url::to(['/auth/logout'])?>"><i class="glyphicon glyphicon-log-out"></i> <?= Yii::$app->user->identity->name ?> (Выход)</a>
                         </li>
                     <?php endif;?>
 
@@ -68,32 +68,32 @@ use yii\helpers\Url;
                             </li>
                             <li class="agileits dropdown">
                                 <a href="#" data-toggle="dropdown" aria-expanded="true">about</a>
-                                <ul class="dropdown-menu agile_short_dropdown">
-                                    <li><a href="about.html">about us</a></li>
-                                    <li><a href="app.html">mobile app</a></li>
-                                    <li><a href="testimonials.html">testimonials</a></li>
-                                </ul>
+<!--                                <ul class="dropdown-menu agile_short_dropdown">-->
+<!--                                    <li><a href="about.html">about us</a></li>-->
+<!--                                    <li><a href="app.html">mobile app</a></li>-->
+<!--                                    <li><a href="testimonials.html">testimonials</a></li>-->
+<!--                                </ul>-->
                             </li>
-                            <li><a href="bbhome.html">Broadband</a></li>
-                            <li class="agileits dropdown">
-                                <a href="#" data-toggle="dropdown" aria-expanded="true">Digital Cable TV</a>
-                                <ul class="dropdown-menu agile_short_dropdown">
-                                    <li><a href="products.html">Products</a></li>
-                                    <li><a href="packs.html">Channel & Packs</a></li>
-                                    <li><a href="pay.html">Quick Pay</a></li>
-                                </ul>
-                            </li>
-                            <li class="agileits dropdown">
-                                <a href="#" data-toggle="dropdown" aria-expanded="true">quick recharge</a>
-                                <ul class="dropdown-menu agile_short_dropdown">
-                                    <li><a href="pay.html">Digital TV</a></li>
-                                    <li><a href="pay.html">Broadband</a></li>
-                                </ul>
-                            </li>
+<!--                            <li><a href="bbhome.html">Broadband</a></li>-->
+<!--                            <li class="agileits dropdown">-->
+<!--                                <a href="#" data-toggle="dropdown" aria-expanded="true">Digital Cable TV</a>-->
+<!--                                <ul class="dropdown-menu agile_short_dropdown">-->
+<!--                                    <li><a href="products.html">Products</a></li>-->
+<!--                                    <li><a href="packs.html">Channel & Packs</a></li>-->
+<!--                                    <li><a href="pay.html">Quick Pay</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
+<!--                            <li class="agileits dropdown">-->
+<!--                                <a href="#" data-toggle="dropdown" aria-expanded="true">quick recharge</a>-->
+<!--                                <ul class="dropdown-menu agile_short_dropdown">-->
+<!--                                    <li><a href="pay.html">Digital TV</a></li>-->
+<!--                                    <li><a href="pay.html">Broadband</a></li>-->
+<!--                                </ul>-->
+<!--                            </li>-->
                             <li <?php if (Yii::$app->controller->action->id == 'blog'):?>class="active"<?php endif?>>
                                 <a href="<?= Url::to(['/site/blog'])?>">Новости</a>
                             </li>
-                            <li><a href="report.html">Report Issues</a></li>
+<!--                            <li><a href="report.html">Report Issues</a></li>-->
                             <li data-target="contact" <?php if (Yii::$app->controller->action->id == 'contact'):?>class="active"<?php endif?>>
                                 <a href="<?= Url::to(['/site/contact'])?>">Обратная связь</a>
                             </li>

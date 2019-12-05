@@ -1,25 +1,8 @@
 <?php
 
-use yii\bootstrap\Modal;
-use yii\helpers\Html;
-use yii\helpers\Url;
-use yii\widgets\ActiveForm;
-use yii\widgets\LinkPager;
-//$list = [
-//    '0' => 'slider-img one-img',
-//    '1' => 'slider-img two-img',
-//    '2' => 'slider-img three-img',
-//];
-//$k = array_rand($list);
-//$v = $list[$k];
-//
-//if(! empty($popular)){
-//    $article = array_rand($popular);
-//    $print = $popular[$article];
-//}
-
 /* @var $modelLoginForm app\models\LoginForm */
 /* @var $modelSignupForm app\models\SignupForm */
+/* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
  /* @var $form yii\bootstrap\ActiveForm */
 
 ?>
@@ -361,7 +344,12 @@ use yii\widgets\LinkPager;
 <?= $this->render('@app/views/auth/login', [
     'modelLoginForm' => $modelLoginForm,
 ])?>
+
 <?= $this->render('@app/views/auth/signup', [
     'modelSignupForm' => $modelSignupForm,
+])?>
+
+<?= $this->render('@app/views/auth/request-password-reset-token', [
+    'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm
 ])?>
 

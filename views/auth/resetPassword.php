@@ -2,11 +2,11 @@
 <?php
 
 /* @var $this yii\web\View */
-/* @var $form yii\bootstrap4\ActiveForm */
+/* @var $form yii\bootstrap\ActiveForm */
 /* @var $modelResetPasswordForm app\models\forms\ResetPasswordForm */
 
 use yii\helpers\Html;
-use yii\bootstrap4\ActiveForm;
+use yii\bootstrap\ActiveForm;
 
 $this->title = Yii::t('app', 'Сброс пароля');
 $this->params['breadcrumbs'][] = $this->title;
@@ -14,7 +14,7 @@ $this->params['breadcrumbs'][] = $this->title;
 ?>
 <section class="main-content-w3layouts-agileits">
     <div class="container">
-        <h3 class="tittle"><?= Html::encode($this->title) ?></h3>
+        <h3 class="title"><?= Html::encode($this->title) ?></h3>
         <div class="row inner-sec">
             <div class="login p-5 bg-light mx-auto mw-100">
                 <p><?= Yii::t('app', 'Введите новый пароль') ?>:</p>

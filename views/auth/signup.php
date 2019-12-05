@@ -12,7 +12,8 @@ $header =
 //        'baseAuthUrl' => ['/auth/signup'],
 //        'popupMode' => false
 //    ]) :
-    '<div class="col-md-12 text-center">' . Yii::t('app', 'Регистрация пользователя') . '</div>';
+//    '<div class="col-md-12 text-center">' . Yii::t('app', 'Регистрация пользователя') . '</div>';
+    '<h3 class="col-md-12 text-center" style="color: #286090"></h3>';
 ?>
 
 <section class="main-content-w3layouts-agileits">
@@ -26,6 +27,7 @@ $header =
                         'header' => $header,
                         'clientOptions' => ['show' => false],
                         'options' => [],
+                        'headerOptions' => ['id' => 'modalHeader'],
                     ]);
                 ?>
                     <?= $this->render('@app/views/auth/_signup-form', ['modelSignupForm' => $modelSignupForm]) ?>

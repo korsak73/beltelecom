@@ -5,7 +5,7 @@ $db = require __DIR__ . '/db.php';
 
 $config = [
     'id' => 'basic',
-    'name' => 'Лого Дом',
+    'name' => 'Белтелеком',
     'basePath' => dirname(__DIR__),
     'language' => 'ru-RU',
     'bootstrap' => ['log'],
@@ -34,52 +34,9 @@ $config = [
             'dateFormat'=>'dd.MM.yyyy',
             'datetimeFormat' => 'yyyy-MM-dd HH:mm:ss',
         ],
-//        'user' => [
-////            'identityClass' => app\models\Users::class,
-//            'identityClass' => 'app\models\Users',
-//            'enableAutoLogin' => true,
-//            'loginUrl' => ['login/default/index'],
-//            'on afterLogin' => function($event) {
-//                app\models\Users::afterLogin($event->identity->id);
-//            }
-//        ],
-//        'session' => [
-//            // this is the name of the session cookie used for login on the frontend
-//            'name' => 'advanced-frontend',
-//        ],
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-//        'mailer' => [
-//            'class' => 'yii\swiftmailer\Mailer',
-//            'enableSwiftMailerLogging' => true,
-//            // send all mails to a file by default. You have to set
-//            // 'useFileTransport' to false and configure a transport
-//            // for the mailer to send real emails.
-////            'useFileTransport' => true,
-//            'viewPath' => '@app/mail',
-//            'useFileTransport' => false,
-////            'htmlLayout'=>false,
-////            'textLayout'=>false,
-//
-//            'transport' => [
-//                'class' => 'Swift_SmtpTransport',
-//                'host' => 'smtp.gmail.com',
-//                'username' => 'volhakorsakova@gmail.com',
-//                'password' => '117ak900',
-////                'port' => '465',
-//                'port' => '587',
-////                'encryption' => 'ssl',
-//                'encryption' => 'tls',
-//                'streamOptions' => [ 'ssl' =>
-//                    [ 'allow_self_signed' => true, 'verify_peer' => false, 'verify_peer_name' => false, ],]
-//            ],
-//        ],
-//        'mailer' => [
-//            'class' => 'boundstate\mailgun\Mailer',
-//            'key' => '2031724d1a19e177905d44c26bc9518f-dc5f81da-0920a603',
-//            'domain' => 'sandboxf213e6f2ea7e41dda98099af1380226a.mailgun.org',
-//        ],
         'mailer' => [
             'class' => 'wadeshuler\sendgrid\Mailer',
             'viewPath' => '@app/mail',

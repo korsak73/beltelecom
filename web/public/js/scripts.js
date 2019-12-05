@@ -9,13 +9,13 @@ $(function () {
 // debugger;
         let href = $(this).attr("href");
         $("#form").attr("action", href);
-        $("#modalHeader h3").text('Создать транспорт');
+        $("#modalHeader h3").text('Вход');
         // $('#form-01-06').yiiActiveForm('resetForm');
 
         // $("#datatransport-category_id").val(0).trigger("change");
         // $("#datatransport-type_id").val(0).trigger("change");
         // $("#sup-cargo").val(0).trigger("change");
-        // $("#datatransport-amount").val('');
+        // $("#loginform-email").val('').trigger("change");
         // $("#datatransport-volume").val('');
         // $("#datatransport-capacity").val('');
         // $("#datatransport-is_navigate").prop('checked', false);
@@ -31,7 +31,7 @@ $(function () {
 // debugger;
         let href = $(this).attr("href");
         $("#form").attr("action", href);
-        $("#modalHeader h3").text('Создать транспорт');
+        $("#modalHeader h3").text('Регистрация пользователя');
         // $('#form-01-06').yiiActiveForm('resetForm');
 
         // $("#datatransport-category_id").val(0).trigger("change");
@@ -45,6 +45,28 @@ $(function () {
         // $("#datatransport-other_cargo").val('');
 
         $("#users-signup").modal("show");
+
+        return false;
+    });
+
+    $(document).on("click", '#password-recovery', function () {
+// debugger;
+        let href = $(this).attr("href");
+        $("#form-password-reset").attr("action", href);
+        $("#modalHeader h3").text('Изменить пароль');
+        // $('#form-01-06').yiiActiveForm('resetForm');
+
+        // $("#datatransport-category_id").val(0).trigger("change");
+        // $("#datatransport-type_id").val(0).trigger("change");
+        // $("#sup-cargo").val(0).trigger("change");
+        // $("#loginform-email").val('').trigger("change");
+        // $("#datatransport-volume").val('');
+        // $("#datatransport-capacity").val('');
+        // $("#datatransport-is_navigate").prop('checked', false);
+        // $("#datatransport-description").val('');
+        // $("#datatransport-other_cargo").val('');
+
+        $("#request-password-reset-token-modal").modal("show");
 
         return false;
     });

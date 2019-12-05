@@ -186,7 +186,8 @@ class Articles extends BaseModel
 
     public function afterFind() {
         parent::afterFind ();
-        $this->publish_date=Yii::$app->formatter->asDate($this->publish_date);
+//        $this->publish_date=Yii::$app->formatter->asDate($this->publish_date);
+        $this->publish_date=date('Y-m-d H:i:s', strtotime($this->publish_date));
     }
 
     /**
@@ -276,6 +277,12 @@ class Articles extends BaseModel
     public function getImage()
     {
         return $this->image ? '/uploads/' . $this->image : '/no-image.png';
+    }
+
+    public function setImage()
+    {
+        $res = $this->saveImage( '/uploads/no-image.png');
+        return $res;
     }
 
     public function saveCategory($category_id)

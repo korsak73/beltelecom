@@ -166,6 +166,23 @@ class ArticleController extends AppAdminController
        return $this->render('image', ['model' => $model]);
     }
 
+    public function actionDeleteImage($id) {
+
+        $model = $this->findModel($id);
+
+        if (Yii::$app->request->isPost) {
+
+                if($model->deleteImage() && $model->save()){
+
+                    return $this->redirect(['index', 'id' => $model->id]);
+                }
+        }
+
+        return $this->render('update', [
+            'model' => $model,
+        ]);
+    }
+
     public function actionSetCategory($id) {
 
         $articles = $this->findModel($id);

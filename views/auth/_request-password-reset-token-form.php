@@ -1,13 +1,13 @@
 <?php
-
-/* @var $this yii\web\View */
-/* @var $form yii\bootstrap4\ActiveForm */
-/* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
-
 use yii\helpers\Html;
-use yii\bootstrap4\ActiveForm;
+use yii\bootstrap\ActiveForm;
 use yii\helpers\Url;
 use phpnt\bootstrapNotify\BootstrapNotify;
+
+/* @var $this yii\web\View */
+/* @var $form yii\bootstrap\ActiveForm */
+/* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
+
 ?>
 <div id="request-password-reset-token-block">
     <?= BootstrapNotify::widget() ?>

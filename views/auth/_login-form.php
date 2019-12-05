@@ -66,6 +66,7 @@ AnimateCssAsset::register($this);
     <div class="col-md-12 text-center">
         <?= Html::button(Yii::t('app', 'Забыли пароль?'), [
             'class' => 'btn btn-xs btn-warning',
+            'id' => 'password-recovery',
             'onclick' => '
                     $.pjax({
                         type: "POST",

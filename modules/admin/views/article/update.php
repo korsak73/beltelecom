@@ -18,6 +18,17 @@ $this->params['breadcrumbs'][] = 'Update';
         <?= Html::a('Добавить картинку', ['set-image', 'id' => $model->id], ['class' => 'btn btn-default']) ?>
         <?= Html::a('Установить рубрику', ['set-category', 'id' => $model->id], ['class' => 'btn btn-default']) ?>
         <?= Html::a('Установить метки', ['set-tags', 'id' => $model->id], ['class' => 'btn btn-default']) ?>
+        <?= Html::a('Удалить картинку', [
+                'delete-image',
+                'id' => $model->id
+            ],
+            [
+                'data' => [
+                    'confirm' => 'Вы уверены, что хотите удалить?',
+                    'method' => 'post',
+                ],
+                    'class' => 'btn btn-default'
+            ]) ?>
     </p>
 
     <?= $this->render('_form', [

@@ -1,8 +1,12 @@
 <?php
-
 use yii\helpers\Url;
 use yii\widgets\ActiveForm;
-use yii\widgets\LinkPager; ?>
+use yii\widgets\LinkPager;
+
+/* @var $modelLoginForm app\models\LoginForm */
+/* @var $modelSignupForm app\models\SignupForm */
+/* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
+?>
     <!-- banner -->
     <div class="w3ls-banner text-center">
         <div class="container">
@@ -208,3 +212,15 @@ use yii\widgets\LinkPager; ?>
         </div>
         <!-- //blog-->
 	</div>
+
+<?= $this->render('@app/views/auth/login', [
+    'modelLoginForm' => $modelLoginForm,
+])?>
+
+<?= $this->render('@app/views/auth/signup', [
+    'modelSignupForm' => $modelSignupForm,
+])?>
+
+<?= $this->render('@app/views/auth/request-password-reset-token', [
+    'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm
+])?>

@@ -7,13 +7,7 @@
 use yii\bootstrap\Modal;
 //use common\widgets\oAuth\AuthChoice;
 
-$header =
-//    isset(Yii::$app->authClientCollection) ?
-//    '<div class="col-md-12 m-b-sm">' . Yii::t('app', 'Войти используя социальную сеть') . ':</div>'.AuthChoice::widget([
-//        'baseAuthUrl' => ['/auth/index'],
-//        'popupMode' => false
-//    ]) :
-    '<div class="col-md-12 text-center">' . Yii::t('app', 'Вход') . '</div>';
+$header =  '<h3 class="col-md-12 text-center"  style="color: #286090"></h3>';
 ?>
 
 <section class="main-content-w3layouts-agileits">
@@ -27,11 +21,10 @@ $header =
                     'header' => $header,
                     'clientOptions' => ['show' => false],
                     'options' => [],
+                    'headerOptions' => ['id' => 'modalHeader'],
                 ]);
                 ?>
-
                 <?= $this->render('@app/views/auth/_login-form', ['modelLoginForm' => $modelLoginForm]) ?>
-
                 <div class="clearfix"></div>
                 <?php
                 Modal::end();

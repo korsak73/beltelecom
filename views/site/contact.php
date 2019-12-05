@@ -2,6 +2,10 @@
 
 use yii\helpers\Url;
 
+/* @var $modelLoginForm app\models\LoginForm */
+/* @var $modelSignupForm app\models\SignupForm */
+/* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
+
 ?>
 <!-- //header -->
     <div class="w3ls-banner contact-agileinfo">
@@ -94,3 +98,16 @@ use yii\helpers\Url;
         <div class="clearfix"></div>
         </div>
     	<!-- footer -->
+
+<?= $this->render('@app/views/auth/login', [
+    'modelLoginForm' => $modelLoginForm,
+])?>
+
+<?= $this->render('@app/views/auth/signup', [
+    'modelSignupForm' => $modelSignupForm,
+])?>
+
+<?= $this->render('@app/views/auth/request-password-reset-token', [
+    'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm
+])?>
+
