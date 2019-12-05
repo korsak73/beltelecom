@@ -203,6 +203,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      */
     public function actionContact()
     {
+        $this->setMeta('Контакты | Белтелеком', 'CityLine design', 'description');
+
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
@@ -221,6 +223,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      */
     public function actionAbout()
     {
+        $this->setMeta('О Компании | Белтелеком', 'CityLine design', 'description');
+
         return $this->render('about');
     }
 
