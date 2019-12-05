@@ -3398,6 +3398,10 @@ p.privacy-para {
 .login-form{
     width: 100% !important;
 }
+
+.m-bottom-0-5{
+    margin-bottom: 0.5em;
+}
 /*#bs-megadropdown-tabs ul {*/
 /*    list-style: none !important;*/
 /*    margin: 0;*/

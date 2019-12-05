@@ -5,56 +5,72 @@
 /* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
  /* @var $form yii\bootstrap\ActiveForm */
 
+$list = [
+    '0' => 'w3layouts-banner-top',
+    '1' => 'w3layouts-banner-top w3layouts-banner-top1',
+    '2' => 'w3layouts-banner-top w3layouts-banner-top2',
+    '3' => 'w3layouts-banner-top w3layouts-banner-top3',
+];
+$k = array_rand($list);
+$v = $list[$k];
+if($k == 0){
+    $v1 =  $list[$k];
+    $v2 =  $list[$k+1];
+    $v3 =  $list[$k+2];
+    $v4 =  $list[$k+3];
+}
+if($k == 1){
+    $v1 =  $list[$k];
+    $v2 =  $list[$k+1];
+    $v3 =  $list[$k+2];
+    $v4 =  $list[$k-1];
+}
+if($k == 2){
+    $v1 =  $list[$k];
+    $v2 =  $list[$k+1];
+    $v3 =  $list[$k-1];
+    $v4 =  $list[$k-2];
+}
+if($k == 3){
+    $v1 =  $list[$k];
+    $v2 =  $list[$k-1];
+    $v3 =  $list[$k-2];
+    $v4 =  $list[$k-3];
+}
 ?>
 <!-- banner -->
 <div class="banner-silder">
     <div id="JiSlider" class="jislider">
         <ul>
             <li>
-                <div class="w3layouts-banner-top">
-
+                <div class="<?= $v1;?>">
                     <div class="container">
                         <div class="agileits-banner-info">
-                            <!---->
-                            <!--                            <h3>Welcome to cityline</h3>-->
-                            <!--                            <p>Sit amet neque semper euismod.</p>-->
-
                         </div>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top1">
+                <div class="<?= $v2;?>">
                     <div class="container">
                         <div class="agileits-banner-info">
-
-                            <!--                            <h3>Time to go Digital</h3>-->
-                            <!--                            <p>Amet sit neque semper euismod.</p>-->
-
                         </div>
                     </div>
                 </div>
             </li>
             <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top2">
+                <div class="<?= $v3;?>">
                     <div class="container">
                         <div class="agileits-banner-info">
-                            <!--                            <h3>Enjoy free live TV</h3>-->
-                            <!--                            <p>Neque amet sit semper euismod.</p>-->
                         </div>
-
                     </div>
                 </div>
             </li>
             <li>
-                <div class="w3layouts-banner-top w3layouts-banner-top3">
+                <div class="<?= $v4;?>">
                     <div class="container">
                         <div class="agileits-banner-info">
-                            <!--                            <h3>Exclusive Digital services</h3>-->
-                            <!--                            <p>Semper neque amet sit euismod.</p>-->
-
-                        </div>
-
+                  </div>
                     </div>
                 </div>
             </li>
@@ -340,16 +356,3 @@
     				</div>
     			</div>
 </div>
-
-<?= $this->render('@app/views/auth/login', [
-    'modelLoginForm' => $modelLoginForm,
-])?>
-
-<?= $this->render('@app/views/auth/signup', [
-    'modelSignupForm' => $modelSignupForm,
-])?>
-
-<?= $this->render('@app/views/auth/request-password-reset-token', [
-    'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm
-])?>
-

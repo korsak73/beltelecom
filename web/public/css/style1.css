@@ -74,8 +74,8 @@ list-style-type: none;
 ul li{display:inline-block;}
 /*-- //Reset-Code --*/
 .title  h3{
-font-size:35px;
-color: #000;
+/*font-size:35px;*/
+color: #000000;
 letter-spacing: 3px;
 font-weight: 600;
 text-transform: uppercase;
@@ -1002,7 +1002,7 @@ top: -7%;
 margin-top: 1em;
 }
 .title h3 {
-font-size: 33px;
+/*font-size: 33px;*/
 letter-spacing: 2px;
 }
 .icons ul li a span {
@@ -1185,7 +1185,7 @@ font-size: 20px;
 width: 77%;
 }
 .title h3 {
-font-size: 31px;
+/*font-size: 31px;*/
 }
 .wthree-about-us-info p {
 line-height: 33px;
@@ -1350,7 +1350,7 @@ left: 53px;
 height: 18em;
 }
 .title h3 {
-font-size: 29px;
+/*font-size: 29px;*/
 }
 .icons-social h4 {
 font-size: 25px;
@@ -1487,7 +1487,7 @@ font-size: 36px;
 font-size: 14px;
 }
 .title h3 {
-font-size: 27px;
+/*font-size: 27px;*/
 letter-spacing: 1px;
 }
 .agile-categories-list ul li a, .bottom-para h6 a, .comments-grid-right ul li {
@@ -1713,7 +1713,7 @@ ul.pagination li.page-item a.page-link {
 margin-right: 6px;
 }
 .title h3 {
-font-size: 25px;
+/*font-size: 25px;*/
 }	
 .counter {
 font-size: 20px;

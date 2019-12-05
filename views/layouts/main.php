@@ -5,6 +5,9 @@
 use app\assets\AppAsset;
 use app\assets\BeltelecomAsset;
 use app\common\widgets\ScrollWidget;
+use app\models\forms\PasswordResetRequestForm;
+use app\models\LoginForm;
+use app\models\SignupForm;
 use yii\helpers\Html;
 use yii\helpers\Url;
 use yii\widgets\Pjax;
@@ -136,6 +139,17 @@ BeltelecomAsset::register($this);
 <!--							</div>-->
 <!--						</div>-->
 				<!-- //Modal1 -->
+<?= $this->render('@app/views/auth/login', [
+    'modelLoginForm' => new LoginForm(),
+])?>
+
+<?= $this->render('@app/views/auth/signup', [
+    'modelSignupForm' => new SignupForm(),
+])?>
+
+<?= $this->render('@app/views/auth/request-password-reset-token', [
+    'modelPasswordResetRequestForm' => new PasswordResetRequestForm()
+])?>
 <footer>
     <?=$this->render('footer.php')?>
 </footer>

@@ -76,18 +76,10 @@ class SiteController extends AppController
      */
     public function actionIndex()
     {
-        $modelLoginForm = new LoginForm();
-        $modelSignupForm = new SignupForm();
-        $modelPasswordResetRequestForm = new PasswordResetRequestForm();
-
         $this->setMeta('Главная | Белтелеком', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design', 'description');
 
-        return $this->render('index', [
-            'modelLoginForm' => $modelLoginForm,
-            'modelSignupForm' => $modelSignupForm,
-            'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm,
-        ]);
+        return $this->render('index');
     }
 
     /**
@@ -98,11 +90,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     public function actionBlog()
     {
         $model = new ContactUsForm();
-        $modelLoginForm = new LoginForm();
-        $modelSignupForm = new SignupForm();
-        $modelPasswordResetRequestForm = new PasswordResetRequestForm();
 
-        $this->setMeta('Контакты | Белтелеком', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
+        $this->setMeta('Новости | Белтелеком', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design', 'description');
 
         $data = Articles::getAll(2);
@@ -122,10 +111,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             'popular' => $popular,
             'categories' => $categories,
             'tags' => $tags,
-            'contactUsForm' => $model,
-            'modelLoginForm' => $modelLoginForm,
-            'modelSignupForm' => $modelSignupForm,
-            'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm,
+            'contactUsForm' => $model
         ]);
     }
 
@@ -217,10 +203,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
      */
     public function actionContact()
     {
-        $modelLoginForm = new LoginForm();
-        $modelSignupForm = new SignupForm();
-        $modelPasswordResetRequestForm = new PasswordResetRequestForm();
-
         $model = new ContactForm();
         if ($model->load(Yii::$app->request->post()) && $model->contact(Yii::$app->params['adminEmail'])) {
             Yii::$app->session->setFlash('contactFormSubmitted');
@@ -228,10 +210,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             return $this->refresh();
         }
         return $this->render('contact', [
-            'model' => $model,
-            'modelLoginForm' => $modelLoginForm,
-            'modelSignupForm' => $modelSignupForm,
-            'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm,
+            'model' => $model
         ]);
     }
 

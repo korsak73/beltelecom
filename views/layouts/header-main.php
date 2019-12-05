@@ -66,8 +66,9 @@ use yii\helpers\Url;
                             <li <?php if (Yii::$app->controller->action->id == 'index'):?>class="active"<?php endif?>>
                                 <a href="<?= Url::home()?>">Главная</a>
                             </li>
-                            <li class="agileits dropdown">
-                                <a href="#" data-toggle="dropdown" aria-expanded="true">about</a>
+<!--                            <li class="agileits dropdown">-->
+                            <li <?php if (Yii::$app->controller->action->id == 'about'):?>class="active"<?php endif?>>
+                                <a href="<?= Url::to(['/site/about'])?>">О Компании</a>
 <!--                                <ul class="dropdown-menu agile_short_dropdown">-->
 <!--                                    <li><a href="about.html">about us</a></li>-->
 <!--                                    <li><a href="app.html">mobile app</a></li>-->
