@@ -6,6 +6,7 @@ use yii\widgets\LinkPager;
 /* @var $modelLoginForm app\models\LoginForm */
 /* @var $modelSignupForm app\models\SignupForm */
 /* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
+/* @var $articles app\models\Articles */
 ?>
     <!-- banner -->
     <div class="w3ls-banner text-center">
@@ -26,7 +27,7 @@ use yii\widgets\LinkPager;
 	<!-- blog -->
         <div class="w3ls-section blog-agile-main">
             <h4 class="w3ls-inner-title">наш блог</h4>
-            <div class="col-md-7  blog-left" style="margin-top: -1em;">
+            <div class="col-md-7  blog-left">
                 <?php foreach ($articles as $article): ?>
                     <div class="post-media">
                         <?php if(isset($article->image)) : ?>
@@ -59,45 +60,21 @@ use yii\widgets\LinkPager;
                     <nav aria-label="Page navigation example">
                         <?php echo LinkPager::widget([
                             'pagination' => $pagination,
-//                          'lastPageLabel' => 'Последняя',
-//                          'firstPageLabel' => 'Первая',
-//                                'nextPageLabel' => 'Следущая',
-//                                'prevPageLabel' => 'Предыдущая',
-//                                'hideOnSinglePage' => true,
-//                                'linkOptions' => [
-//                                    'class' => 'page-link',
-//                                ],
                             //Css option for container
                             'options' => ['class' => ''],
-                            //First option value
-//                            'firstPageLabel' => '&nbsp;',
-                            //Last option value
-//                            'lastPageLabel' => '&nbsp;',
-                            //Previous option value
-//                            'prevPageLabel' => '<',
-                            //Next option value
-//                            'nextPageLabel' => '>',
                             //Current Active option value
                             'activePageCssClass' => 'p-active',
                             //Max count of allowed options
                             'maxButtonCount' => 3,
-
                             // Css for each options. Links
                             'linkOptions' => ['class' => ''],
-//                                'disabledPageCssClass' => 'disabled',
-
                             // Customzing CSS class for navigating link
                             'prevPageCssClass' => 'p-back',
                             'nextPageCssClass' => 'p-next',
                             'firstPageCssClass' => 'frist',
                             'lastPageCssClass' => 'last',
-
                         ]);?>
                     </nav>
-<!--                            <ul>-->
-<!--                                <li><a class="frist" href="#">Prev</a></li>-->
-<!--                                <li><a class="last" href="#">Next</a></li>-->
-<!--                            </ul>-->
                     <div class="clearfix"> </div>
                 </div>
                 <!--//end-blog-pagenate-->
@@ -158,7 +135,7 @@ use yii\widgets\LinkPager;
                                         <?php if($article->image) : ?>
                                             <div class="col-lg-4 col-md-6 col-sm-6 col-5 text-right">
                                                 <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">
-                                                    <img class="img-fluid" src="<?= $article->getImage();?>" alt="" >
+                                                    <img class="img-responsive" alt="" style="width: 100%" src="<?= $article->getImage();?>">
                                                 </a>
                                             </div>
                                             <div class="col-lg-8 col-md-6 col-sm-6 col-7 bottom-para px-0">
@@ -189,6 +166,7 @@ use yii\widgets\LinkPager;
                 </div>
                 <!--//Популярные посты-->
                 <?php endif; ?>
+
                 <?php if(!empty($recent)) : ?>
                 <!--Последние посты-->
                 <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
@@ -203,7 +181,7 @@ use yii\widgets\LinkPager;
                                         <?php if($article->image) : ?>
                                             <div class="col-lg-4 col-md-6 col-sm-6 col-5 text-right">
                                                 <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">
-                                                    <img class="img-fluid" src="<?= $article->getImage();?>" alt="" >
+                                                    <img src="<?= $article->getImage();?>" class="img-responsive" alt="" style="width: 100%" >
                                                 </a>
                                             </div>
                                             <div class="col-lg-8 col-md-6 col-sm-6 col-7 bottom-para px-0">

@@ -32,7 +32,6 @@ class SiteController extends AppController
     public function behaviors()
     {
         return [
-//            'class' => 'app\modules\statistics\behaviors\Stat',
             'access' => [
                 'class' => AccessControl::className(),
                 'only' => ['logout'],
@@ -76,10 +75,18 @@ class SiteController extends AppController
      */
     public function actionIndex()
     {
+        $modelLoginForm = new LoginForm();
+        $modelSignupForm = new SignupForm();
+        $modelPasswordResetRequestForm = new PasswordResetRequestForm();
+
         $this->setMeta('Главная | Белтелеком', 'CityLine Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design', 'description');
 
-        return $this->render('index');
+        return $this->render('index', [
+            'modelLoginForm' => $modelLoginForm,
+            'modelSignupForm' => $modelSignupForm,
+            'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm,
+        ]);
     }
 
     /**
@@ -160,12 +167,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         $category = Categories::getCategoryById($id);
         $categories = Categories::getAllActive();
         $tags = Tags::getTagsByCategoryId($id);
-//        foreach ($data['articles'] as $article) {
-//            $id = ArrayHelper::getValue($article, 'id');
-//            $article = Articles::findOne($id);
-//            $tag = $article->getTagsByArticleId($id);
-//            $tags = array_merge($tag);
-//        }
 
         return $this->render('category',[
             'articles'=>$data['articles'],
@@ -300,40 +301,4 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             }
         }
     }
-    /*
- * Вынимает нужные данные из массива объектов видео.
- * Массив объектов получаем вызовом метода getItems() у Google_Service_YouTube_VideoListResponse
- */
-//    public function getDataVideo(array $videos){
-//
-//        $dataset = [];
-//        array_walk($videos, function ($value) use (&$dataset){
-//
-//            $dataset[] = [
-//                'id' => $value->toSimpleObject()->id,
-//                'title' => $value->toSimpleObject()->snippet['title'],
-//                'thumbnails' => [
-//                    'default' =>  $value->toSimpleObject()->snippet['thumbnails']['default']['url'],
-//                    'medium' =>  $value->toSimpleObject()->snippet['thumbnails']['medium']['url'],
-//                ],
-//                'viewCount' => $value->toSimpleObject()->statistics['viewCount'] ?? '-',
-//                'duration' => $this->timeFormatting($value->toSimpleObject()->contentDetails['duration'])
-//
-//            ];
-//        });
-//
-//        return $dataset;
-//    }
-
-    //форматирует время ролика в формат 00:00:00
-//    public function timeFormatting($duration){
-//
-//        $interval = new \DateInterval($duration);
-//        $seconds = $interval->days * 86400 + $interval->h * 3600 + $interval->i * 60 + $interval->s;
-//
-//        $time = gmdate("H:i:s", $seconds);
-//        return $time;
-//
-//    }
-
 }

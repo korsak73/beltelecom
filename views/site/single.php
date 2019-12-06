@@ -1,14 +1,15 @@
 <?php
-
+use app\common\widgets\SubscriptionWidget;
 use yii\helpers\Url;
 
+/* @var $article app\models\Articles */
 ?>
 
 <!-- banner -->
-    <div class="w3ls-banner text-center">
+    <div class="w3ls-banner-single text-center">
         <div class="container">
-            <h2 class="wthree-title">time to go digital</h2>
-            <h3 class="wthree-subtitle">making a better world</h3>
+            <h2 class="wthree-title"></h2>
+            <h3 class="wthree-subtitle"></h3>
         </div>
     </div>
     <!-- //banner -->
@@ -21,23 +22,34 @@ use yii\helpers\Url;
     <!-- //breadcrumbs -->
     <div class="container">	
 	    <div class="w3ls-section single-page-agile-info">
+            <?php if(! empty($article->category)) : ?>
+                <a href="<?= Url::toRoute(['site/category','id'=>$article->category->id]);?>" class="text-muted" >
+                    <h4 class="w3ls-inner-title"><?= $article->category->title ?></h4>
+                </a>
+            <?php endif; ?>
                    <!-- /movie-browse-agile -->
                 <div class="show-top-grids-w3lagile">
 				<div class="col-sm-7 single-left">
 					<div class="post-media">
-						<img src="public/images/contact2.jpg" class="img-responsive" alt="">
+                        <?php if($article->image) : ?>
+						    <img src="<?= $article->getImage(); ?>" class="img-responsive" alt="">
+                        <?php endif; ?>
 						  <div class="blog-text">
-							<h3 class="h-t">Lorem Ipsum is simply dummy text</h3></a>
+							<h3 class="h-t"><?=  $article->title ?></h3></a>
 							  <div class="entry-meta">
-									<h6 class="blg"><i class="fa fa-clock-o"></i> Jan 25, 2017</h6>
+                                  <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">
+                                      <h6 class="blg"><i class="fa fa-clock-o"></i> <?= $article->getPublishDate(); ?></h6>
+                                  </a>
 									<div class="icons">
-										<a href="#"><i class="fa fa-user"></i> Admin</a>
+										<a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-user"></i> <?= empty($article->nameAutor) ? null : $article->nameAutor ?></a>
 										<a href="#"><i class="fa fa-comments-o"></i> 2</a>
-										<a href="#"><i class="fa fa-thumbs-o-up"></i> 152</a>
+										<a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>""><i class="fa fa-thumbs-o-up"></i> <?= $article->getCountTags(); ?> тэгов</a>
 										<a href="#"><i class="fa fa-thumbs-o-down"></i>  26</a>
 									</div>
-										<div class="clearfix"></div>
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Non semper, inquam; Quo modo autem philosophus loquitur? Duo Reges: constructio interrete. Dici enim nihil potest verius. Hic ambiguo ludimur. An hoc usque quaque, aliter in vita? Bonum incolumis acies: misera caecitas. Favorite</p>
+									<div class="clearfix"></div>
+                                      <?php if(! empty($article->content)) : ?>
+                                          <p><?= $article->content ?></p>
+                                      <?php endif; ?>
 							  </div>
 						  </div>
 					</div>
@@ -83,94 +95,113 @@ use yii\helpers\Url;
 						</div>
 					</div>	
 					<div class="all-comments">
-						<div class="media-grids">
-							<div class="media">
-								<h5>TOM BROWN</h5>
-								<div class="media-left">
-									<a href="#">
-										<img src="public/images/m.png" title="One movies" alt=" ">
-									</a>
-								</div>
-								<div class="media-body">
-									<p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit</p>
-									<span>View all posts by :<a href="#"> Admin </a></span>
-								</div>
-							</div>
-							<div class="media">
-								<h5>MARK JOHNSON</h5>
-								<div class="media-left">
-									<a href="#">
-									<img src="public/images/m.png" title="One movies" alt=" ">
-									</a>
-								</div>
-								<div class="media-body">
-									<p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit</p>
-									<span>View all posts by :<a href="#"> Admin </a></span>
-								</div>
-							</div>
-							<div class="media">
-								<h5>STEVEN SMITH</h5>
-								<div class="media-left">
-									<a href="#">
-									<img src="public/images/f.png" title="One movies" alt=" ">
-									</a>
-								</div>
-								<div class="media-body">
-									<p>Maecenas ultricies rhoncus tincidunt maecenas imperdiet ipsum id ex pretium hendrerit maecenas imperdiet ipsum id ex pretium hendrerit</p>
-									<span>View all posts by :<a href="#"> Admin </a></span>
-								</div>
-							</div>
-
-						</div>
-						<div class="all-comments-info">
-							<a href="#">Comments</a>
-							<div class="agile-info-wthree-box">
-								<form>
-									<input type="text" placeholder="Name" required="">			           					   
-									<input type="text" placeholder="Email" required="">
-									<input type="text" placeholder="Phone" required="">
-									<textarea placeholder="Message" required=""></textarea>
-									<input type="submit" value="SEND">
-									<div class="clearfix"> </div>
-								</form>
-							</div>
-						</div>
+                        <!--comments-->
+                        <?= $this->render('/partials/comment', [
+                            'article'=>$article,
+                            'comments'=>$comments,
+                            'commentForm'=>$commentForm
+                        ])?>
+                        <!--comments-->
 					</div>
-				
 				</div>
 				<div class="col-md-5 blog-right">
-				<h4 class="widget-title">My Cityline app</h4>
-				<h5 class="h-t">Manage all your accounts anytime. anywhere.</h3>
-				<ul class="app-w3ls">
-					<li><a href="#"><img src="public/images/1.png" alt=""></a></li>
-					<li><a href="#"><img src="public/images/2.png" alt=""></a></li>
-				</ul>
-				<div class="clearfix"></div>
-				<div class="w3ls-section widget-side">
-			<h4 class="widget-title">Popular Blog Posts</h4>
-				<ul>
-					<li>
-						<a href="index.html">consectetur adipiscing elit.</a>
-						<span class="post-date">Feb 13, 2017</span>
-					</li>
-					<li>
-						<a href="bbhome">Lorem ipsum dolor sit amet</a>
-						<span class="post-date">Feb 14, 2017</span>
-					</li>
-					<li>
-						<a href="products.html">consectetur adipiscing elit.</a>
-						<span class="post-date">Feb 16, 2017</span>
-					</li>
-					<li>
-						<a href="index.html">Lorem ipsum dolor sit amet</a>
-						<span class="post-date">Feb 18, 2017</span>
-					</li>
-					<li>
-						<a href="index.html">consectetur adipiscing elit.</a>
-						<span class="post-date">Feb 19, 2017</span>
-					</li>
-				</ul>
-			 </div>
+                    <!--News Letter-->
+                    <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
+                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">
+                            <h3 class="h-t">Подписка на новые статьи</h3>
+                        </div>
+                        <div class="news-about-us">
+                            <?= SubscriptionWidget::widget() ?>
+                        </div>
+                    </div>
+                    <!--//News Letter-->
+                    <!--Categories-->
+                    <?php if(!empty($categories)) : ?>
+                        <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
+                            <div class="title text-center mb-lg-4 mb-md-3 mb-3">
+                                <h3 class="h-t">Рубрики</h3>
+                            </div>
+                            <div class="agile-categories-list text-center">
+                                <ul>
+                                    <?php foreach ($categories as $category ): ?>
+                                        <?php if(!empty($category->id)) : ?>
+                                            <li class="py-2">
+                                                <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title ?></a>
+                                                <span class="post-count pull-right"> (<?= $category->getArticlesCount();?>)</span>
+                                            </li>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                    <!--//Categories-->
+                    <!--Tags-->
+                    <?php if(! empty($tags)) : ?>
+                        <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
+                            <div class="title text-center mb-lg-4 mb-md-3 mb-3">
+                                <h3 class="h-t">Для этой статьи метки</h3>
+                            </div>
+                            <div class="tages-w3layouts-list text-center">
+                                <ul >
+                                    <?php foreach ($tags as $tag ): ?>
+                                        <?php if(!empty($tag['id'])) : ?>
+                                            <li class="py-2">
+                                                <a href="<?= Url::toRoute(['site/tag','id'=>$tag['id']]);?>"><?= $tag['title']; ?></a>
+                                            </li>
+                                        <?php endif; ?>
+                                    <?php endforeach; ?>
+                                </ul>
+                            </div>
+                        </div>
+                    <?php endif; ?>
+                    <!--//Tags-->
+                    <!--Популярные посты-->
+                    <?php if(! empty($popular)) : ?>
+                        <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
+                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">
+                            <h3 class="h-t">Популярные посты</h3>
+                        </div>
+                        <div class="dance-agile-info  articles-text-center">
+                            <ul>
+                                <?php foreach ($popular as $article): ?>
+                                    <li>
+                                        <div class="footer-grid row  mb-3">
+                                            <?php if($article->image) : ?>
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-5 text-right">
+                                                    <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">
+                                                        <img src="<?= $article->getImage();?>" class="img-responsive" alt="" style="width: 100%"  >
+                                                    </a>
+                                                </div>
+                                                <div class="col-lg-8 col-md-6 col-sm-6 col-7 bottom-para px-0">
+                                                    <h6><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="scroll"><?= $article->title; ?></a></h6>
+                                                    <div class="news-date-list pt-2">
+                                                        <ul>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> Tags</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            <?php else: ?>
+                                                <div class="col-lg-12 col-md-12 col-sm-12 col-12 bottom-para">
+                                                    <h6><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="scroll"><?= $article->title; ?></a></h6>
+                                                    <div class="news-date-list pt-2">
+                                                        <ul>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> Tags</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    </div>
+                    <?php endif; ?>
+                    <!--//Популярные посты-->
+			    </div>
 			</div>
 			<div class="clearfix"> </div>
 		</div>

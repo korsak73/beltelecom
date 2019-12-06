@@ -15,7 +15,7 @@ AnimateCssAsset::register($this);
 <div id="elements-form-block">
     <div class="row">
         <?php $form = ActiveForm::begin([
-            'id' => 'form',
+            'id' => 'form-login',
             'action' => Url::to(['/auth/login/']),
             'options' => ['data-pjax' => true]
         ]); ?>
@@ -82,12 +82,12 @@ AnimateCssAsset::register($this);
 
         <?php
         $js = <<< JS
-        $('#form').on('beforeSubmit', function () {
+        $('#form-login').on('beforeSubmit', function () {
             var form = $(this);
                 $.pjax({
                     type: form.attr('method'),
                     url: form.attr('action'),
-                    data: new FormData($('#form')[0]),
+                    data: new FormData($('#form-login')[0]),
                     container: "#elements-form-block",
                     push: false,
                     scrollTo: false,

@@ -189,26 +189,26 @@ if($k == 3){
     </div>
     <!--		<script src="public/js/easy-responsive-tabs.js"></script>-->
     <script>
-        // $(document).ready(function () {
-        // 	$('#horizontalTab').easyResponsiveTabs({
-        // 		type: 'default', //Types: default, vertical, accordion
-        // 		width: 'auto', //auto or any width like 600px
-        // 		fit: true, // 100% fit in a container
-        // 		closed: 'accordion', // Start closed if in accordion view
-        // 		activate: function (event) { // Callback function if tab is switched
-        // 			var $tab = $(this);
-        // 			var $info = $('#tabInfo');
-        // 			var $name = $('span', $info);
-        // 			$name.text($tab.text());
-        // 			$info.show();
-        // 		}
-        // 	});
-        // 	$('#verticalTab').easyResponsiveTabs({
-        // 		type: 'vertical',
-        // 		width: 'auto',
-        // 		fit: true
-        // 	});
-        // });
+        $(document).ready(function () {
+        	$('#horizontalTab').easyResponsiveTabs({
+        		type: 'default', //Types: default, vertical, accordion
+        		width: 'auto', //auto or any width like 600px
+        		fit: true, // 100% fit in a container
+        		closed: 'accordion', // Start closed if in accordion view
+        		activate: function (event) { // Callback function if tab is switched
+        			var $tab = $(this);
+        			var $info = $('#tabInfo');
+        			var $name = $('span', $info);
+        			$name.text($tab.text());
+        			$info.show();
+        		}
+        	});
+        	$('#verticalTab').easyResponsiveTabs({
+        		type: 'vertical',
+        		width: 'auto',
+        		fit: true
+        	});
+        });
     </script>
     <!-- //agents section -->
 <!--     markets -->
@@ -356,3 +356,15 @@ if($k == 3){
     				</div>
     			</div>
 </div>
+
+<?= $this->render('@app/views/auth/login', [
+    'modelLoginForm' => $modelLoginForm,
+])?>
+
+<?= $this->render('@app/views/auth/signup', [
+    'modelSignupForm' => $modelSignupForm
+])?>
+
+<?= $this->render('@app/views/auth/request-password-reset-token', [
+    'modelPasswordResetRequestForm' => $modelPasswordResetRequestForm
+])?>

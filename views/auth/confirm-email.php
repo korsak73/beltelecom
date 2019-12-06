@@ -15,7 +15,7 @@ use phpnt\bootstrapNotify\BootstrapNotify;
     <?= BootstrapNotify::widget() ?>
     <?php BootstrapSelectAsset::register($this) ?>
     <?php $form = ActiveForm::begin([
-        'id' => 'form',
+        'id' => 'form-confirm',
         'action' => Url::to(['/auth/signup/confirm-email', 'user_id' => Yii::$app->request->get('user_id')]),
         'options' => ['data-pjax' => true]
     ]); ?>

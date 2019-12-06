@@ -30,7 +30,7 @@ use yii\helpers\Url;
                         </li>
                     <?php endif;?>
 
-                    <?php if(Yii::$app->user->isGuest): ?>
+                    <?php if((Yii::$app->user->isGuest) && (Yii::$app->controller->action->id == 'index')): ?>
                         <li class="nav-item">
                             <i class="glyphicon glyphicon-book" aria-hidden="true"></i><a href="<?= Url::to(['/auth/signup'])?>" class="login reg"  data-toggle="modal" data-target="#myModal5" id="header-signup">Регистрация</a>
                         </li>
@@ -91,7 +91,8 @@ use yii\helpers\Url;
 <!--                                    <li><a href="pay.html">Broadband</a></li>-->
 <!--                                </ul>-->
 <!--                            </li>-->
-                            <li <?php if (Yii::$app->controller->action->id == 'blog'):?>class="active"<?php endif?>>
+                            <li <?php if ((Yii::$app->controller->action->id == 'blog')
+                                                                    ||(Yii::$app->controller->action->id == 'view')):?>class="active"<?php endif?>>
                                 <a href="<?= Url::to(['/site/blog'])?>">Новости</a>
                             </li>
 <!--                            <li><a href="report.html">Report Issues</a></li>-->

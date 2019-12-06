@@ -524,6 +524,18 @@ p.fexi_header_para1 a i {
     background-size: cover;
 }
 
+.w3ls-banner-single {
+    background: url(../images/trafic.jpg) no-repeat center;
+    min-height: 300px;
+    background-size: cover;
+}
+
+.w3ls-banner-about{
+    background: url(../images/tv4.jpg) no-repeat center;
+    min-height: 300px;
+    background-size: cover;
+}
+
 
 
 .frame .sep {
