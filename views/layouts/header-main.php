@@ -1,14 +1,6 @@
 <?php
-
 use app\models\Users;
 use yii\helpers\Url;
-
-//foreach ([
-//             '01'
-//         ] as $js) {
-//    $this->registerJsFile('/public/js/' . $js . '.js?' . date('U'), [ // .min
-//    ]);
-//}
 ?>
 
 <!-- header -->
@@ -18,7 +10,7 @@ use yii\helpers\Url;
             <div class="header-grid-left">
                 <ul>
                     <li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">beltelecom.by</a></li>
-                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>123</li>
+                    <li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>123 Служба технической поддержки</li>
                     <?php if(! Yii::$app->user->isGuest):?>
                         <?php if( Users::isIdentityAdmin(Yii::$app->user->identity->getId())): ?>
                             <li class="nav-item">

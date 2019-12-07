@@ -49,7 +49,8 @@ use yii\helpers\Html;
         </div>
         <div class="col-sm-12">
             <div class="form-group text-center">
-                <?= Html::submitButton(Yii::t('app', 'Регистрация'), ['class' => 'btn btn-primary text-uppercase full-width']) ?>
+                <?= Html::submitButton(Yii::t('app', 'Регистрация'), ['class' => 'btn btn-primary text-uppercase full-width',
+                    'style' => 'width: 100% !important;']) ?>
             </div>
         </div>
     </div>

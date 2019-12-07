@@ -59,7 +59,8 @@ AnimateCssAsset::register($this);
         </div>
         <div class="col-md-12 ">
             <div class="form-group text-center">
-                <?= Html::submitButton(Yii::t('app', 'Войти'), ['class' => 'btn btn-primary text-uppercase full-width-btn']) ?>
+                <?= Html::submitButton(Yii::t('app', 'Войти'), ['class' => 'btn btn-primary text-uppercase full-width-btn',
+                    'style' => 'width: 100% !important;']) ?>
             </div>
         </div>
 

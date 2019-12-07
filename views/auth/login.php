@@ -7,7 +7,7 @@
 use yii\bootstrap\Modal;
 //use common\widgets\oAuth\AuthChoice;
 
-$header =  '<h3 class="col-md-12 text-center"  style="color: #286090"></h3>';
+$header =  '<h3 class="col-md-12 text-center"  style="color: #286090;"></h3>';
 ?>
 
 <section class="main-content-w3layouts-agileits">
@@ -21,7 +21,10 @@ $header =  '<h3 class="col-md-12 text-center"  style="color: #286090"></h3>';
                     'header' => $header,
                     'clientOptions' => ['show' => false],
                     'options' => [],
-                    'headerOptions' => ['id' => 'modalHeader'],
+                    'headerOptions' => [
+                            'id' => 'modalHeader',
+                            'class' => 'modal-header',
+                    ],
                 ]);
                 ?>
                 <?= $this->render('@app/views/auth/_login-form', ['modelLoginForm' => $modelLoginForm]) ?>

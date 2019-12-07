@@ -1927,7 +1927,7 @@ a.w3layouts-t:hover {
 }
 .modal-header {
     min-height: 16.42857143px;
-    padding: 2em;
+    padding: 0em!important;
     border-bottom: 0px solid #e5e5e5;
 }
 .login-form input[type="email"], .login-form input[type="text"], .login-form input[type="password"] {
@@ -3199,4 +3199,3 @@ p.privacy-para {
 	}
 }
 /* -- //Responsive code -- */
-
