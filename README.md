@@ -1,1 +1,1 @@
-# logodom
+# beltelecom
