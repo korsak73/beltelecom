@@ -15,29 +15,20 @@ $header =
 //    '<div class="col-md-12 text-center">' . Yii::t('app', 'Регистрация пользователя') . '</div>';
     '<h3 class="col-md-12 text-center" style="color: #286090"></h3>';
 ?>
+<?php
+    Modal::begin([
+        'id' => 'users-signup',
+        'size' => 'modal-md',
+        'header' => $header,
+        'clientOptions' => ['show' => false],
+        'options' => [],
+        'headerOptions' => ['id' => 'modalHeader'],
+    ]);
+?>
+    <?= $this->render('@app/views/auth/_signup-form', ['modelSignupForm' => $modelSignupForm]) ?>
 
-<section class="main-content-w3layouts-agileits">
-    <div class="container-login">
-        <div class="row inner-sec">
-            <div class="login p-5 bg-light mx-auto mw-100">
-                <?php
-                    Modal::begin([
-                        'id' => 'users-signup',
-                        'size' => 'modal-md',
-                        'header' => $header,
-                        'clientOptions' => ['show' => false],
-                        'options' => [],
-                        'headerOptions' => ['id' => 'modalHeader'],
-                    ]);
-                ?>
-                    <?= $this->render('@app/views/auth/_signup-form', ['modelSignupForm' => $modelSignupForm]) ?>
-
-                    <div class="clearfix"></div>
-                <?php
-                    Modal::end();
-                ?>
-            </div>
-        </div>
-    </div>
-</section>
+    <div class="clearfix"></div>
+<?php
+    Modal::end();
+?>
 

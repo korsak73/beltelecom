@@ -9,32 +9,24 @@ use yii\bootstrap\Modal;
 
 $header =  '<h3 class="col-md-12 text-center"  style="color: #286090;"></h3>';
 ?>
+<?php
+Modal::begin([
+    'id' => 'users-login',
+    'size' => 'modal-md',
+    'header' => $header,
+    'clientOptions' => ['show' => false],
+    'options' => [],
+    'headerOptions' => [
+            'id' => 'modalHeader',
+            'class' => 'modal-header',
+    ],
+]);
+?>
+<?= $this->render('@app/views/auth/_login-form', ['modelLoginForm' => $modelLoginForm]) ?>
 
-<section class="main-content-w3layouts-agileits">
-    <div class="container-login">
-        <div class="row inner-sec">
-            <div class="login p-5 bg-light mx-auto mw-100">
-                <?php
-                Modal::begin([
-                    'id' => 'users-login',
-                    'size' => 'modal-md',
-                    'header' => $header,
-                    'clientOptions' => ['show' => false],
-                    'options' => [],
-                    'headerOptions' => [
-                            'id' => 'modalHeader',
-                            'class' => 'modal-header',
-                    ],
-                ]);
-                ?>
-                <?= $this->render('@app/views/auth/_login-form', ['modelLoginForm' => $modelLoginForm]) ?>
-                <div class="clearfix"></div>
-                <?php
-                Modal::end();
-                ?>
-            </div>
-        </div>
-    </div>
-    <!--    </div>-->
-</section>
+<div class="clearfix"></div>
+<?php
+Modal::end();
+?>
+
 <div class="clearfix"> </div>

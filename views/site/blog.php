@@ -3,9 +3,6 @@ use yii\helpers\Url;
 use yii\widgets\ActiveForm;
 use yii\widgets\LinkPager;
 
-/* @var $modelLoginForm app\models\LoginForm */
-/* @var $modelSignupForm app\models\SignupForm */
-/* @var $modelPasswordResetRequestForm app\models\forms\PasswordResetRequestForm */
 /* @var $articles app\models\Articles */
 ?>
     <!-- banner -->

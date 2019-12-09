@@ -55,7 +55,7 @@ use yii\helpers\Url;
 					</div>
 						<div class="song-grid-right">
 						<div class="share">
-							<h5>Share this</h5>
+							<h5>Поделится</h5>
 							<div class="single-agile-shar-buttons">
 							<ul>
 								<li>
@@ -94,7 +94,7 @@ use yii\helpers\Url;
 						</div>
 						</div>
 					</div>	
-					<div class="all-comments">
+<!--					<div class="all-comments">-->
                         <!--comments-->
                         <?= $this->render('/partials/comment', [
                             'article'=>$article,
@@ -102,7 +102,7 @@ use yii\helpers\Url;
                             'commentForm'=>$commentForm
                         ])?>
                         <!--comments-->
-					</div>
+<!--					</div>-->
 				</div>
 				<div class="col-md-5 blog-right">
                     <!--News Letter-->

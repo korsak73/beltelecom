@@ -16,8 +16,8 @@ $(function () {
 
     $(document).on("click", '#header-login', function () {
 
-        let href = $(this).attr("href");
-        $("#form-login").attr("action", href);
+        // let href = $(this).attr("href");
+        // $("#form-login").attr("action", href);
         $("#modalHeader h3").text('Вход');
         $("#users-login").modal("show");
 
@@ -26,8 +26,8 @@ $(function () {
 
     $(document).on("click", '#header-signup', function () {
 
-        let href = $(this).attr("href");
-        $("#form").attr("action", href);
+        // let href = $(this).attr("href");
+        // $("#form").attr("action", href);
         $("#modalHeader h3").text('Регистрация пользователя');
         $("#users-signup").modal("show");
 
@@ -36,8 +36,8 @@ $(function () {
 
     $(document).on("click", '#password-recovery', function () {
 
-        let href = $(this).attr("href");
-        $("#form-password-reset").attr("action", href);
+        // let href = $(this).attr("href");
+        // $("#form-password-reset").attr("action", href);
         $("#modalHeader h3").text('Изменить пароль');
         $("#request-password-reset-token-modal").modal("show");
 

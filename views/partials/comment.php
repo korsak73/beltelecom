@@ -1,4 +1,4 @@
-<div class="comments-w3layouts-grid pt-lg-5 pt-md-4 pt-3">
+<div class="comments-w3layouts-grid pt-lg-5 pt-md-4 pt-3" style="margin-top: 1em;">
     <?php use yii\helpers\Url;
 
     if(!empty($comments)):?>
@@ -27,7 +27,7 @@
 </div>
             <!--//comments-->
             <!--comments-form-->
-<div class="pt-lg-4 pt-md-3 pt-3 form-comment">
+<div class="pt-lg-4 pt-md-3 pt-3 form-comment" style="margin-top: 2em;">
     <?php if(! Yii::$app->user->isGuest):?>
             <div class="my-3 leave-comment text-left">
                 <h4>Комментарии</h4>
