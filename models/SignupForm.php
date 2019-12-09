@@ -23,8 +23,8 @@ class SignupForm extends Model
             [['email', 'name'], 'string', 'max' => 100],    // Строка (максимум 100 символов)
             [['email', 'password', 'name'], 'filter', 'filter' => 'trim'],   // Обрезаем строки по краям
             [['email'], 'email'],
-            ['reCaptcha', \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6Lfi87wUAAAAADG65TQ_YpH4obrgMRzvWA3lQs9A']
-//            ['reCaptcha', \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LeB87wUAAAAAIMX5ByLZo1dtpYDt2uPIOvtCRBj']
+//            ['reCaptcha', \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6Lfi87wUAAAAADG65TQ_YpH4obrgMRzvWA3lQs9A']
+            ['reCaptcha', \himiklab\yii2\recaptcha\ReCaptchaValidator::className(), 'secret' => '6LeB87wUAAAAAIMX5ByLZo1dtpYDt2uPIOvtCRBj']
         ];
     }
 

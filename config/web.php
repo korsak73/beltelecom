@@ -73,10 +73,10 @@ $config = [
         'reCaptcha' => [
             'name' => 'reCaptcha',
             'class' => 'himiklab\yii2\recaptcha\ReCaptcha',
-//            'siteKey' => '6LeB87wUAAAAAHQzjWQpnbimyYerIgMztIGpp8Zq',
-//            'secret' => '6LeB87wUAAAAAIMX5ByLZo1dtpYDt2uPIOvtCRBj'
-            'siteKey' => '6Lfi87wUAAAAAD14Vwcjl9YR_CdsXMls5vs3efKQ',
-            'secret' => '6Lfi87wUAAAAADG65TQ_YpH4obrgMRzvWA3lQs9A'
+            'siteKey' => '6LeB87wUAAAAAHQzjWQpnbimyYerIgMztIGpp8Zq',
+            'secret' => '6LeB87wUAAAAAIMX5ByLZo1dtpYDt2uPIOvtCRBj'
+//            'siteKey' => '6Lfi87wUAAAAAD14Vwcjl9YR_CdsXMls5vs3efKQ',
+//            'secret' => '6Lfi87wUAAAAADG65TQ_YpH4obrgMRzvWA3lQs9A'
         ],
         'assetManager' => [
             'class' => 'yii\web\AssetManager',
