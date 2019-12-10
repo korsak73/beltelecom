@@ -81,101 +81,77 @@ if($k == 3){
 <div class="container">
     <!-- services section -->
     <div class="w3ls-section w3_agileits-services" id="services">
-        <h2 class="agileits-title">welcome to cityline</h2>
-        <h4 class="wthree">Phasellus dapibus felis elit accumsan arcu vitae.</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor.
-            Integer laoreet placerat suscipit.</p>
+        <h2 class="agileits-title">Приглашаем к сотрудничеству</h2>
+        <h4 class="wthree">Компания «Белтелеком» готова полностью обеспечить потребность современного офиса, бизнеса и производства в телекоммуникационных услугах. Цифровые продукты и решения помогут юридическим лицам и индивидуальным предпринимателям повысить эффективность бизнес-процессов в любой сфере.</h4>
+<!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor.-->
+<!--            Integer laoreet placerat suscipit.</p>-->
         <div class="agileinfo-about-main">
             <div class="col-md-8 demo">
                 <div id="verticalTab">
                     <ul class="resp-tabs-list">
                         <li>
                             <div class="tab1">
-                                <h3>investors</h3>
+                                <h3>Для Дома</h3>
                             </div>
                         </li>
                         <li>
                             <div class="tab1">
-                                <h3>partners</h3>
+                                <h3>Для Бизнеса</h3>
                             </div>
                         </li>
                         <li>
                             <div class="tab1">
-                                <h3>vision</h3>
+                                <h3>Операторам связи</h3>
                             </div>
                         </li>
                         <li>
                             <div class="tab1">
-                                <h3>mision</h3>
+                                <h3>Пропуск трафика</h3>
                             </div>
                         </li>
-                        <li>
-                            <div class="tab1">
-                                <h3>management</h3>
-                            </div>
-
-                        </li>
+<!--                        <li>-->
+<!--                            <div class="tab1">-->
+<!--                                <h3>Размещение оборудования</h3>-->
+<!--                            </div>-->
+<!---->
+<!--                        </li>-->
                     </ul>
                     <div class="resp-tabs-container">
                         <div class="tabs-right1">
-                            <h6>Aliquam donec id urna</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <p class="agile-tab-txt">scelerisque commodo.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur
-                                nibh quis urna gravida mollis.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <div class="button">
-                                <a href="about.html">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-                            </div>
+                            <h6>Основными особенностями пакетов услуг «ЯСНА» являются:</h6>
+                            <p>наличие в составе пакета трех базовых услуг, которые делают современную жизнь более комфортной: доступа к сети Интернет, телевидения (с использованием различных технологий) и телефонной связи на базе платформы IMS. Услуги телефонной связи включены в пакет на условиях неограниченного количества и времени соединений фиксированной сети РУП «Белтелеком». Таким образом, при совершении местных и междугородных звонков, никакой дополнительной платы, кроме абонплаты за пакет, с абонента не взимается. Кроме того, в данные пакеты услуг включена дополнительная услуга телефонной связи «Идентификация линии вызывающего абонента (CLIP)»</p>
+                            <p class="agile-tab-txt">использование современной технологии xPON, гарантирующей высокую скорость доступа в Интернет, возможность просмотра интерактивного телевидения на любом количестве телеприемников, и неизменно высокое качество всех оказываемых услуг..</p>
+                            <p>выгодная стоимость: подключение к услугам в составе пакета дешевле, чем по отдельности.</p>
+<!--                            <div class="button">-->
+<!--                                <a href="#">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>-->
+<!--                            </div>-->
                         </div>
                         <div class="tabs-right1">
-                            <h6>Aliquam donec id urna</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <p class="agile-tab-txt">scelerisque commodo.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur
-                                nibh quis urna gravida mollis.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <div class="button">
-                                <a href="about.html">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-                            </div>
+                            <h6>По выделенной линии</h6>
+                            <p>Доступ к сети Интернет по выделенной линии предназначен для тех предприятий и организаций, для которых сеть Интернет является важной составляющей бизнеса. В рамках этой услуги Вам будет предоставлен постоянный доступ к сети Интернет в режиме 24 часа в сутки, 7 дней в неделю</p>
+                            <p class="agile-tab-txt">В зависимости от конкретных потребностей Вашей организации, доступ в сеть может быть предоставлен на скорости от 1 Мбит/с и выше. Заказчикам, для которых особенно важными являются вопросы надежности услуги, мы предлагаем дополнительный сервис «горячее резервирование канала».</p>
+                            <p>Для абонентов услуги, подключенных на скорости 100  Мбит/с и более, имеется возможность подключения дополнительного сервиса «Защита от DDoS-атак»..</p>
+<!--                            <div class="button">-->
+<!--                                <a href="#">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>-->
+<!--                            </div>-->
                         </div>
                         <div class="tabs-right1">
-                            <h6>Aliquam donec id urna</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <p class="agile-tab-txt">scelerisque commodo.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur
-                                nibh quis urna gravida mollis.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <div class="button">
-                                <a href="about.html">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-                            </div>
+                            <h6>Актуальная версия порядка оказания</h6>
+                            <p>Услуга по предоставлению операторам электросвязи доступа к международным сетям передачи данных, в том числе к сегменту Интернет</p>
+                            <p class="agile-tab-txt">Поскольку к услугам операторского класса предъявляются самые высокие требования, в Белтелеком осуществляется круглосуточный мониторинг оборудования, операторам предоставляется оперативная информация о состоянии сети Интернет и сети Белтелеком, действует служба поддержки..</p>
+                            <p>Дополнительно в рамках услуги «Доступ к сети Интернет с гарантированной полосой пропускания» заказчику может быть предоставлена услуга по ограничению доступа к ресурсам сети Интернет, включенным в список ограниченного доступа и содержащие информацию, запрещенную или ограниченную к распространению в соответствии с законодательными актами Республики Беларусь..</p>
+<!--                            <div class="button">-->
+<!--                                <a href="#">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>-->
+<!--                            </div>-->
                         </div>
                         <div class="tabs-right1">
-                            <h6>Aliquam donec id urna</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <p class="agile-tab-txt">scelerisque commodo.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur
-                                nibh quis urna gravida mollis.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <div class="button">
-                                <a href="about.html">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-                            </div>
-                        </div>
-                        <div class="tabs-right1">
-                            <h6>Aliquam donec id urna</h6>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <p class="agile-tab-txt">scelerisque commodo.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus. Proin consectetur
-                                nibh quis urna gravida mollis.Nam porta cursus lectus. Proin nunc erat, gravida a facilisis quis, ornare id lectus.</p>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel
-                                tortor. Integer laoreet placerat suscipit.</p>
-                            <div class="button">
-                                <a href="about.html">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
-                            </div>
+                            <h6>Пропуск трафика на сети зарубежных операторов связи</h6>
+                            <p>В рамках межоператорского сотрудничества РУП «Белтелеком» оказывает услуги по пропуску международного трафика от абонентов операторов сетей электросвязи Республики Беларусь на международные сети связи.</p>
+                            <p class="agile-tab-txt">РУП "Белтелеком" предоставляет в пользование каналы и тракты по всей территории Республики Беларусь. Воспользовавшись данной услугой, Вы получаете возможность постоянно оперативно обмениваться большими объемами информации. Благодаря разветвленной сети, РУП "Белтелеком" имеет возможность объединить территориально удаленные офисы (подразделения) предприятия в единую защищенную корпоративную сеть..</p>
+                            <p>Услуга "Предоставление в пользование каналов и трактов" позволит Вам организовать надёжную связь между компьютерными и информационными сетями по всей территории Республики Беларусь. Также данная услуга может быть использована операторами сетей электросвязи и крупными корпорациями при построении собственных телекоммуникационных сетей..</p>
+<!--                            <div class="button">-->
+<!--                                <a href="#">Get More<span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>-->
+<!--                            </div>-->
                         </div>
                     </div>
                 </div>
@@ -187,27 +163,27 @@ if($k == 3){
             <div class="clearfix"></div>
         </div>
     </div>
-    <!--		<script src="public/js/easy-responsive-tabs.js"></script>-->
+    <script src="public/js/easy-responsive-tabs.js"></script>
     <script>
         $(document).ready(function () {
-        	$('#horizontalTab').easyResponsiveTabs({
-        		type: 'default', //Types: default, vertical, accordion
-        		width: 'auto', //auto or any width like 600px
-        		fit: true, // 100% fit in a container
-        		closed: 'accordion', // Start closed if in accordion view
-        		activate: function (event) { // Callback function if tab is switched
-        			var $tab = $(this);
-        			var $info = $('#tabInfo');
-        			var $name = $('span', $info);
-        			$name.text($tab.text());
-        			$info.show();
-        		}
-        	});
-        	$('#verticalTab').easyResponsiveTabs({
-        		type: 'vertical',
-        		width: 'auto',
-        		fit: true
-        	});
+            $('#horizontalTab').easyResponsiveTabs({
+                type: 'default', //Types: default, vertical, accordion
+                width: 'auto', //auto or any width like 600px
+                fit: true, // 100% fit in a container
+                closed: 'accordion', // Start closed if in accordion view
+                activate: function (event) { // Callback function if tab is switched
+                    var $tab = $(this);
+                    var $info = $('#tabInfo');
+                    var $name = $('span', $info);
+                    $name.text($tab.text());
+                    $info.show();
+                }
+            });
+            $('#verticalTab').easyResponsiveTabs({
+                type: 'vertical',
+                width: 'auto',
+                fit: true
+            });
         });
     </script>
     <!-- //agents section -->

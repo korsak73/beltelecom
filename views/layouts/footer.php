@@ -1,59 +1,64 @@
+<?php
+
+use yii\helpers\Url;
+
+?>
 <!-- footer -->
 <div class="footer">
     <div class="w3layouts-main-footer">
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
             <h3>Для дома</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="about.html">About us</a></li>
-                <li><a href="media.html">media</a></li>
-                <li><a href="contact.html">support</a></li>
-                <li><a href="privacy.html">privacy policy</a></li>
+                <li><a href="<?= Url::to(['/site/about'])?>">О нас</a></li><br>
+                <li><a href="#">Интернет</a></li><br>
+                <li><a href="#">Видеоконтроль</a></li><br>
+                <li><a href="#">Технические работы</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
-            <h3>Для дома</h3>
+            <h3>Сети связи</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="packs.html">Пакеты</a></li>
-                <li><a href="faq.html">Интернет</a></li>
-                <li><a href="cabletv.html">Телевидение</a></li>
-                <li><a href="pay.html">quick pay</a></li>
-                <li><a href="media.html">support</a></li>
+                <li><a href="#">Пакеты</a></li><br>
+                <li><a href="#">Интернет</a></li><br>
+                <li><a href="#">Телевидение</a></li><br>
+                <li><a href="#">Хостинг</a></li><br>
+                <li><a href="#">Умный дом</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
             <h3>Для бизнеса</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="bbhome.html">Телевидение</a></li>
-                <li><a href="faq.html">Умный дом</a></li>
-                <li><a href="broadband.html">Видеоконтроль</a></li>
-                <li><a href="pay.html">Интернет</a></li>
-                <li><a href="media.html">Прочие услуги</a></li>
+                <li><a href="#">Телевидение</a></li><br>
+                <li><a href="#">Умный дом</a></li><br>
+                <li><a href="#">Видеоконтроль</a></li><br>
+                <li><a href="#">Интернет</a></li><br>
+                <li><a href="#">Прочие услуги</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
             <h3>Новости</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="media.html">Центральные новости</a></li>
-                <li><a href="faq.html">Новости филиалов</a></li>
-                <li><a href="contact.html">Закупки</a></li>
-                <li><a href="pay.html">quick pay</a></li>
-                <li><a href="media.html">Технические работы</a></li>
+                <li><a href="<?= Url::to(['/site/blog'])?>">Центральные новости</a></li>
+                <li><a href="<?= Url::to(['/site/blog'])?>">Новости филиалов</a></li><br>
+                <li><a href="#">Закупки</a></li><br>
+                <li><a href="#">quick pay</a></li><br>
+                <li><a href="#">Технические работы</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
             <h3>О компании</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="faq.html">Руководство</a></li>
-                <li><a href="privacy.html">Компания</a></li>
-                <li><a href="terms.html">Правовая информация</a></li>
+                <li><a href="<?= Url::to(['/site/about'])?>">Руководство</a></li><br>
+                <li><a href="#">Компания</a></li><br>
+                <li><a href="#">Правовая информация</a></li>
             </ul>
         </div>
         <div class="col-md-2 col-sm-4 col-xs-6 w3_footer_grid">
             <h3>Обратная связь</h3>
             <ul class="w3_footer_grid_list">
-                <li><a href="contact.html">Контакты</a></li>
-                <li><a href="privacy.html">Пресс-центр</a></li>
-                <li><a href="faq.html">Сервисные центры и пункты</a></li>
+                <li><a href="<?= Url::to(['/site/contact'])?>">Контакты</a></li><br>
+                <li><a href="#">Пресс-центр</a></li>
+                <li><a href="#">Сервисные центры и пункты</a></li>
             </ul>
         </div>
         <div class="clearfix"> </div>

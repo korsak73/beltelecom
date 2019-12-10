@@ -30,7 +30,7 @@
 }
 ul.resp-tabs-list li.resp-tab-active {
     border-right: none;
-    background-color: #03b9f8;
+    /*background-color: #03b9f8;*/
     position: relative;
     color: #FFF;
     z-index: 1;
