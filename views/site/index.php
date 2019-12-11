@@ -82,7 +82,7 @@ if($k == 3){
     <!-- services section -->
     <div class="w3ls-section w3_agileits-services" id="services">
         <h2 class="agileits-title">Приглашаем к сотрудничеству</h2>
-        <h4 class="wthree">Компания «Белтелеком» готова полностью обеспечить потребность современного офиса, бизнеса и производства в телекоммуникационных услугах. Цифровые продукты и решения помогут юридическим лицам и индивидуальным предпринимателям повысить эффективность бизнес-процессов в любой сфере.</h4>
+        <h4 class="wthree">Компания «Белтелеком» готова полностью обеспечить потребность современного офиса, бизнеса и производства в телекоммуникационных услугах.</h4>
 <!--        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum nibh urna, euismod ut ornare non, volutpat vel tortor.-->
 <!--            Integer laoreet placerat suscipit.</p>-->
         <div class="agileinfo-about-main">
@@ -163,29 +163,6 @@ if($k == 3){
             <div class="clearfix"></div>
         </div>
     </div>
-    <script src="public/js/easy-responsive-tabs.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('#horizontalTab').easyResponsiveTabs({
-                type: 'default', //Types: default, vertical, accordion
-                width: 'auto', //auto or any width like 600px
-                fit: true, // 100% fit in a container
-                closed: 'accordion', // Start closed if in accordion view
-                activate: function (event) { // Callback function if tab is switched
-                    var $tab = $(this);
-                    var $info = $('#tabInfo');
-                    var $name = $('span', $info);
-                    $name.text($tab.text());
-                    $info.show();
-                }
-            });
-            $('#verticalTab').easyResponsiveTabs({
-                type: 'vertical',
-                width: 'auto',
-                fit: true
-            });
-        });
-    </script>
     <!-- //agents section -->
 <!--     markets -->
     		<div class="w3ls-section markets" id="markets">
@@ -196,8 +173,11 @@ if($k == 3){
     							<i class="fa fa-wifi" aria-hidden="true"></i>
     						</div>
     						<div class="icon-right">
-    							<h5>Suspendisse</h5>
-    							<p>Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.</p>
+                                <a href="http://byfly.by/">
+                                    <img src="public/images/byfly.png" class="img-responsive" alt="" />
+    							    <h5>Летать легко</h5>
+                                </a>
+    							<p>Цифровые продукты и решения помогут юридическим лицам и индивидуальным предпринимателям повысить эффективность бизнес-процессов в любой сфере</p>
     						</div>
     						<div class="clearfix"> </div>
     					</div>
@@ -208,8 +188,11 @@ if($k == 3){
     							<i class="fa fa-cog" aria-hidden="true"></i>
     						</div>
     						<div class="icon-right">
-    							<h5>Aliquam</h5>
-    							<p>Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.</p>
+                                <a href="http://yasna.by">
+                                    <img src="public/images/yasna.png" class="img-responsive" alt="" />
+                                    <h5>Ты Дома</h5>
+                                </a>
+    							<p>Пакеты услуг линейки «ЯСНА» включают три основные услуги, необходимые современному человеку для комфорта и полноценного общения: Интернет, телефонную связь и телевидение.</p>
     						</div>
     						<div class="clearfix"> </div>
     					</div>
@@ -220,8 +203,11 @@ if($k == 3){
     							<i class="fa fa-television" aria-hidden="true"></i>
     						</div>
     						<div class="icon-right">
-    							<h5>Consectetur</h5>
-    							<p>Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.</p>
+                                <a href="http://zala.by/">
+                                    <img src="public/images/zala.png" class="img-responsive" alt="" />
+                                    <h5>Управляй своим телевидением</h5>
+                                </a>
+    							<p>Телевидение ZALA — это современный способ доступа к различным телеканалам, обеспечивающий высокое качество телевизионного сигнала.</p>
     						</div>
     						<div class="clearfix"> </div>
     					</div>
@@ -232,8 +218,11 @@ if($k == 3){
     							<i class="fa fa-tasks" aria-hidden="true"></i>
     						</div>
     						<div class="icon-right">
-    							<h5>Bibendum</h5>
-    							<p>Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.</p>
+                                <a href=" https://home.beltelecom.by/">
+                                    <img src="public/images/homeIndex.png" class="img-responsive" alt="" />
+                                    <h5>Умный дом</h5>
+                                </a>
+    							<p>«Умный дом» помогает повысить комфорт и безопасность проживания, позволяя контролировать различные процессы, происходящие в доме либо офисе.</p>
     						</div>
     						<div class="clearfix"> </div>
     					</div>
@@ -248,14 +237,14 @@ if($k == 3){
     			<div class="offers-grids">
     				<div class="wthree-offers-right">
     					<div class="col-md-7  col-sm-8 col-xs-8 wthree-offers1-right">
-    						<h4>CityLine | Digital Networks Broadband</h4>
-    						<p>Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.</p>
+    						<h4>Белтелеком | Телевидение</h4>
+    						<p></p>
     						<ul>
-    							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Phasellus sem leo, interdum quis risus</a></li>
-    							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Nullam egestas nisi id malesuada aliquet </a></li>
-    							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Donec condimentum purus urna venenatis</a></li>
-    							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Ut congue, nisl id tincidunt lobor mollis</a></li>
-    							<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i> Cum sociis natoque penatibus et magnis</a></li>
+    							<li><a href="https://beltelecom.by/business/tv/interaktivnoe"><i class="fa fa-angle-right" aria-hidden="true"></i>Интерактивное</a></li>
+    							<li><a href="https://beltelecom.by/business/tv/efirnoe"><i class="fa fa-angle-right" aria-hidden="true"></i> Эфирное </a></li>
+    							<li><a href="https://beltelecom.by/business/tv/smart"><i class="fa fa-angle-right" aria-hidden="true"></i> SMART</a></li>
+    							<li><a href="https://beltelecom.by/business/tv/poryadok-okazaniya-uslugi-interaktivnogo-televideniya-zala"><i class="fa fa-angle-right" aria-hidden="true"></i> Порядок оказания услуг</a></li>
+    							<li><a href="https://beltelecom.by/business/tv/coverage-areas-of-the-territory-of-digital-terrestrial-tv"><i class="fa fa-angle-right" aria-hidden="true"></i> Охват территории РБ эфирным телевизионным вещанием</a></li>
     						</ul>
     					</div>
     					<div class="col-md-5 col-sm-4  col-xs-4 wthree-offers1">
@@ -270,15 +259,17 @@ if($k == 3){
     					</div>
     					<div class="col-md-7  col-sm-8 col-xs-8 wthree-offers-left">
     						<div class="offers-left-heading">
-    							<h4>CityLine | Digital Networks DTH</h4>
-    							<h5>Phasellus dapibus felis elit, sed accumsan arcu gravida vitae.</h5>
+    							<h4>Белтелеком | Хостинг</h4>
+    							<h5></h5>
     						</div>
     						<div class="offers-left-grids">
     							<div class="offers-number">
     								<p>1</p>
     							</div>
     							<div class="offers-text">
-    								<p>Integer egestas non lorem eget aliquet. Nulla egestas felis et maximus elementum. Morbi a dui ac nunc mollis rhoncus.</p>
+                                    <a href="https://beltelecom.by/business/hosting/disk-space">
+    								    <p>Предоставление дискового пространства.</p>
+                                    </a>
     							</div>
     							<div class="clearfix"> </div>
     						</div>
@@ -287,7 +278,9 @@ if($k == 3){
     								<p>2</p>
     							</div>
     							<div class="offers-text">
-    								<p>Integer egestas non lorem eget aliquet. Nulla egestas felis et maximus elementum. Morbi a dui ac nunc mollis rhoncus.</p>
+                                    <a href="https://beltelecom.by/business/hosting/dedicated-server-new">
+    								    <p>Предоставление физического сервера (Dedicated).</p>
+                                    </a>
     							</div>
     							<div class="clearfix"> </div>
     						</div>
@@ -296,7 +289,9 @@ if($k == 3){
     								<p>3</p>
     							</div>
     							<div class="offers-text">
-    								<p>Integer egestas non lorem eget aliquet. Nulla egestas felis et maximus elementum. Morbi a dui ac nunc mollis rhoncus.</p>
+                                    <a href="https://beltelecom.by/business/hosting/placing-colocation">
+    								    <p>Размещение оборудования (Colocation).</p>
+                                    </a>
     							</div>
     							<div class="clearfix"> </div>
     						</div>
@@ -310,22 +305,22 @@ if($k == 3){
     				<div class="services-w3ls-row agileits-w3layouts">
     					<div class="col-md-3 col-sm-3 col-xs-6 services-grid agileits-w3layouts text-center">
     						<i class="fa fa-envelope-o" aria-hidden="true"></i>
-    						<h5>Inquiry</h5>
+    						<h5>Индивидуальный подход</h5>
 
     					</div>
     					<div class="col-md-3 col-sm-3 col-xs-6 services-grid agileits-w3layouts text-center">
     						<i class="fa fa-comments" aria-hidden="true"></i>
-    						<h5>24/7 Support</h5>
+    						<h5>Доступность услуг 24/7</h5>
 
     					</div>
     					<div class="col-md-3 col-sm-3 col-xs-6 services-grid agileits-w3layouts text-center">
     						<i class="fa fa-question" aria-hidden="true"></i>
-    						<h5>faqs</h5>
+    						<h5>Вопросы и ответы</h5>
 
     					</div>
     					<div class="col-md-3 col-sm-3 col-xs-6 services-grid agileits-w3layouts text-center">
     						<i class="fa fa-list-alt" aria-hidden="true"></i>
-    						<h5>quick pay bill</h5>
+    						<h5>Решения от ведущих поставщиков</h5>
 
     					</div>
     					<div class="clearfix"> </div>
