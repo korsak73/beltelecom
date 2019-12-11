@@ -236,7 +236,7 @@ class Articles extends BaseModel
      */
     public function getComments()
     {
-        return $this->hasMany(Comments::className(), ['article_id' => 'id']);
+        return $this->hasMany(Comments::className(), ['article_id' => 'id'])->andWhere(['comments.status' => Comments::STATUS_ALLOW]);
     }
 
     /**
@@ -357,6 +357,11 @@ class Articles extends BaseModel
     public function getCountTags()
     {
         return $this->getTags()->select('id')->asArray()->count();
+    }
+
+    public function getCountComments()
+    {
+        return $this->getComments()->select('id')->andWhere(['status' => self::STATUS_ACTIVE])->asArray()->count();
     }
 
     public function getTagsByArticleId($id)

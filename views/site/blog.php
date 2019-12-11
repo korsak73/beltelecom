@@ -41,9 +41,10 @@ use yii\widgets\LinkPager;
                                     <h6 class="blg"><i class="fa fa-clock-o"></i><?= $article->getPublishDate(); ?></h6>
                                     <div class="icons">
                                         <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-user"></i> <?= $article->nameAuthor ?></a>
-                                        <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-comments-o"></i> <?= $article->getCountTags(); ?> Тэгов</a>
+                                        <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-comments-o"></i> <?= $article->getCountComments(); ?> комментариев</a>
+                                        <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-tag"></i> <?= $article->getCountTags(); ?> тэгов</a>
                                         <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-thumbs-o-up"></i> <?= $article->viewed ?> просмотров</a>
-                                        <a href="#"><i class="fa fa-thumbs-o-down"></i>  26</a>
+<!--                                        <a href="#"><i class="fa fa-thumbs-o-down"></i>  0</a>-->
                                     </div>
                                         <div class="clearfix"></div>
                                     <p><?= $article->description ?></p>

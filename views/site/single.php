@@ -41,10 +41,12 @@ use yii\helpers\Url;
                                       <h6 class="blg"><i class="fa fa-clock-o"></i> <?= $article->getPublishDate(); ?></h6>
                                   </a>
 									<div class="icons">
-										<a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-user"></i> <?= empty($article->nameAutor) ? null : $article->nameAutor ?></a>
-										<a href="#"><i class="fa fa-comments-o"></i> 2</a>
-										<a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>""><i class="fa fa-thumbs-o-up"></i> <?= $article->getCountTags(); ?> тэгов</a>
-										<a href="#"><i class="fa fa-thumbs-o-down"></i>  26</a>
+										<a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-user"></i> <?= empty($article->nameAutor) ? null : $article->nameAutor ?>автор</a>
+<!--										<a href="#"><i class="fa fa-comments-o"></i> 2</a>-->
+                                        <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-thumbs-o-up"></i> <?= $article->viewed ?> просмотров</a>
+                                        <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-comments-o"></i> <?= $article->getCountComments(); ?> комментариев</a>
+                                        <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>"><i class="fa fa-tag"></i> <?= $article->getCountTags(); ?> тэгов</a>
+<!--										<a href="#"><i class="fa fa-thumbs-o-down"></i>  0</a>-->
 									</div>
 									<div class="clearfix"></div>
                                       <?php if(! empty($article->content)) : ?>
@@ -178,7 +180,7 @@ use yii\helpers\Url;
                                                     <div class="news-date-list pt-2">
                                                         <ul>
                                                             <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
-                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> Tags</a></li>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> тэгов</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -188,7 +190,7 @@ use yii\helpers\Url;
                                                     <div class="news-date-list pt-2">
                                                         <ul>
                                                             <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
-                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> Tags</a></li>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> тэгов</a></li>
                                                         </ul>
                                                     </div>
                                                 </div>
