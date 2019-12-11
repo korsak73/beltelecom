@@ -7,21 +7,22 @@
                     <h3>Комментарии</h3>
                 </div>
         <?php foreach($comments as $comment):?>
-                <div class="comment-list">
-                    <div class="row">
-                        <div class="col-lg-3 col-md-4 col-sm-4 comment-imgs text-center">
-                            <img class="img-fluid avatar-default" src="<?= $comment->user->avatar ? $comment->user->getImage() : '/public/images/avatar-default.png'; ?>" alt="">
+            <div class="all-comments">
+                <div class="media-grids">
+                    <div class="media">
+                        <h5><?= empty($comment->userName) ? null : $comment->getUser()->getName();?></h5>
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="img-fluid avatar-default" src="<?= ! empty($comment->user->avatar) ? $comment->user->getImage() : 'public/images/avatar-default.png'; ?>" title="One movies" alt=" ">
+                            </a>
                         </div>
-                        <div class="col-lg-9 col-md-8 col-sm-8 comments-grid-right text-left">
-                            <h4 ><?= empty($comment->userName) ? null : $comment->getUser()->getName();?></h4>
-                            <p class="my-2"><?= $comment->text; ?></p>
-                            <ul>
-                                <li> <?= $comment->getDate();?><i>|</i></li>
-                                <li><a href="<?= Url::toRoute(['site/view','id'=>$comment->article_id]);?>" class="clr-two">Подробнее ..</a></li>
-                            </ul>
+                        <div class="media-body">
+                            <p><?= $comment->text; ?></p>
+                            <span>Подробнее ..<a href="<?= Url::toRoute(['site/view','id'=>$comment->article_id]);?>"> <?= $comment->article->nameAuthor ?> </a></span>
                         </div>
                     </div>
                 </div>
+            </div>
         <?php endforeach;?>
     <?php endif;?>
 </div>
