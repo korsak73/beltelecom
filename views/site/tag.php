@@ -97,7 +97,7 @@ use yii\widgets\LinkPager;
             <!--//Blog-inner-->
             <div class="col-lg-4">
                 <!--News Letter-->
-                <div class="address_mail_footer_grids">
+                <div class="address_mail_footer_grids m-bottom-0-5">
                     <div class="title text-center mb-lg-4 mb-md-3 mb-3">
                         <h3>Подписка на новые статьи</h3>
                     </div>
@@ -107,68 +107,73 @@ use yii\widgets\LinkPager;
                 </div>
                 <!--//News Letter-->
                 <!--Categories-->
-                <div class="mt-lg-4 mt-3 address_mail_footer_grids">
-                    <div class="title text-center mb-lg-4 mb-md-3 mb-3">
-                        <h3>Рубрики</h3>
+                <?php if(!empty($categories)) : ?>
+                    <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
+                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">
+                            <h3 class="h-t">Рубрики</h3>
+                        </div>
+                        <div class="agile-categories-list text-center">
+                            <ul>
+                                <?php foreach ($categories as $category ): ?>
+                                    <?php if(!empty($category->id)) : ?>
+                                        <li class="py-2">
+                                            <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title ?></a>
+                                            <span class="post-count pull-right"> (<?= $category->getArticlesCount();?>)</span>
+                                        </li>
+                                    <?php endif; ?>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="agile-categories-list text-center">
-                        <ul>
-                            <?php foreach ($categories as $category ): ?>
-                                <li class="py-2">
-                                    <a href="<?= Url::toRoute(['site/category','id'=>$category->id]);?>"><?= $category->title ?></a>
-                                    <span class="post-count pull-right"> (<?= $category->getArticlesCount();?>)</span>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
-                    </div>
-                </div>
+                <?php endif; ?>
                 <!--//Categories-->
                 <!--Популярные посты-->
                 <?php if(! empty($popular)) : ?>
-                <div class="mt-lg-4 mt-3 address_mail_footer_grids">
-                    <div class="title text-center mb-lg-4 mb-md-3 mb-3">
-                        <h3>Популярные статьи</h3>
-                    </div>
-                    <div class="dance-agile-info  articles-text-center">
-                        <ul>
-                            <?php foreach ($popular as $article): ?>
-                                <li>
-                                    <div class="footer-grid row  mb-3">
-                                        <?php if($article->image) : ?>
-                                            <div class="col-lg-4 col-md-6 col-sm-6 col-5 text-right">
-                                                <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">
-                                                    <img class="img-fluid" src="<?= $article->getImage();?>" alt="" >
-                                                </a>
-                                            </div>
-                                            <div class="col-lg-8 col-md-6 col-sm-6 col-7 bottom-para px-0">
-                                                <h6><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="scroll"><?= $article->title; ?></a></h6>
-                                                <div class="news-date-list pt-2">
-                                                    <ul>
-                                                        <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
-                                                        <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> меток</a></li>
-                                                    </ul>
+                    <div class="mt-lg-4 mt-3 address_mail_footer_grids m-bottom-0-5">
+                        <div class="title text-center mb-lg-4 mb-md-3 mb-3">
+                            <h3 class="h-t">Популярные статьи</h3>
+                        </div>
+                        <div class="dance-agile-info  articles-text-center">
+                            <ul>
+                                <?php foreach ($popular as $article): ?>
+                                    <li>
+                                        <div class="footer-grid row  mb-3">
+                                            <?php if($article->image) : ?>
+                                                <div class="col-lg-4 col-md-6 col-sm-6 col-5 text-right">
+                                                    <a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>">
+                                                        <img class="img-responsive" alt="" style="width: 100%" src="<?= $article->getImage();?>">
+                                                    </a>
                                                 </div>
-                                            </div>
-                                        <?php else: ?>
-                                            <div class=" text-center col-lg-12 col-md-12 col-sm-12 col-12 bottom-para">
-                                                <h6><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="text-center scroll"><?= $article->title; ?></a></h6>
-                                                <div class=" text-center news-date-list pt-2">
-                                                    <ul>
-                                                        <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
-                                                        <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> меток</a></li>
-                                                    </ul>
+                                                <div class="col-lg-8 col-md-6 col-sm-6 col-7 bottom-para px-0">
+                                                    <h6><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="scroll"><?= $article->title; ?></a></h6>
+                                                    <div class="news-date-list pt-2">
+                                                        <ul>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> меток</a></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                        <?php endif; ?>
-                                    </div>
-                                </li>
-                            <?php endforeach; ?>
-                        </ul>
+                                            <?php else: ?>
+                                                <div class=" text-center col-lg-12 col-md-12 col-sm-12 col-12 bottom-para">
+                                                    <h6><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="text-center scroll"><?= $article->title; ?></a></h6>
+                                                    <div class=" text-center news-date-list pt-2">
+                                                        <ul>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getPublishDate(); ?></a></li>
+                                                            <li><a href="<?= Url::toRoute(['site/view','id'=>$article->id]);?>" class="clr-two"><?= $article->getCountTags(); ?> меток</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            <?php endif; ?>
+                                        </div>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
                     </div>
-                </div>
                 <?php endif; ?>
                 <!--//Популярные посты-->
                 <!--Tags-->
+                <?php if(! empty($tags)) : ?>
                 <div class="mt-lg-4 mt-3 address_mail_footer_grids">
                     <div class="title text-center mb-lg-4 mb-md-3 mb-3">
                         <h3>Все метки</h3>
@@ -183,6 +188,7 @@ use yii\widgets\LinkPager;
                         </ul>
                     </div>
                 </div>
+                <?php endif; ?>
                 <!--//Tags-->
             </div>
         </div>
