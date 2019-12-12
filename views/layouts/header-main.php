@@ -85,6 +85,7 @@ use yii\helpers\Url;
 <!--                            </li>-->
                             <li <?php if ((Yii::$app->controller->action->id == 'blog')
                                                                     ||(Yii::$app->controller->action->id == 'view')
+                                                                    ||(Yii::$app->controller->action->id == 'tag')
                                                                     ||(Yii::$app->controller->action->id == 'category')):?>class="active"<?php endif?>>
                                 <a href="<?= Url::to(['/site/blog'])?>">Новости</a>
                             </li>
