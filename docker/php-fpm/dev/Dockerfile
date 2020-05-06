@@ -41,7 +41,7 @@ RUN  set -xe \
         echo 'xdebug.max_nesting_level=500'; \
         echo 'xdebug.remote_enable=On'; \
         echo 'xdebug.remote_connect_back=1'; \
-        echo 'xdebug.remote_port=9001'; \
+        echo '/home/korsak/projects/saservicexdebug.remote_port=9001'; \
     } > $PHP_INI_DIR/conf.d/xdebug.ini
 
 RUN set -ex \
